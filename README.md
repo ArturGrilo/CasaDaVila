@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Casa da Vila - Website
+Welcome to Casa da Vila! This is a website designed to showcase our charming local accommodation and provide visitors with essential information about their stay.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About
+Casa da Vila is a beautifully crafted website dedicated to promoting our local accommodation facility. We aim to provide visitors with an immersive experience, highlighting the unique features and amenities of our establishment.
 
-## Available Scripts
+Features
+Stunning Visuals: Explore high-quality images showcasing the beauty of our accommodations, surroundings, and amenities.
+Interactive Experience: Navigate through our website seamlessly with an intuitive user interface designed for ease of use.
+Accommodation Details: Learn about our rooms, facilities, and services to make informed booking decisions.
+Contact and Booking: Easily get in touch with us or book your stay directly through our website.
+Installation
+As Casa da Vila is a live website, there is no installation required. Simply visit casa-da-vila.com to explore our offerings and book your stay!
 
-In the project directory, you can run:
+Technologies Used
+HTML5
+CSS3
+JavaScript
+React
+Contact Us
+For inquiries, bookings, or further information, please contact us at contact@casa-da-vila.com or visit our website casa-da-vila.com/contact.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This website is privately owned and operated by Casa da Vila. All rights reserved.
