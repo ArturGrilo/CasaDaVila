@@ -1,0 +1,35 @@
+.cdv-flag-container{
+    position: fixed; /* Botão fixo na tela */
+    bottom: 5%; /* Distância do fundo da janela de visualização */
+    left: 30px; /* Distância da direita da janela de visualização */
+    z-index: 99; /* Certifique-se de que o botão esteja acima de outros elementos */
+    border: none; /* Sem borda */
+    outline: none; /* Sem destaque de foco */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor do mouse como um ponteiro */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.cdv-country-icon{
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cdv-country-icon.active-language{
+    font-weight: bold;
+    background-color: var(--color-primary);
+}
+
+.cdv-country-icon:hover{
+    font-weight: bold;
+}

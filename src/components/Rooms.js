@@ -20,19 +20,27 @@ function Rooms() {
   };
 
   return (
-    <section id="spaces-id" className="cdv-section alt">
-      <img
-        src="/images/Balcony.jpeg"
-        alt="Logo"
-        className="img-comodidades"
-      />
+    <section id="spaces-id" className="cdv-section">
       <div className="cdv-main-container">
-        <div className="cdv-title alt">
+        <div className="cdv-title">
           <span>Comodidades</span>
+        </div>
+        <div className="cdv-text">
+          <span>
+            Casa Da Vila - Alojamento Local é uma casa de pedra renovada, dividida em dois apartamentos 
+            no rés-do-chão e primeiro andar.
+          </span>
+          <span>
+            O exterior mantém o estilo típico da região, com portas e janelas em tons de vinho, refletindo
+             a cor das cerejas do Fundão.
+          </span>
+          <span>
+            O interior combina rusticidade com um design limpo e acolhedor.
+          </span>
         </div>
         <div className="rooms-grid">
           <div className="cdv-card" onClick={() => openPopup(1)}>
-            <img src="/images/HomeOutside.jpeg" alt="Imagem 2"/>
+            <img src="/images/RC_6.jpeg" alt="Imagem 2"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Apartamento rés de chão</div>
               <div className="cdv-card-details-see-more">
@@ -42,7 +50,7 @@ function Rooms() {
             </div>
           </div>
           <div className="cdv-card" onClick={() => openPopup(2)}>
-            <img src="/images/HomeInside.jpeg" alt="Imagem 2"/>
+            <img src="/images/PS_3.jpeg" alt="Casa Da Vila - Piso Superior"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Apartamento duplex</div>
               <div className="cdv-card-details-see-more">

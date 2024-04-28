@@ -15,6 +15,11 @@ import SplashScreen from "./components/SplashScreen";
 import "./styles/fonts.css";
 import "./styles/App.css";
 import "./styles/variables.css";
+import GalleryBreakSection from "./components/GalleryBreakSection";
+import WordsBreakSection from "./components/WordsBreakSection";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import CookieBanner from "./components/CookieBanner";
+import LanguageSelector from "./components/LanguageSelector";
 
 const App = () => {
 
@@ -24,11 +29,16 @@ const App = () => {
       <SplashScreen />
       <WhatsAppLink />
       <ButtonTop />
+      <LanguageSelector />
       <Routes>
         {/* Rota da página principal */}
         <Route 
           path="/" 
           element={<MainPage />} 
+        />
+        <Route 
+          path="/PoliticaDePrivacidade" 
+          element={<PrivacyPolicy />} 
         />
 
         {/* Rota da página das Aldeias Históricas */}
@@ -109,6 +119,7 @@ const App = () => {
                                                     isParties={true}
                                                   />} />
       </Routes>
+      <CookieBanner />
     </div>
   );
 };
@@ -120,7 +131,9 @@ const MainPage = () => {
       <TopBar />
       <Home />
       <AboutUs />
+      <WordsBreakSection />
       <Rooms />
+      <GalleryBreakSection />
       <Experiences />
       <ReservationBreakSection />
       <Feedback />

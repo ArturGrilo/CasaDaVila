@@ -1,0 +1,28 @@
+#words-section-id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    height: 400px;
+    font-size: 50px;
+    z-index: 1;
+}
+
+  
+#words-section-id img{
+    position: absolute;
+    width: 420px;
+    object-fit: cover;
+    bottom: 50px;
+    left: calc(50% - 210px);
+}
+
+#words-section-id span{
+    font-family: 'Cinzel', sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 160px;
+    color: var(--color-background-primary);
+}

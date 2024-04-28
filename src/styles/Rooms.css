@@ -1,9 +1,11 @@
-#spaces-id{
-  background-color: #800000;
-}
-
 #spaces-id .cdv-title{
   z-index: 100;
+}
+
+#spaces-id .cdv-text{
+  text-align: justify;
+  max-width: 920px;
+  margin-bottom: 100px;
 }
 
 .rooms-grid{
@@ -12,73 +14,8 @@
   gap: 80px;
 }
 
-.cdv-card{
-  height: 70vh;
-  width: 100%;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
-.cdv-card:hover img{
-  transform: scale(1.2);
-  opacity: 0.6;
-}
-
-.cdv-card-details-see-more{
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out; 
-  visibility: hidden;
-  color: white;
-  font-weight: bold;
-}
-
-.cdv-card:hover .cdv-card-details-see-more{
-  opacity: 1;
-  visibility: visible;
-}
-
-.cdv-card:hover .cdv-card-details{
-  height: calc(100% - 80px);
-}
-
-.cdv-card img {
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cdv-card-details{
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-  width: calc(100% - 80px);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  height: 130px;
-  transition: height 0.3s ease-in-out;
-}
-
-.cdv-card-details-title{
-  text-transform: uppercase;
-  font-size: 35px;
-  color: var(--color-background-light);
-  font-weight: bold;
-}
-
-.cdv-card-details-see-more{
-  font-size: 25px;
+#spaces-id .cdv-card{
+  width: 25vw;
 }
 
 .img-comodidades {
