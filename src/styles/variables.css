@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #990000;
+    --color-highlight: #f2ba67;
+    --color-text-dark: #333333;
+    --color-background-light: #f0f0f0;
+    --color-background-dark: #360803;
+    --color-border-shadow: rgba(0, 0, 0, 0.1);
+    --color-alternative: #ff6b33;
+    --color-topbar-scroll-background: rgba(255,255,255,0.98);
+  }

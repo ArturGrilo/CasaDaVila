@@ -1,0 +1,73 @@
+.slick-prev,
+.slick-next {
+  color: transparent;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 25px;
+  display: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: transparent; /* Cor de destaque ao passar o mouse sobre os botões */
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  line-height: 12px;
+  width: 12px;
+  height: 12px;
+  color: transparent; 
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+  background-color: white;
+}
+
+.slick-dots button:before {
+    opacity: 1 !important;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-dots{
+    color: white;
+    bottom: 25px;
+}
+
+.slick-slider{
+    height: 100%;;
+}
+
+.slick-list, .slick-track{
+    height: 100%;
+}
+
+.slick-slide div{
+    height: 100%;
+}
+
+.slick-list {
+  height: 80vh;
+}
+
+.slick-next{
+  right: 25px;
+}
+
+.slick-prev{
+  z-index: 1;
+  left: 25px;
+}

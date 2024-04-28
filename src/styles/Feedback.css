@@ -1,0 +1,53 @@
+.feedback-section {
+    padding: 60px 0 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .feedback-main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .feedback-aspas{
+    font-size: 5rem;
+    color: var(--color-primary);
+    margin-bottom: -55px;
+    font-family: 'Ephesis', sans-serif;
+  }
+
+  .vertical-line {
+    margin: 15px 0;
+    width: 2px;
+    height: 100px; 
+    background-color: #000; 
+  }
+
+  .feedback-text{
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .feedback-author{
+    margin-top: 20px;
+    color: var(--color-primary);
+    font-size: 22px;
+  }
+
+  .feedback-country{
+    font-size: 22px;
+    color: var(--color-text-dark);
+  }
+
+  .feedback-image{
+    width: 100%;
+    margin: -10px 0;
+  }
+  .feedback-image img{
+    width: calc(100%);
+  }

@@ -1,0 +1,267 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: 'Cinzel', sans-serif;
+  /*background-color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;*/
+  /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);*/
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 90%, transparent 100%);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-bar-container{
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.scrolled .top-bar-container{
+  gap: 0;
+  flex-direction: row;
+}
+
+.scrolled .top-bar-container{
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar.scrolled {
+  background-color: var(--color-topbar-scroll-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: none;
+}
+
+.top-bar-icon{
+  width: auto;
+  margin-left: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-menu-link{
+  position: relative;
+}
+
+.dropdown-menu-link:hover .top-bar-icon{
+  transform: rotate(180deg); 
+  opacity: 0.7;
+}
+
+.dropdown-menu-container{
+  display: none;
+  position: absolute;
+  padding-top: 20px;
+  width: max-content;
+  right: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu-sub-container{
+  background-color: var(--color-background-light);
+  border-radius: 8px;
+}
+
+.dropdown-menu-option{
+  color: var(--color-text-dark);
+  text-shadow: none;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-menu-option:hover{
+  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-background-light);
+}
+
+.dropdown-menu-sub-container.a:last-child.dropdown-menu-option:hover{
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown-menu-option:first-child:hover{
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-menu-option:last-child{
+  border: none;
+}
+
+.dropdown-menu-link:hover .dropdown-menu-container,
+.dropdown-menu-container:hover .dropdown-menu-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  max-height: 150px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.scrolled .logo-container{
+  max-height: 100px;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+.scrolled .logo{
+  max-height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.links-top-bar{
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-dark);
+}
+
+.links-top-bar .cdv-button-secundary{
+  font-size: 30px;
+  background-color: white;
+  border-color: white;
+  color: var(--color-primary);
+}
+
+.links-top-bar .cdv-button-secundary:hover{
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white
+}
+
+.scrolled .links-top-bar .cdv-button-secundary{
+  font-size: 26px;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white
+}
+
+.scrolled .links-top-bar .cdv-button-secundary:hover{
+  font-size: 26px;
+  background-color: white;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.scrolled .links-top-bar{
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.links-top-bar span{
+  position: relative;
+  font-weight: bold;
+  transform: scale(1);
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.links-top-bar span::after {
+  content: '';
+  position: absolute; 
+  left: 0; 
+  bottom: -8px; 
+  width: 100%;
+  height: 4px; 
+  background-color: var(--color-topbar-scroll-background); 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.links-top-bar span:hover::after {
+  opacity: 1; 
+}
+
+.links-top-bar span:hover{
+  font-weight: bolder;
+  transform: scale(1.6); 
+}
+
+.links-top-bar a{
+  text-decoration: none;
+  color: var(--color-topbar-scroll-background);
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.scrolled .links-top-bar a{
+  font-size: 24px;
+}
+
+.scrolled .links-top-bar a{
+  color: var(--color-text-dark);
+  text-shadow: none;
+}
+
+@keyframes fontWeightAnimation {
+  from {
+    font-weight: normal;
+  }
+  to {
+    font-weight: bold;
+  }
+}
+
+.cdv-active-link{
+  font-weight: bolder; /* Mudar o peso da fonte para dar destaque */
+  color: white !important;
+  position: relative; /* Para que os pseudo-elementos fiquem posicionados relativamente a este elemento */
+}
+
+.scrolled .cdv-active-link{
+  color: var(--color-primary) !important;
+}
+
+.cdv-active-link::before,
+.cdv-active-link::after {
+  content: ''; /* Adiciona conteúdo aos pseudo-elementos */
+  position: absolute; /* Posiciona os pseudo-elementos absolutamente em relação ao elemento pai */
+  left: 0; /* Posiciona os pseudo-elementos no canto esquerdo do elemento pai */
+  right: 0; /* Posiciona os pseudo-elementos no canto direito do elemento pai */
+  height: 2px; /* Define a altura das linhas */
+  background-color: white; /* Cor das linhas */
+}
+
+.scrolled .cdv-active-link::before,
+.scrolled .cdv-active-link::after {
+  background-color: var(--color-primary);  /* Cor das linhas */
+}
+
+.cdv-active-link::before {
+  top: -5px; /* Posiciona a linha superior */
+}
+
+.cdv-active-link::after {
+  bottom: -3px; /* Posiciona a linha inferior */
+}
+
+.cdv-active-link span:hover::after {
+  opacity: 0 !important; 
+}

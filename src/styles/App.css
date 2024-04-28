@@ -1,0 +1,299 @@
+/*--------------------------------------------*/
+/* 1 - Main Properties                        */
+/* 2 - Buttons                                */
+/* 3 - Title and Text                         */
+/* 4 - Section                                */
+/* 5 - Popup                                  */
+/* 6 - Grid                                   */
+/* 7 - Card                                   */
+/*--------------------------------------------*/
+
+/*--------------------------------------------*/
+/* 1 - Main Properties                        */
+/*--------------------------------------------*/
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede a barra de rolagem vertical */
+  background-image: url(../bg-texture.jpeg);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*--------------------------------------------*/
+/* 2 - Buttons                                */
+/*--------------------------------------------*/
+
+.cdv-button-primary{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: 'Cinzel', sans-serif;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.cdv-button-secundary{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-background-light);
+  padding: 15px;
+  font-size: 25px;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  font-family: 'Cinzel', sans-serif;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.cdv-button-secundary:hover{
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+}
+
+.cdv-button-primary:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+}
+
+/*--------------------------------------------*/
+/* 3 - Title and Text                         */
+/*--------------------------------------------*/
+
+.cdv-title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 50px;
+  font-weight: bold;
+  margin: 5px 0 40px 0;
+  text-transform: uppercase;
+  align-items: baseline;
+  font-family: 'Cinzel', sans-serif;
+}
+
+.cdv-title.alt{
+  color: var(--color-background-light);
+}
+
+.cdv-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.cdv-text.alt{
+  color: var(--color-background-light);
+}
+
+.cdv span{
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------*/
+/* 4 - Section                                */
+/*--------------------------------------------*/
+
+.cdv-section {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cdv-section.alt{
+  background-color: var(--color-primary);
+}
+
+.cdv-section.alt2{
+  background-color: rgba(150, 0, 0, 0.9);
+}
+
+.cdv-main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 60px;
+  align-items: center;
+}
+
+/*--------------------------------------------*/
+/* 5 - Popup                                  */
+/*--------------------------------------------*/
+
+.cdv-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Começa com fundo transparente */
+  display: none; /* Inicia oculto */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Adiciona transição suave para fundo e opacidade */
+  z-index: 1000;
+}
+
+.cdv-popup-content {
+  position: relative;
+  background-color: #fff;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cdv-popup-open {
+  background-color: rgba(0, 0, 0, 0.6); /* Altera o fundo para semi-transparente quando o modal está aberto */
+  opacity: 1; /* Ajusta a opacidade para 1 quando o modal está aberto */
+  display: flex; /* Exibe o modal quando aberto */
+}
+
+.cdv-popup-times{
+  position: absolute;
+  cursor: pointer;
+  color: var(--color-primary);
+  right: 20px;
+  top: 28px;
+}
+
+/*--------------------------------------------*/
+/* 6 - Grid                                   */
+/*--------------------------------------------*/
+
+.cdv-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas iguais */
+  gap: 80px; /* Espaçamento entre os itens */
+}
+
+/*--------------------------------------------*/
+/* 7 - Card                                   */
+/*--------------------------------------------*/
+
+.cdv-card{
+  height: 70vh;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background-color: gray;
+}
+
+.cdv-card:hover img{
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.cdv-card-details-see-more{
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+  visibility: hidden;
+  color: white;
+  font-weight: bold;
+}
+
+.cdv-card:hover .cdv-card-details-see-more{
+  opacity: 1;
+  visibility: visible;
+}
+
+.cdv-card:hover .cdv-card-details{
+  height: calc(100% - 80px);
+}
+
+.cdv-card img {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cdv-card video{
+  width: 100%;
+  height: 100%;
+}
+
+.cdv-card-details{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  height: 130px;
+  transition: height 0.3s ease-in-out;
+}
+
+.cdv-card-details-title{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: var(--color-background-light);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cdv-card-details-see-more{
+  font-size: 25px;
+}
+
+.cdv-flag-container{
+  display: flex;
+  gap: 5px;
+  height: 40px;
+}
+
+.cdv-flag-icon{
+  cursor: pointer;
+  position: relative;
+  height: 40px !important;
+}
+
+.cdv-flag-icon img{
+  height: 40px;
+}

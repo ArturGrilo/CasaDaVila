@@ -1,0 +1,44 @@
+#break-section-id{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 50px;
+  color: white;
+  padding: 100px 60px;
+}
+
+#break-sub-section-id{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  position: relative;
+  gap: 50px;
+}
+
+#break-sub-section-id.price{
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.break-section-title{
+  font-family: 'Cinzel', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+.break-section-text{
+  font-size: 28px;
+}
+
+#break-section-id img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+}

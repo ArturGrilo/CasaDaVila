@@ -1,0 +1,58 @@
+.space-main-container{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.space-1{
+  display: flex;
+  max-height: 60vh;
+  width: 50%;
+}
+
+.carousel-container {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.slick-slide img {   
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.space-1-info{
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+
+.commodity-list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.commodity-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.commodity-item.right{
+  justify-content: right;
+}
+
+.commodity-icon{
+  color: var(--color-primary);
+  width: 50px;
+}
+
+.rooms-reservar-button{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
