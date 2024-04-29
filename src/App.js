@@ -20,6 +20,7 @@ import WordsBreakSection from "./components/WordsBreakSection";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import CookieBanner from "./components/CookieBanner";
 import LanguageSelector from "./components/LanguageSelector";
+import GalleryPage from "./components/GalleryPage";
 
 const App = () => {
   return (
@@ -33,7 +34,7 @@ const App = () => {
         {/* Rota da página principal */}
         <Route path="/" element={<MainPage />} />
         <Route path="/PoliticaDePrivacidade" element={<PrivacyPolicy />} />
-
+        <Route path="/Galeria" element={<GalleryPage />} />
           {/* Rota da página das Aldeias Históricas */}
           <Route 
             path="/AldeiasHistoricas" 

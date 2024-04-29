@@ -1,0 +1,107 @@
+#gallery-page-id{
+  padding-top: 200px;
+}
+
+#gallery-page-id.cdv-section{
+  padding-bottom: 0;
+}
+  
+.media-type-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+  gap: 30px;
+}
+  
+#gallery-page-id .cdv-button-primary{
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+#gallery-page-id .cdv-button-primary:hover{
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+#gallery-page-id .cdv-button-secundary{
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.4);
+}
+
+.media-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define colunas responsivas */
+  gap: 20px; /* Espaçamento entre as mídias */
+}
+
+/* Estilo para cada item de mídia */
+.media-item {
+  border-radius: 8px;
+  overflow: hidden; /* Para garantir que a mídia não ultrapasse o contêiner */
+  max-width: 250px;
+}
+
+/* Estilo para imagens */
+.media-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para garantir que a imagem preencha o contêiner */
+}
+
+/* Estilo para vídeos */
+.media-item video {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para áudios */
+.media-item audio {
+  width: 100%;
+}
+
+.modal {
+  display: none; /* Inicia oculto por padrão */
+  position: fixed; /* Mantém o modal posicionado na tela */
+  z-index: 1; /* Coloca o modal sobre outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Adiciona rolagem quando necessário */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+}
+
+.modal.open{
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 150px auto; 
+  border: 1px solid #888;
+  width: min-content; /* Ajusta a largura do modal */
+  height: calc(100vh - 300px);
+  position: relative;
+}
+
+/* Estiliza o botão de fechar */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 12;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.media-item{
+  cursor: pointer;
+}

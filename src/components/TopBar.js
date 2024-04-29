@@ -23,7 +23,7 @@ const TopBar = ({ scrollThreshold }) => {
           (location.pathname === "/AldeiasHistoricas") || (location.pathname === "/AldeiasDoXisto") ||
           (location.pathname === "/Romarias")) {
         setActiveSection('exps');
-      }else if (topBarRef.current) {
+      } else if (topBarRef.current) {
         const topBarHeight = topBarRef.current.offsetHeight;
         const homeSection = document.getElementById('home-id');
         const aboutSection = document.getElementById('about-us-id');
@@ -38,19 +38,17 @@ const TopBar = ({ scrollThreshold }) => {
   
         const scrollY = window.scrollY;
   
-        if (scrollY >= offsets[0] && scrollY < offsets[1]) {
-          setActiveSection('home');
-        } else if (scrollY >= offsets[1] && scrollY < offsets[2]) {
-          setActiveSection('about-us');
-        } else if (scrollY >= offsets[2] && scrollY < offsets[3]) {
-          setActiveSection('spaces');
-        } else if (scrollY >= offsets[3] && scrollY < offsets[4]) {
-          setActiveSection('gallery-section');
-        } else if (scrollY >= offsets[4] && scrollY < offsets[5]) {
-          setActiveSection('exps');
-        } else {
-          setActiveSection('');
+        let closestOffsetIndex = 0;
+        let minDistance = Math.abs(offsets[0] - scrollY);
+        for (let i = 1; i < offsets.length; i++) {
+          const distance = Math.abs(offsets[i] - scrollY);
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestOffsetIndex = i;
+          }
         }
+
+        setActiveSection(sections[closestOffsetIndex]?.id);
       }
     };
   
@@ -68,6 +66,14 @@ const TopBar = ({ scrollThreshold }) => {
     };
   }, [scrollThreshold, location.pathname]);
 
+  const handleLinkClick = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+      const sectionTop = sectionElement.offsetTop - 120;
+      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
@@ -78,16 +84,37 @@ const TopBar = ({ scrollThreshold }) => {
           <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>
             <span>{t('home-label')}</span>
           </a>
-          <a href="/#about-us-id" className={activeSection === 'about-us' ? 'cdv-active-link' : ''}>
+          <a href="/#about-us-id" 
+             className={activeSection === 'about-us' ? 'cdv-active-link' : ''}
+             onClick={(e) => {
+               e.preventDefault(); // Impede o comportamento padrão de navegação
+               handleLinkClick('about-us-id');
+             }}>
             <span>{t('about-us-label')}</span>
           </a>
-          <a href="/#spaces-id" className={activeSection === 'spaces' ? 'cdv-active-link' : ''}>
+          <a 
+            className={activeSection === 'spaces' ? 'cdv-active-link' : ''} 
+            href="#spaces-id"
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('spaces-id');
+            }}
+          >
             <span>Comodidades</span>
           </a>
-          <a href="/#gallery-section-id" className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''}>
+          <a href="/#gallery-section-id" 
+             className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
+             onClick={(e) => {
+               e.preventDefault(); // Impede o comportamento padrão de navegação
+               handleLinkClick('gallery-section-id');
+             }}>
             <span>Galeria</span>
           </a>
-          <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
+          <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('exps-id');
+            }}>
             <span>Experiências</span>
             <div className="dropdown-menu-container">
               <div className="dropdown-menu-sub-container">
