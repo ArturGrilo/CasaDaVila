@@ -342,9 +342,70 @@ a{
 }
 
 @media only screen and (max-width: 800px) {
+  .logo{
+    max-height: 100px;
+  }
+
+  .scrolled .top-bar-container {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scrolled .links-top-bar {
+    display: contents;
+  }
+
   .cdv-menu-icon {
     display: block; /* Exibe o ícone do menu em dispositivos menores */
     cursor: pointer;
+    top: calc(50% - 28px);
+    right: 10px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .scrolled .cdv-menu-icon{
+    right: 10px;
+    top: calc(50% - 7px);
+  }
+
+  .whatsapp-link{
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .cdv-flag-container{
+    bottom: 10px !important; /* Distância do fundo da janela de visualização */
+    left: 10px !important;
+  }
+
+  .go-to-top-link {
+    bottom: 65px; /* Distância do fundo da janela de visualização */
+    right: 10px;
+  }
+
+  .cdv-title {
+    font-size: 30px;
+  }
+
+  .cdv-main-container {
+    padding: 0 20px;
+  }
+
+  .cdv-text {
+    font-size: 20px;
+  }
+
+  .about-us-signature {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .grid-about-us{
+    height: 30vh;
+    grid-gap: 10px;
   }
 
   /* Exibir o menu lateral quando o ícone do menu estiver visível */
