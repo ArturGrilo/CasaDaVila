@@ -339,23 +339,10 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .cdv-menu-icon {
     display: block; /* Exibe o ícone do menu em dispositivos menores */
     cursor: pointer;
-  }
-
-  .logo-container {
-    order: -1; /* Move o logo para cima */
-  }
-
-  .top-bar-container {
-    position: relative;
-  }
-
-  /* Esconder o menu padrão quando o ícone do menu estiver visível */
-  .links-top-bar {
-    display: none;
   }
 
   /* Exibir o menu lateral quando o ícone do menu estiver visível */
