@@ -2,7 +2,7 @@
     display: none; /* Ocultar o botão por padrão */
     position: fixed; /* Botão fixo na tela */
     bottom: 5%; /* Distância do fundo da janela de visualização */
-    right: 30px; /* Distância da direita da janela de visualização */
+    right: 90px; /* Distância da direita da janela de visualização */
     z-index: 99; /* Certifique-se de que o botão esteja acima de outros elementos */
     border: none; /* Sem borda */
     outline: none; /* Sem destaque de foco */

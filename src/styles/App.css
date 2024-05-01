@@ -27,6 +27,7 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-size: auto;
+  width: 100%;
 }
 
 .content {
@@ -339,4 +340,16 @@ a{
 
 .cdv-flag-icon img{
   height: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  .cdv-menu-icon {
+    display: block; /* Exibe o ícone do menu em dispositivos menores */
+    cursor: pointer;
+  }
+
+  /* Exibir o menu lateral quando o ícone do menu estiver visível */
+  .links-top-bar.open {
+    display: block;
+  }
 }

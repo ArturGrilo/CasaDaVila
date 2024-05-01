@@ -339,7 +339,7 @@
   color: white;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   .cdv-menu-icon {
     display: block; /* Exibe o ícone do menu em dispositivos menores */
     cursor: pointer;
