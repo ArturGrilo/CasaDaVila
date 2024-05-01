@@ -412,4 +412,15 @@ a{
   .links-top-bar.open {
     display: block;
   }
+
+  #words-section-id span {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  #words-section-id img {
+    width: 220px !important;
+    left: calc(50% - 110px) !important;
+    height: auto !important;
+  }
 }
