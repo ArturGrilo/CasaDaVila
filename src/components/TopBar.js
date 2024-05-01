@@ -1,17 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons'; // Adicionado o ícone de menu
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/TopBar.css";
 import { useTranslation } from 'react-i18next';
 
 const TopBar = ({ scrollThreshold }) => {
-  library.add(faCaretDown);
+  library.add(faCaretDown, faBars); // Adicionado o ícone de menu
   
   const [activeSection, setActiveSection] = useState('');
   const topBarRef = useRef(null);
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar a abertura e fechamento do menu
   const location = useLocation();
 
   useEffect(() => {
@@ -74,6 +76,10 @@ const TopBar = ({ scrollThreshold }) => {
     }
   };
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen); // Alterna entre aberto e fechado
+  };
+
   return (
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
@@ -81,62 +87,70 @@ const TopBar = ({ scrollThreshold }) => {
           <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo" className="logo" />
         </div>
         <div className="links-top-bar">
-          <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>
-            <span>{t('home-label')}</span>
-          </a>
-          <a href="/#about-us-id" 
-             className={activeSection === 'about-us' ? 'cdv-active-link' : ''}
-             onClick={(e) => {
-               e.preventDefault(); // Impede o comportamento padrão de navegação
-               handleLinkClick('about-us-id');
-             }}>
-            <span>{t('about-us-label')}</span>
-          </a>
-          <a 
-            className={activeSection === 'spaces' ? 'cdv-active-link' : ''} 
-            href="#spaces-id"
-            onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
-              handleLinkClick('spaces-id');
-            }}
-          >
-            <span>Comodidades</span>
-          </a>
-          <a href="/#gallery-section-id" 
-             className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
-             onClick={(e) => {
-               e.preventDefault(); // Impede o comportamento padrão de navegação
-               handleLinkClick('gallery-section-id');
-             }}>
-            <span>Galeria</span>
-          </a>
-          <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
-            onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
-              handleLinkClick('exps-id');
-            }}>
-            <span>Experiências</span>
-            <div className="dropdown-menu-container">
-              <div className="dropdown-menu-sub-container">
-                <a href="/AldeiasHistoricas">
-                  <div className="dropdown-menu-option">Aldeias Históricas</div>
-                </a>
-                <a href="/AldeiasDoXisto">
-                  <div className="dropdown-menu-option">Aldeias Do Xisto</div>
-                </a>
-                <a href="/SerraDaGardunha">
-                  <div className="dropdown-menu-option">Serra da Gardunha</div>
-                </a>
-                <a href="/SerraDaEstrela">
-                  <div className="dropdown-menu-option">Serra da Estrela</div>
-                </a>
-                <a href="/Romarias">
-                  <div className="dropdown-menu-option">Festas e Romarias</div>
-                </a>
+          {/* Ícone do menu para dispositivos móveis e tablets */}
+          <div className="cdv-menu-icon" onClick={handleMenuToggle}>
+            <FontAwesomeIcon icon="bars" className="top-bar-icon" />
+          </div>
+          {/* Menu lateral */}
+          <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+            <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>
+              <span>{t('home-label')}</span>
+            </a>
+            <a href="/#about-us-id" 
+              className={activeSection === 'about-us' ? 'cdv-active-link' : ''}
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('about-us-id');
+              }}>
+              <span>{t('about-us-label')}</span>
+            </a>
+            <a 
+              className={activeSection === 'spaces' ? 'cdv-active-link' : ''} 
+              href="#spaces-id"
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('spaces-id');
+              }}
+            >
+              <span>Comodidades</span>
+            </a>
+            <a href="/#gallery-section-id" 
+              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('gallery-section-id');
+              }}>
+              <span>Galeria</span>
+            </a>
+            <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('exps-id');
+              }}>
+              <span>Experiências</span>
+              <div className="dropdown-menu-container">
+                <div className="dropdown-menu-sub-container">
+                  <a href="/AldeiasHistoricas">
+                    <div className="dropdown-menu-option">Aldeias Históricas</div>
+                  </a>
+                  <a href="/AldeiasDoXisto">
+                    <div className="dropdown-menu-option">Aldeias Do Xisto</div>
+                  </a>
+                  <a href="/SerraDaGardunha">
+                    <div className="dropdown-menu-option">Serra da Gardunha</div>
+                  </a>
+                  <a href="/SerraDaEstrela">
+                    <div className="dropdown-menu-option">Serra da Estrela</div>
+                  </a>
+                  <a href="/Romarias">
+                    <div className="dropdown-menu-option">Festas e Romarias</div>
+                  </a>
+                </div>
               </div>
-            </div>
-          </a>
-          <button className="cdv-button-secundary">Reservar</button>
+            </a>
+            <button className="cdv-button-secundary">Reservar</button>
+          </div>
+          
         </div>
       </div>
     </div>
