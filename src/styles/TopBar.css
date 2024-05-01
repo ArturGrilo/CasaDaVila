@@ -338,15 +338,3 @@
   right: 40px;
   color: white;
 }
-
-@media (max-width: 800px) {
-  .cdv-menu-icon {
-    display: block; /* Exibe o ícone do menu em dispositivos menores */
-    cursor: pointer;
-  }
-
-  /* Exibir o menu lateral quando o ícone do menu estiver visível */
-  .links-top-bar.open {
-    display: block;
-  }
-}
