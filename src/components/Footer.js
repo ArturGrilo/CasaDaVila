@@ -33,7 +33,7 @@ function Footer() {
               </div>
             <div className="footer-column-2">
                 <img
-                src="/images/CasaDaVilaWhiteLOGO.png"
+                src="/images/Logo/CasaDaVilaWhiteLogo.png"
                 alt="Logo"
                 className="logo"
                 />

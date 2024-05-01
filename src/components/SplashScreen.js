@@ -30,7 +30,7 @@ const SplashScreen = () => {
   return (
     <div className={`splash-container ${hiddenSplashScreen ? "hidden" : ""} ${changeIndex ? "change-index" : ""}`}>
       <img
-        src="/images/CasaDaVilaLogo2.png"
+        src="/images/Logo/CasaDaVilaLogo2.png"
         alt="Logo"
         className={`splash-logo ${hiddenSplashLogo ? "hidden" : ""}`}
       />

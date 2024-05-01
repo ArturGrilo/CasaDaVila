@@ -3,7 +3,7 @@ import "../styles/Home.css";
 
 const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
-  const images = ["/images/HomeOutside_2.jpeg", "/images/HomeInside2.jpeg", "/images/RC_15.jpeg"];
+  const images = ["/images/HomeOutside_2.jpeg", "/images/HomeInside2.jpeg", "/images/RC_15.jpeg", "/images/CasaDaVilaI/IMG-20240423-WA0021.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {

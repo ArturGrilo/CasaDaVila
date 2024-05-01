@@ -6,7 +6,7 @@ function WordsBreakSection() {
   return (
     <section id="words-section-id" className="cdv-section alt">
       <img
-        src="/images/CasaDaVilaWhiteLogo.png"
+        src="/images/Logo/CasaDaVilaWhiteLogo.png"
         alt="Alpedrinha - Vista do Palácio do Picadeiro"
         className="img-words-break-section"
       />

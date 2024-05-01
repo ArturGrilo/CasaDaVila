@@ -78,7 +78,7 @@ const TopBar = ({ scrollThreshold }) => {
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
         <div className="logo-container">
-          <img src={scrolled ? "/images/CasaDaVilaLogo.png" : "/images/CasaDaVilawhiteLOGO.png"} alt="Logo" className="logo" />
+          <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo" className="logo" />
         </div>
         <div className="links-top-bar">
           <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>

@@ -1,10 +1,10 @@
 import "../styles/Experiences.css";
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useRef } from 'react';
+//import React, { useEffect, useRef } from 'react';
 
 function Experiences() {
-  const videoRef = useRef(null);
+  /*const videoRef = useRef(null);
 
   useEffect(() => {
     const playVideo = () => {
@@ -30,7 +30,7 @@ function Experiences() {
     return () => {
       video.removeEventListener('canplay', playVideo);
     };
-  }, []);
+  }, []);*/
 
   return (
     <section id="exps-id" className="cdv-section">
@@ -40,8 +40,18 @@ function Experiences() {
         </div>
         <div className='experiences-interval'>
         <div className="cdv-grid">
+          <a className="cdv-card" href="/Alpedrinha">
+            <img src="/images/Experiencias/Picadeiro.jpeg" alt="Alpedrinha"/>
+            <div className="cdv-card-details">
+              <div className="cdv-card-details-title">Alpedrinha</div>
+              <div className="cdv-card-details-see-more">
+                <span>Ver mais</span>
+                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+              </div>
+            </div>
+          </a>
           <a className="cdv-card" href="/AldeiasHistoricas">
-            <img src="/images/historicas.png" alt="Aldeias Históricas"/>
+            <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Aldeias Históricas</div>
               <div className="cdv-card-details-see-more">
@@ -51,7 +61,7 @@ function Experiences() {
             </div>
           </a>
           <a className="cdv-card" href="/AldeiasDoXisto">
-            <img src="/images/xisto.jpeg" alt="Aldeias Do Xisto"/>
+            <img src="/images/Experiencias/AldeiasDoXisto.jpeg" alt="Aldeias Do Xisto"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Aldeias do Xisto</div>
               <div className="cdv-card-details-see-more">
@@ -61,7 +71,7 @@ function Experiences() {
             </div>
           </a>
           <a className="cdv-card" href="/SerraDaGardunha">
-            <img src="/images/Gardunha.jpeg" alt="Serra da Gardunha"/>
+            <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Serra da Gardunha</div>
               <div className="cdv-card-details-see-more">
@@ -71,22 +81,9 @@ function Experiences() {
             </div>
           </a>
           <a className="cdv-card" href="/SerraDaEstrela">
-            <img src="/images/TorreSerraEstrela.jpeg" alt="Serra Da Estrela"/>
+            <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Serra da Estrela</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
-              </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/SerraDaEstrela">
-            <video ref={videoRef} controls>
-                <source src="videos/video-casa-da-vila.mp4" type="video/mp4"/>
-            </video>
-            
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Video teste</div>
               <div className="cdv-card-details-see-more">
                 <span>Ver mais</span>
                 <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>

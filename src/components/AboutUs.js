@@ -29,13 +29,13 @@ function AboutUs() {
         <div className="about-us-signature">Maria da Conceição Ferreira da Silva</div>
         <div className="grid-about-us">
           <div className="column">
-            <img src="/images/Picadeiro.jpeg" alt="Imagem 1" className="homepage-image-animation-2"/>
+            <img src="/images/SobreNos/Picadeiro.jpeg" alt="Imagem 1" className="homepage-image-animation-2"/>
           </div>
           <div className="column">
-            <img src="/images/HomeOutside.jpeg" alt="Imagem 2"/>
+            <img src="/images/SobreNos/HomeOutside.jpeg" alt="Imagem 2"/>
           </div>
           <div className="column">
-            <img src="/images/serra-beira-baixa.jpeg" alt="Imagem 3" className="homepage-image-animation"/>
+            <img src="/images/SobreNos/SerraDaGardunha.jpeg" alt="Imagem 3" className="homepage-image-animation"/>
           </div>
         </div>
       </div>
