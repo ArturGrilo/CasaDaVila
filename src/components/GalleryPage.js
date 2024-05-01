@@ -3,11 +3,14 @@ import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { faTimes} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GalleryPage = () => {
   const [displayedImages, setDisplayedImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('CasaDaVilaI');
 
   useEffect(() => {
     fetchImages('CasaDaVilaI');
@@ -16,17 +19,20 @@ const GalleryPage = () => {
   const fetchImages = (category) => {
     axios.get(`/images/${category}`)
       .then(response => {
-        setDisplayedImages(response.data);
-        debugger;
+        const imagesData = response.data.map(filename => ({
+          src: `/images/${category}/${filename}`,
+          alt: `Image from ${category}`
+        }));
+        setDisplayedImages(imagesData);
       })
       .catch(error => {
         console.error('Error fetching images:', error);
       });
   };
 
-  const handleCategoryChange = (event) => {
-    const selectedCategory = event.target.value;
-    fetchImages(selectedCategory);
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    fetchImages(category);
   };
 
   const openModal = (imageSrc) => {
@@ -41,24 +47,26 @@ const GalleryPage = () => {
 
   return (
     <section id="gallery-page-id" className="cdv-section">
-      <TopBar scrollThreshold={-1} />
-      <div className="cdv-main-container">
-        <div className="cdv-title">
-          <span>Galeria</span>
+      <div className="img-gallery-page">
+        <div className="img-parallax-gallery-page">
+          <div className='red'></div>
         </div>
+      </div>
+      <TopBar scrollThreshold={-1} />
+      <div className="cdv-title">
+        <span>Galeria</span>
+      </div>
+      <div className="cdv-main-container">
         <div className="media-type-buttons">
-          <label>
-            <input type="radio" name="category" value="CasaDaVilaI" onChange={handleCategoryChange} />
-            Casa Da Vila I
-          </label>
-          <label>
-            <input type="radio" name="category" value="CasaDaVilaII" onChange={handleCategoryChange} />
-            Casa Da Vila II
-          </label>
-          <label>
-            <input type="radio" name="category" value="Exterior" onChange={handleCategoryChange} />
-            Exterior
-          </label>
+          <button className={selectedCategory === 'CasaDaVilaI' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="CasaDaVilaI" onClick={() => handleCategoryChange('CasaDaVilaI')} >
+            <span>Casa Da Vila I</span>
+          </button>
+          <button className={selectedCategory === 'CasaDaVilaII' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="CasaDaVilaII" onClick={() => handleCategoryChange('CasaDaVilaII')} >
+            <span>Casa Da Vila II</span>
+          </button>
+          <button className={selectedCategory === 'Exterior' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="Exterior" onClick={() => handleCategoryChange('Exterior')} >
+            <span>Exterior</span>
+          </button>
         </div>
         <div className="media-display">
           {displayedImages.map((image, index) => (
@@ -70,7 +78,7 @@ const GalleryPage = () => {
         {/* Modal */}
         <div className={`modal${modalOpen ? ' open' : ''}`} onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close" onClick={closeModal}>&times;</button>
+            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times"  onClick={closeModal}/>
             <img src={selectedImage} alt="Imagem Modal" />
           </div>
         </div>
