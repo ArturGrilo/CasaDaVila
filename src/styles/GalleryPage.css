@@ -29,15 +29,15 @@
 
 .media-display {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define colunas responsivas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define colunas responsivas */
   gap: 20px; /* Espaçamento entre as mídias */
+  margin-bottom: 100px;
 }
 
 /* Estilo para cada item de mídia */
 .media-item {
   border-radius: 8px;
   overflow: hidden; /* Para garantir que a mídia não ultrapasse o contêiner */
-  max-width: 250px;
 }
 
 /* Estilo para imagens */

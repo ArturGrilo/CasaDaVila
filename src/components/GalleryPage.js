@@ -1,28 +1,42 @@
-import React, { useState } from 'react';
 import '../styles/GalleryPage.css';
 import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
-
-const images = [
-  { src: "/images/AL.jpeg", alt: "Imagem 1" },
-  { src: "/images/Balcony.jpeg", alt: "Imagem 2" },
-  { src: "/images/HomeOutside_2.jpeg", alt: "Imagem 3" },
-  { src: "/images/RC_14.jpeg", alt: "Imagem 3" }
-  // Adicione mais objetos de imagem conforme necessário
-];
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const GalleryPage = () => {
+  const [displayedImages, setDisplayedImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [modalOpen, setModalOpen] = useState(false); // Estado para controlar se o modal está aberto
+  const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    fetchImages('CasaDaVilaI');
+  }, []);
+
+  const fetchImages = (category) => {
+    axios.get(`/images/${category}`)
+      .then(response => {
+        setDisplayedImages(response.data);
+        debugger;
+      })
+      .catch(error => {
+        console.error('Error fetching images:', error);
+      });
+  };
+
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    fetchImages(selectedCategory);
+  };
 
   const openModal = (imageSrc) => {
     setSelectedImage(imageSrc);
-    setModalOpen(true); // Abrir o modal ao clicar na imagem
+    setModalOpen(true);
   };
 
   const closeModal = () => {
     setSelectedImage(null);
-    setModalOpen(false); // Fechar o modal ao clicar fora dele ou no botão de fechar
+    setModalOpen(false);
   };
 
   return (
@@ -32,8 +46,22 @@ const GalleryPage = () => {
         <div className="cdv-title">
           <span>Galeria</span>
         </div>
+        <div className="media-type-buttons">
+          <label>
+            <input type="radio" name="category" value="CasaDaVilaI" onChange={handleCategoryChange} />
+            Casa Da Vila I
+          </label>
+          <label>
+            <input type="radio" name="category" value="CasaDaVilaII" onChange={handleCategoryChange} />
+            Casa Da Vila II
+          </label>
+          <label>
+            <input type="radio" name="category" value="Exterior" onChange={handleCategoryChange} />
+            Exterior
+          </label>
+        </div>
         <div className="media-display">
-          {images.map((image, index) => (
+          {displayedImages.map((image, index) => (
             <div key={index} className="media-item" onClick={() => openModal(image.src)}>
               <img src={image.src} alt={image.alt} />
             </div>
