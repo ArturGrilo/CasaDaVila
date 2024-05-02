@@ -468,9 +468,31 @@ a{
 
   #gallery-section-id{
     height: 320px !important;
+    padding: 30px !important;
   }
   
   #gallery-section-id .cdv-button-primary{
     font-size: 30px !important;
+  }
+
+  #spaces-id .cdv-card{
+    width: 100% !important;
+  }
+
+  .feedback-text{
+    font-size: 20px;
+  }
+
+  .feedback-aspas {
+    margin-top: -40px;
+    font-size: 4rem !important;
+  }
+
+  .feedback-country, .feedback-author{
+    font-size: 18px;
+  }
+
+  .feedback-image {
+    margin: 40px 0 -10px 0 !important;
   }
 }

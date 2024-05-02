@@ -12,11 +12,11 @@
   display: flex;
   flex-direction: row;
   gap: 80px;
+  max-width: 100%;
 }
 
 #spaces-id .cdv-card{
-  width: 25vw;
-  min-width: 420px;
+  width: 100% !important;
 }
 
 .img-comodidades {
