@@ -114,12 +114,8 @@ const TopBar = ({ scrollThreshold }) => {
             >
               <span>Comodidades</span>
             </a>
-            <a href="/#gallery-section-id" 
-              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
-              onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
-                handleLinkClick('gallery-section-id');
-              }}>
+            <a href="/Galeria" 
+              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''}>
               <span>Galeria</span>
             </a>
             <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}

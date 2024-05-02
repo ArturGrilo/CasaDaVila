@@ -459,4 +459,18 @@ a{
   .mobile-words-break-section span{
     margin-bottom: 0px !important;
   }
+
+  .rooms-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #gallery-section-id{
+    height: 320px !important;
+  }
+  
+  #gallery-section-id .cdv-button-primary{
+    font-size: 30px !important;
+  }
 }
