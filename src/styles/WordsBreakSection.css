@@ -26,3 +26,7 @@
     margin-bottom: 160px;
     color: var(--color-background-primary);
 }
+
+.mobile-words-break-section{
+    display: none;
+}

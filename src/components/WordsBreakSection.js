@@ -10,7 +10,14 @@ function WordsBreakSection() {
         alt="Alpedrinha - Vista do Palácio do Picadeiro"
         className="img-words-break-section"
       />
-      <span> Simplicidade • Conforto • História</span>
+      <span className="desktop-words-break-section"> Simplicidade • Conforto • História</span>
+      <div className="mobile-words-break-section">
+        <span > Simplicidade</span>
+        <span> • </span>
+        <span> Conforto </span>
+        <span> • </span>
+        <span> História</span>
+      </div>
     </section>
   );
 }

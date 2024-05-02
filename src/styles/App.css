@@ -404,7 +404,7 @@ a{
   }
 
   .grid-about-us{
-    height: 30vh;
+    height: 35vh;
     grid-gap: 10px;
   }
 
@@ -413,14 +413,50 @@ a{
     display: block;
   }
 
+  .cookie-content {
+    flex-direction: column;
+  }
+
+  .cookie-content p {
+      font-size: 20px !important;
+      margin-right: 0 !important;
+      text-align: justify;
+  }
+
+  .cookie-content button{
+    font-size: 22px;
+  }
+
+  .cookie-content a{
+    font-size: 22px;
+  }
+
+  #words-section-id {
+    align-items: start !important;
+    height: 320px !important;
+  }
+
   #words-section-id span {
-    font-size: 40px !important;
+    font-size: 30px !important;
     text-align: center;
   }
 
   #words-section-id img {
-    width: 220px !important;
-    left: calc(50% - 110px) !important;
+    width: 190px !important;
+    left: calc(50% - 95px) !important;
     height: auto !important;
+  }
+
+  .desktop-words-break-section{
+    display: none;
+  }
+
+  .mobile-words-break-section{
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .mobile-words-break-section span{
+    margin-bottom: 0px !important;
   }
 }
