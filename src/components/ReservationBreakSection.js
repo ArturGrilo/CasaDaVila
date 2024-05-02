@@ -8,10 +8,16 @@ function ReservationBreakSection() {
       <div id="break-sub-section-id">
         <span className="break-section-title">Reservar a Casa da Vila</span>
         <span className="break-section-text">Veja disponibilidades e faça a sua reserva clicando em baixo</span>
-        <button className="cdv-button-primary">Reservar</button>
+        <div className="break-section-button-container">
+          <button className="cdv-button-primary">Reservar</button>
+          <div id="break-sub-section-id" className="price">
+            <span className="break-section-text">Desde</span>
+            <span className="break-section-title">80€</span>
+          </div>
+        </div>
       </div>
-      <div id="break-sub-section-id" className="price">
-      <span className="break-section-text">Desde</span>
+      <div id="break-sub-section-id" className="price desktop">
+        <span className="break-section-text">Desde</span>
         <span className="break-section-title">80€</span>
       </div>
     </section>

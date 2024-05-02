@@ -8,6 +8,10 @@
   padding: 100px 60px;
 }
 
+.break-section-button-container #break-sub-section-id{
+  display: none;
+}
+
 #break-sub-section-id{
   display: flex;
   flex-direction: column;
@@ -41,4 +45,11 @@
   right: 0;
   height: 100%;
   width: 500px;
+}
+
+.break-section-button-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
 }

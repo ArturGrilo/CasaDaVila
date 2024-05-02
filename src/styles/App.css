@@ -481,6 +481,7 @@ a{
 
   #break-section-id {
     flex-direction: column;
+    padding: 90px 30px;
   }
 
   .break-section-title {
@@ -491,6 +492,14 @@ a{
   .break-section-text {
     font-size: 20px;
     text-align: justify;
+  }
+
+  .break-section-button-container #break-sub-section-id{
+    display: flex;
+  }
+
+  #break-sub-section-id.desktop{
+    display: none;
   }
 
   .feedback-text{
