@@ -503,10 +503,35 @@ a{
     gap: 0px;
   }
 
+  #rooms-popup {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 6px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+  }
+
+  .slick-dots {
+    color: white;
+    bottom: 5px;
+  }
+
   .carousel-container {
     width: 100%;
     margin-bottom: 0px;
-    height: 40%;
+    height: 30%;
     order: 1;
   }
 
