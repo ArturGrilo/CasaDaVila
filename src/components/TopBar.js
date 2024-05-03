@@ -144,10 +144,10 @@ const TopBar = ({ scrollThreshold }) => {
               <span>Reservar</span>
             </a>
             <div className="side-menu-contacts">
-              <span className="footer-text" onClick={() => window.location.href = 'mailto:contato@meusite.com'}>
+              <span onClick={() => window.location.href = 'mailto:contato@meusite.com'}>
                 casa_da_vila@gmail.com
               </span>
-              <span className="footer-text">Tel: (+351) 964 849 002</span>
+              <span>(+351) 964 849 002</span>
               <div>
                 <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
                 <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon"/>
