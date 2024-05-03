@@ -83,7 +83,7 @@ const TopBar = ({ scrollThreshold }) => {
   return (
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
-        <div className="logo-container">
+        <div onClick={() => window.location.href = "/#home-id"} className="logo-container">
           <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo" className="logo" />
         </div>
         <div className="links-top-bar">

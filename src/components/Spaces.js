@@ -43,7 +43,7 @@ function Spaces({ space }) {
   library.add(faWifi, faSnowflake, faShower, faFireBurner, faTv, faBed, faCouch, faPerson, faBinoculars);
 
   return (
-    <section>
+    <section id="rooms-popup">
         {space === 1 && (
           <div className="space-main-container">
             <div className="carousel-container">

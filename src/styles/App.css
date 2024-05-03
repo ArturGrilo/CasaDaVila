@@ -476,7 +476,7 @@ a{
   .rooms-grid{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
   #gallery-section-id{
@@ -489,13 +489,47 @@ a{
   }
 
   #spaces-id .cdv-text{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   #spaces-id .cdv-card{
     width: 100% !important;
     max-width: 350px;
     height: 50vh;
+  }
+
+  .space-main-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    margin-bottom: 0px;
+    height: 50%;
+    order: 1;
+  }
+
+  .space-1 {
+    width: 100%;
+  }
+
+  .commodity-list {
+    gap: 15px;
+    justify-content: left;
+  }
+
+  .commodity-item {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-left: -15px;
+    font-size: 15px;
+  }
+
+  #rooms-popup .cdv-title{
+    font-size: 20px !important;
+    margin-bottom: 20px;
   }
 
   .cdv-card-details-title{
@@ -516,9 +550,7 @@ a{
     visibility: visible;
   }
 
-  .cdv-card .cdv-card-details{
-    height: calc(100% - 80px);
-  }
+  
 
   .cdv-card{
     width: calc(100% - 60px);
@@ -535,13 +567,13 @@ a{
     height: auto;
   }
 
-  #exps-id .cdv-card-details{
-    padding: 15px;
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
+  .cdv-card-details{
+    padding: 20px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
   }
 
-  #exps-id .cdv-card-details-see-more {
+  .cdv-card-details-see-more {
     bottom: 20px;
     right: 20px;
   }

@@ -1,6 +1,11 @@
+#rooms-popup{
+  height: 100%;
+}
+
 .space-main-container{
   display: flex;
   width: 100%;
+  height: 100%;
   gap: 30px;
   justify-content: space-between;
 }
