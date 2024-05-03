@@ -41,7 +41,7 @@ function Experiences() {
         <div className='experiences-interval'>
         <div className="cdv-grid">
           <a className="cdv-card" href="/Alpedrinha">
-            <img src="/images/Experiencias/Picadeiro.jpeg" alt="Alpedrinha"/>
+            <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">Alpedrinha</div>
               <div className="cdv-card-details-see-more">

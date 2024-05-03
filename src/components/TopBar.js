@@ -114,8 +114,12 @@ const TopBar = ({ scrollThreshold }) => {
             >
               <span>Comodidades</span>
             </a>
-            <a href="/Galeria" 
-              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''}>
+            <a href="/#gallery-section-id" 
+              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('gallery-section-id');
+              }}>
               <span>Galeria</span>
             </a>
             <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
@@ -146,7 +150,62 @@ const TopBar = ({ scrollThreshold }) => {
             </a>
             <button className="cdv-button-secundary">Reservar</button>
           </div>
-          
+          <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home' ? 'cdv-active-link' : ''}`}>
+            <span>{t('home-label')}</span>
+          </a>
+          <a href="/#about-us-id" 
+            className={`desktop-topbar-link ${activeSection === 'about-us' ? 'cdv-active-link' : ''}`}
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('about-us-id');
+            }}>
+            <span>{t('about-us-label')}</span>
+          </a>
+          <a 
+            className={`desktop-topbar-link ${activeSection === 'spaces' ? 'cdv-active-link' : ''}`}
+            href="#spaces-id"
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('spaces-id');
+            }}
+          >
+            <span>Comodidades</span>
+          </a>
+          <a href="/#gallery-section-id" 
+            className={`desktop-topbar-link ${activeSection === 'gallery-section' ? 'cdv-active-link' : ''}`} 
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('gallery-section-id');
+            }}>
+            <span>Galeria</span>
+          </a>
+          <a href="/#exps-id" className={`desktop-topbar-link ${activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}
+            onClick={(e) => {
+              e.preventDefault(); // Impede o comportamento padrão de navegação
+              handleLinkClick('exps-id');
+            }}>
+            <span>Experiências</span>
+            <div className="dropdown-menu-container">
+              <div className="dropdown-menu-sub-container">
+                <a href="/AldeiasHistoricas">
+                  <div className="dropdown-menu-option">Aldeias Históricas</div>
+                </a>
+                <a href="/AldeiasDoXisto">
+                  <div className="dropdown-menu-option">Aldeias Do Xisto</div>
+                </a>
+                <a href="/SerraDaGardunha">
+                  <div className="dropdown-menu-option">Serra da Gardunha</div>
+                </a>
+                <a href="/SerraDaEstrela">
+                  <div className="dropdown-menu-option">Serra da Estrela</div>
+                </a>
+                <a href="/Romarias">
+                  <div className="dropdown-menu-option">Festas e Romarias</div>
+                </a>
+                </div>
+              </div>
+            </a>
+            <button className="desktop-topbar-link cdv-button-secundary">Reservar</button>
         </div>
       </div>
     </div>

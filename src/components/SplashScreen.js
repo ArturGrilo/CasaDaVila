@@ -29,11 +29,14 @@ const SplashScreen = () => {
 
   return (
     <div className={`splash-container ${hiddenSplashScreen ? "hidden" : ""} ${changeIndex ? "change-index" : ""}`}>
-      <img
-        src="/images/Logo/CasaDaVilaLogo2.png"
-        alt="Logo"
-        className={`splash-logo ${hiddenSplashLogo ? "hidden" : ""}`}
-      />
+      <div className="splash-logo-container">
+        <img
+          src="/images/Logo/CasaDaVilaLogo2.png"
+          alt="Logo"
+          className={`splash-logo ${hiddenSplashLogo ? "hidden" : ""}`}
+        />
+        <div class="spinner"></div>
+      </div>
     </div>
   );
 };

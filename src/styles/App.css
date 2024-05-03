@@ -371,6 +371,19 @@ a{
     top: calc(50% - 7px);
   }
 
+  .desktop-topbar-link{
+    display: none;
+  }
+
+  .splash-logo-container{
+    max-width: calc(100% - 60px);
+  }
+
+  .splash-logo {
+    max-width: 100%;
+    height: auto;
+  }
+
   .whatsapp-link{
     bottom: 10px;
     right: 10px;
@@ -472,11 +485,66 @@ a{
   }
   
   #gallery-section-id .cdv-button-primary{
-    font-size: 30px !important;
+    font-size: 25px !important;
+  }
+
+  #spaces-id .cdv-text{
+    margin-bottom: 50px;
   }
 
   #spaces-id .cdv-card{
     width: 100% !important;
+    max-width: 350px;
+    height: 50vh;
+  }
+
+  .cdv-card-details-title{
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .cdv-card-details-see-more{
+    font-size: 15px;
+  }
+
+  .cdv-card img{
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+
+  .cdv-card .cdv-card-details-see-more{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cdv-card .cdv-card-details{
+    height: calc(100% - 80px);
+  }
+
+  .cdv-card{
+    width: calc(100% - 60px);
+  }
+
+  #exps-id .cdv-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #exps-id .cdv-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+
+  #exps-id .cdv-card-details{
+    padding: 15px;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  #exps-id .cdv-card-details-see-more {
+    bottom: 20px;
+    right: 20px;
   }
 
   #break-section-id {
