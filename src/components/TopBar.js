@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons'; // Adicionado o ícone de menu
+import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Adicionado o ícone de menu
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/TopBar.css";
 import { useTranslation } from 'react-i18next';
 
 const TopBar = ({ scrollThreshold }) => {
-  library.add(faCaretDown, faBars); // Adicionado o ícone de menu
+  library.add(faCaretDown, faBars, faTimes); // Adicionado o ícone de menu
   
   const [activeSection, setActiveSection] = useState('');
   const topBarRef = useRef(null);
@@ -93,6 +94,12 @@ const TopBar = ({ scrollThreshold }) => {
           </div>
           {/* Menu lateral */}
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+            <div className="logo-container">
+              <img src="/images/Logo/CasaDaVilaLogo.png" alt="Logo" className="logo" />
+              <div className="times-icon" onClick={handleMenuToggle}>
+                <FontAwesomeIcon icon="times" className="times" />
+              </div>
+            </div>
             <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>
               <span>{t('home-label')}</span>
             </a>
@@ -128,27 +135,27 @@ const TopBar = ({ scrollThreshold }) => {
                 handleLinkClick('exps-id');
               }}>
               <span>Experiências</span>
-              <div className="dropdown-menu-container">
-                <div className="dropdown-menu-sub-container">
-                  <a href="/AldeiasHistoricas">
-                    <div className="dropdown-menu-option">Aldeias Históricas</div>
-                  </a>
-                  <a href="/AldeiasDoXisto">
-                    <div className="dropdown-menu-option">Aldeias Do Xisto</div>
-                  </a>
-                  <a href="/SerraDaGardunha">
-                    <div className="dropdown-menu-option">Serra da Gardunha</div>
-                  </a>
-                  <a href="/SerraDaEstrela">
-                    <div className="dropdown-menu-option">Serra da Estrela</div>
-                  </a>
-                  <a href="/Romarias">
-                    <div className="dropdown-menu-option">Festas e Romarias</div>
-                  </a>
-                </div>
-              </div>
             </a>
-            <button className="cdv-button-secundary">Reservar</button>
+            <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+              onClick={(e) => {
+                e.preventDefault(); // Impede o comportamento padrão de navegação
+                handleLinkClick('exps-id');
+              }}>
+              <span>Reservar</span>
+            </a>
+            <div className="side-menu-contacts">
+              <span className="footer-text" onClick={() => window.location.href = 'mailto:contato@meusite.com'}>
+                casa_da_vila@gmail.com
+              </span>
+              <span className="footer-text">Tel: (+351) 964 849 002</span>
+              <div>
+                <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
+                <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon"/>
+              </div>
+            </div>
+            <div className="feedback-image">
+              <img src="/images/feedback-image-copia.png" alt="feedback"/>
+            </div>
           </div>
           <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home' ? 'cdv-active-link' : ''}`}>
             <span>{t('home-label')}</span>
