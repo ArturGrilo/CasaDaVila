@@ -506,8 +506,13 @@ a{
   .carousel-container {
     width: 100%;
     margin-bottom: 0px;
-    height: 50%;
+    height: 40%;
     order: 1;
+  }
+
+  .cdv-popup-content {
+    width: 90vw;
+    height: 80vh;
   }
 
   .space-1 {
@@ -528,8 +533,12 @@ a{
   }
 
   #rooms-popup .cdv-title{
-    font-size: 20px !important;
+    font-size: 18px !important;
     margin-bottom: 20px;
+  }
+
+  .cdv-popup-times{
+    font-size: 20px;
   }
 
   .cdv-card-details-title{
