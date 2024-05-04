@@ -62,7 +62,7 @@ function RoadTimeline({ title, description, routes, bottomLogo, isNature, isPart
                             <div className="cdv-road-timeline">
                                 <div className="cdv-road-from-icon">
                                     <div className="logo-container">
-                                        <img src="/images/CasaDaVilaLogo.png" alt="Logo" className="logo" />
+                                        <img src="/images/Logo/CasaDaVilaLogo.png" alt="Logo" className="logo" />
                                     </div>
                                 </div>
                                 <div className="cdv-road-from-icon-2">
