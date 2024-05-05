@@ -285,10 +285,11 @@
   width: 100px;
   z-index: 20;
   background-color: var(--color-background-light);
+  overflow: hidden;
 }
 
 .cdv-road-image-container.parties img{
-  border-radius: 15px 0px 0px 15px !important;
+  border-radius: 0px !important;
 }
 
 .cdv-title.parties{
@@ -336,6 +337,7 @@
 }
 
 .parties-main-container{
+  margin-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -368,7 +370,7 @@
   align-items: flex-end;
   background-color: var(--color-background-dark);
   padding: 0 20px;
-  color: var(--color-background-light);
+  color: var(--color-text-dark);
   height: 108px;
   justify-content: center;
 }
@@ -438,10 +440,6 @@
 
 .parties-sub-container:nth-child(odd) .cdv-road-image-container.parties{
   border-radius: 0px 20px 20px 0px !important;
-}
-
-.parties-sub-container:nth-child(odd) .cdv-road-image-container.parties img{
-  border-radius: 0px 15px 15px 0px !important;
 }
 
 .fa-tree.commodity-icon{

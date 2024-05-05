@@ -105,8 +105,8 @@ const App = () => {
                                                           "Aproveite as nossas sugestões, esperemos que goste!"
                                                       ]}
                                                       routes={[
-                                                          { title: "Festa da Cereja", location: "Alcongosta", month: "Junho", image: "/images/FestaDaCereja.jpeg" },
-                                                          { title: "Anjo da Guarda", location: "Alpedrinha", month: "Agosto", image: "/images/AnjoDaGuarda.jpeg" },
+                                                          { title: "Festa da Cereja", location: "Alcongosta", month: "Junho", image: "/images/Romarias/FestaDaCereja.jpeg" },
+                                                          { title: "Anjo da Guarda", location: "Alpedrinha", month: "Agosto", image: "/images/Experiencias/AnjoDaGuarda.jpeg" },
                                                           { title: "Chocalhos", location: "Alpedrinha", month: "Setembro", image: "/images/Chocalhos.jpeg" },
                                                           { title: "Míscaros", location: "Alcaide", month: "Novembro", image: "/images/Miscaros.jpeg" }
                                                       ]}  

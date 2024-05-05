@@ -869,4 +869,68 @@ a{
   .cdv-road-to-dashed-line.nature-color {
     border-top: 5px dashed #422600;
   }
+
+  .cdv-month.parties {
+    font-size: 25px;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+
+  .timeline-central-bar {
+    left: 5px;
+  }
+
+  .cdv-title.parties {
+    font-size: 20px;
+    justify-content: flex-start;
+  }
+
+  .cdv-sub-title.parties {
+    color: var(--color-background-light);
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .parties-sub-container:nth-child(even) .cdv-dot-container {
+    order: 0;
+  }
+
+  .seta-text-details {
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
+    height: 104px;
+    width: 100%;
+  }
+
+  .cdv-road-image-container.parties {
+    border-radius: 0 4px 4px 0 !important;
+    border: 2px solid var(--color-background-dark);
+    height: 100px;
+    width: 100px;
+  }
+
+  .seta-direita, .seta-esquerda, .cdv-empty-container{
+    display: none;
+  }
+
+  .cdv-road-image-container{
+    order: 0 !important;
+  }
+
+  .cdv-dot-container {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cdv-text.parties{
+    justify-content: flex-end;
+  }
+
+  .parties-sub-container:nth-child(odd) .cdv-road-image-container.parties {
+    border-radius: 0px 4px 4px 0px !important;
+  }
+
+  .parties-text-details{
+    width: calc(100% - 119px);
+  }
 }

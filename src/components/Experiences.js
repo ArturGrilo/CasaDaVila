@@ -90,6 +90,16 @@ function Experiences() {
               </div>
             </div>
           </a>
+          <a className="cdv-card" href="/Romarias">
+            <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Serra Da Estrela"/>
+            <div className="cdv-card-details">
+              <div className="cdv-card-details-title">Festas e Romarias</div>
+              <div className="cdv-card-details-see-more">
+                <span>Ver mais</span>
+                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+              </div>
+            </div>
+          </a>
         </div>
         </div>
       </div>

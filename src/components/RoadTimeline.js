@@ -29,7 +29,6 @@ function RoadTimeline({ title, description, routes, bottomLogo, isNature, isPart
                         </div>
                         {isParties ? 
                             <div className="parties-main-container">
-                                <img src="/images/FestasERomarias.png" alt="Logo" />
                                 <div className="parties-container">
                                     <div className="timeline-central-bar"></div>
                                     {routes.map((route, index) => (
