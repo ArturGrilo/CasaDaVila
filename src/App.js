@@ -92,8 +92,8 @@ const App = () => {
                                                           "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
                                                       ]}
                                                       routes={[
-                                                          { title: "Torre", description: "Ponto mais alto de Portugal Continental com 1993 metros acima do nível do mar. Uma torre de 7 metros foi construída de forma que o ponto mais alto alcance simbolicamente 2 000 metros.", image: "/images/TorreSerraEstrela.jpeg" },
-                                                          { title: "Seia", description: "Situada a 550 metros de altitude, Seia é uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela e uma porta de entrada para o ponto mais alto de Portugal Continental (Torre).", image: "/images/Seia.jpeg" }
+                                                          { title: "Torre", description: mobile ? "Ponto mais alto de Portugal Continental com 1993 metros acima do nível do mar." : "Ponto mais alto de Portugal Continental com 1993 metros acima do nível do mar. Uma torre de 7 metros foi construída de forma que o ponto mais alto alcance simbolicamente 2 000 metros.", image: "/images/Experiencias/SerraEstrela.jpeg" },
+                                                          { title: "Seia", description: mobile ? "Uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela." : "Situada a 550 metros de altitude, Seia é uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela e uma porta de entrada para o ponto mais alto de Portugal Continental (Torre).", image: "/images/Seia.jpeg" }
                                                       ]}  
                                                       bottomLogo="/images/AldeiasDoXisto.png"
                                                       isNature={true}
