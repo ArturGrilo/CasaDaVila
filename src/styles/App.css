@@ -689,7 +689,7 @@ a{
   }
 
   #experiences-id .cdv-text{
-    text-align: justify;
+    text-align: center;
   }
 
   .cdv-road-timeline{
@@ -809,5 +809,22 @@ a{
 
   .cdv-road-to-icon, .cdv-road-to-icon-2 {
     display: none;
+  }
+
+  .cdv-road-from-icon{
+    display: none;
+  }
+
+  .cdv-road-from-icon-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -55px;
+    left: 0;
+  }
+
+  .cdv-road-from-icon-2 .commodity-icon{
+    height: 25px;
+    width: 25px;
   }
 }
