@@ -694,6 +694,7 @@ a{
 
   .cdv-road-timeline{
     left: -15px;
+    margin-bottom: 20px;
   }
 
   .cdv-road-from-dashed-line {
@@ -725,7 +726,7 @@ a{
 
   .cdv-road-text-container .cdv-title {
     font-size: 18px;
-    margin: 0px 0 10px 0;
+    margin: 0px;
   }
   
   .cdv-road-text-container .cdv-text {
@@ -804,5 +805,9 @@ a{
     bottom: 13px;
     border-top: 5px dashed var(--color-background-light);
     right: calc(-50vw + 50% - 20px);
+  }
+
+  .cdv-road-to-icon, .cdv-road-to-icon-2 {
+    display: none;
   }
 }
