@@ -65,8 +65,8 @@ const App = () => {
                                                           "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
                                                       ]}
                                                       routes={[
-                                                          { title: "Barroca (39,8 km)", description: "A parte mais antiga da aldeia está implantada ao longo de um pequeno morro, ladeado por duas linhas de água profundamente cavadas, formando um conjunto perpendicular ao curso do Zêzere, com o qual confina.", image: "/images/Barroca.png" },
-                                                          { title: "Janeiro de Cima (52,1 km)", description: "Janeiro de Cima encontra-se na margem esquerda do Zêzere, rodeada por uma extensa manta de terrenos agrícolas. Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto.", image: "/images/JaneiroDeCima.jpeg" }
+                                                          { title: "Barroca (39,8km)", description: mobile ? "Num pequeno morro, ladeado por duas linhas de água, junto ao rio Zêzere." : "A parte mais antiga da aldeia está implantada ao longo de um pequeno morro, ladeado por duas linhas de água profundamente cavadas, formando um conjunto perpendicular ao curso do Zêzere, com o qual confina.", image: "/images/Barroca.png" },
+                                                          { title: "Janeiro de Cima (52,1km)", description: mobile ? "Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto." : "Janeiro de Cima encontra-se na margem esquerda do Zêzere, rodeada por uma extensa manta de terrenos agrícolas. Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto.", image: "/images/JaneiroDeCima.jpeg" }
                                                       ]}  
                                                       bottomLogo= "/images/AldeiasDoXisto.png"
                                                     />} />
@@ -78,8 +78,8 @@ const App = () => {
                                                           "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
                                                       ]}
                                                       routes={[
-                                                          { title: "Percursos pedestres, trail ou btt", description: "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante na reserva natural da Rede Natura 2000 e no Geopark Naturtejo.", image: "/images/PercursosGardunha.jpg" },
-                                                          { title: "Casa do Guarda", description: "Neste local encantador, aguardam-no amplas áreas de lazer, equipadas com mesas, churrasqueiras, espaços para preparar deliciosas refeições ao ar livre e ainda oferece uma vista deslumbrante das majestosas serras circundantes.", image: "/images/CasaDoGuarda.jpeg" }
+                                                          { title: "Percursos pedestres, trail ou btt", description: mobile ? "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante." : "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante na reserva natural da Rede Natura 2000 e no Geopark Naturtejo.", image: "/images/PercursosGardunha.jpg" },
+                                                          { title: "Casa do Guarda", description: mobile ? "Amplas áreas de lazer e uma vista deslumbrante das majestosas serras circundantes." : "Neste local encantador, aguardam-no amplas áreas de lazer, equipadas com mesas, churrasqueiras, espaços para preparar deliciosas refeições ao ar livre e ainda oferece uma vista deslumbrante das majestosas serras circundantes.", image: "/images/CasaDoGuarda.jpeg" }
                                                       ]}  
                                                       bottomLogo="/images/AldeiasDoXisto.png"
                                                       isNature={true}

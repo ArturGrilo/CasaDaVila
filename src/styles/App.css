@@ -828,4 +828,45 @@ a{
     height: 25px;
     width: 25px;
   }
+
+  .cdv-road-from.nature-color {
+    border-top: 30px solid #806043;
+  }
+  
+  .cdv-road-from-dashed-line.nature-color {
+    border-top: 5px dashed #422600;
+  }
+
+  .cdv-road-container:nth-child(odd) .cdv-road.nature-color {
+    border-radius: 0 50% 50% 0px !important;
+    border-top: 30px solid #806043;
+    border-right: 30px solid #806043;
+    border-bottom: 30px solid #806043;
+  }
+
+  .cdv-road-container:nth-child(odd) .cdv-road-sub.nature-color {
+    border-top: 5px dashed #422600;
+    border-right: 5px dashed #422600;
+    border-bottom: 5px dashed #422600;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road.nature-color {
+    border-top: 30px solid #806043;
+    border-left: 30px solid #806043;
+    border-bottom: 30px solid #806043;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road-sub.nature-color {
+    border-top: 5px dashed #422600;
+    border-left: 5px dashed #422600;
+    border-bottom: 5px dashed #422600;
+  }
+
+  .cdv-road-to.nature-color {
+    border-top: 30px solid #806043;
+  }
+
+  .cdv-road-to-dashed-line.nature-color {
+    border-top: 5px dashed #422600;
+  }
 }
