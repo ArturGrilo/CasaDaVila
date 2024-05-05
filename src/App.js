@@ -23,6 +23,8 @@ import LanguageSelector from "./components/LanguageSelector";
 import GalleryPage from "./components/GalleryPage";
 
 const App = () => {
+  const mobile = window.innerWidth < 800;
+
   return (
     <div>  
       <ScrollToTop />
@@ -47,10 +49,10 @@ const App = () => {
                             "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
                         ]}
                         routes={[
-                            { title: "Castelo Novo (6,5 km)", description: "Em plena Serra da Gardunha, a Aldeia Histórica de Castelo Novo ergue-se em tons de verde e cinza. Construída sobre o granito, Castelo Novo conserva no tempo um património arquitetónico único.", image: "/images/CasteloNovo.jpeg" },
-                            { title: "Monsanto (41 km)", description: "Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes, a Aldeia Histórica de Portugal de Monsanto detém um encanto singular.", image: "/images/Monsanto.jpeg" },
-                            { title: "Belmonte (44 km)", description: "Terra de Pedro Álvares Cabral, situada em plena Cova da Beira e com ampla vista sobre a encosta oriental da Serra da Estrela, a vila de Belmonte justifica plenamente as características que lhe terão dado o nome.", image: "/images/Belmonte.jpeg" },
-                            { title: "Sortelha (56,5 km)", description: "Sortelha é uma das mais belas e antigas vilas portuguesas, tendo mantido a sua fisionomia urbana e arquitectónica inalterada desde o renascimento até aos nossos dias.", image: "/images/Sortelha.jpeg" }
+                            { title: "Castelo Novo (6,5km)", description: mobile ? "Em plena Serra da Gardunha, Castelo Novo ergue-se em tons de verde e cinza." : "Em plena Serra da Gardunha, a Aldeia Histórica de Castelo Novo ergue-se em tons de verde e cinza. Construída sobre o granito, Castelo Novo conserva no tempo um património arquitetónico único.", image: "/images/CasteloNovo.jpeg" },
+                            { title: "Monsanto (41km)", description: mobile ? "Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes. Um encanto singular." : "Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes, a Aldeia Histórica de Portugal de Monsanto detém um encanto singular.", image: "/images/Monsanto.jpeg" },
+                            { title: "Belmonte (44km)", description: mobile ? "Terra de Pedro Álvares Cabral, detém uma ampla vista sobre a Serra da Estrela." : "Terra de Pedro Álvares Cabral, situada em plena Cova da Beira e com ampla vista sobre a encosta oriental da Serra da Estrela, a vila de Belmonte justifica plenamente as características que lhe terão dado o nome.", image: "/images/Belmonte.jpeg" },
+                            { title: "Sortelha (56,5km)", description: mobile ? "A sua fisionomia urbana e arquitectónica permanece inalterada desde o Renascimento." : "Sortelha é uma das mais belas e antigas vilas portuguesas, tendo mantido a sua fisionomia urbana e arquitectónica inalterada desde o renascimento até aos nossos dias.", image: "/images/Sortelha.jpeg" }
                         ]}  
                         bottomLogo= "/images/AldeiasHistoricasPortuguesas.png"
                     />} 

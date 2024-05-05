@@ -557,7 +557,7 @@ a{
   }
 
   #rooms-popup .cdv-title{
-    font-size: 18px !important;
+    font-size: 16px !important;
     margin-bottom: 20px;
   }
 
@@ -742,7 +742,7 @@ a{
   }
 
   .cdv-road-container:nth-child(odd) .cdv-road-image-container {
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 5px 10px;
     padding: 5px 5px 5px 0;
     box-shadow: 0px 0px 5px -1px var(--color-primary);
   }
@@ -786,7 +786,7 @@ a{
   }
 
   .cdv-road-container:nth-child(even) .cdv-road-image-container {
-    margin: 5px 0px 5px 5px;
+    margin: 5px 10px 5px 5px;
     padding: 5px 0px 5px 5px;
     box-shadow: 0px 0px 5px -1px var(--color-primary);
   }
@@ -797,10 +797,12 @@ a{
 
   .cdv-road-to {
     border-top: 30px solid var(--color-text-dark);
+    right: calc(-50vw + 50% - 20px);
   }
 
   .cdv-road-to-dashed-line {
-    bottom: 12px;
+    bottom: 13px;
     border-top: 5px dashed var(--color-background-light);
+    right: calc(-50vw + 50% - 20px);
   }
 }
