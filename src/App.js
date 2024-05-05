@@ -98,6 +98,20 @@ const App = () => {
                                                       bottomLogo="/images/AldeiasDoXisto.png"
                                                       isNature={true}
                                                     />} />
+          <Route path="/Alpedrinha" element={<RoadTimeline 
+                                                      title="Alpedrinha"
+                                                      description={[
+                                                          "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
+                                                          "Venha explorar este tesouro da região e deixe-se encantar pela sua beleza singular.",
+                                                          "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
+                                                      ]}
+                                                      routes={[
+                                                          { title: "Palácio do Picadeiro", description: mobile ? "Palácio do século XVIII. Foi recentemente recuperado e transformado num museu cultural.": "Construído no século XVIII por um magistrado, o solar passou por várias mãos e funções, desde tribunal a hospital e até tipografia de jornal. Abandonado durante anos, foi recuperado recentemente e transformado num museu cultural.", image: "/images/Alpedrinha/Picadeiro_2.jpeg" },
+                                                          { title: "Chafariz D. João V", description: mobile ? "Construído a mando de D. João V. Estrutura-se em dois níveis, com escadaria em U, de estilo barroco." : "Construído a mando de D. João V. Estrutura-se em dois níveis, com escadaria em U. É um chafariz barroco e edificado em granito. É constituído por um baluarte com três faces cada uma com a sua respetiva bica.", image: "/images/Alpedrinha/Chafariz_D_Joao_V.jpeg" }
+                                                      ]}  
+                                                      bottomLogo=""
+                                                      isNature={false}
+                                                    />} />
           <Route path="/Romarias" element={<RoadTimeline 
                                                       title="Festas e Romarias"
                                                       description={[
@@ -107,7 +121,7 @@ const App = () => {
                                                       routes={[
                                                           { title: "Festa da Cereja", location: "Alcongosta", month: "Junho", image: "/images/Romarias/FestaDaCereja.jpeg" },
                                                           { title: "Anjo da Guarda", location: "Alpedrinha", month: "Agosto", image: "/images/Experiencias/AnjoDaGuarda.jpeg" },
-                                                          { title: "Chocalhos", location: "Alpedrinha", month: "Setembro", image: "/images/Chocalhos.jpeg" },
+                                                          { title: "Chocalhos", location: "Alpedrinha", month: "Setembro", image: "/images/Romarias/Chocalhos.jpeg" },
                                                           { title: "Míscaros", location: "Alcaide", month: "Novembro", image: "/images/Miscaros.jpeg" }
                                                       ]}  
                                                       bottomLogo="/images/AldeiasDoXisto.png"
