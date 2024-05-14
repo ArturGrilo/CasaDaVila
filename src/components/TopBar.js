@@ -100,11 +100,11 @@ const TopBar = ({ scrollThreshold }) => {
                 <FontAwesomeIcon icon="times" className="times" />
               </div>
             </div>
-            <a href="/#home-id" className={activeSection === 'home' ? 'cdv-active-link' : ''}>
+            <a href="/#home-id" className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
               <span>{t('home-label')}</span>
             </a>
             <a href="/#about-us-id" 
-              className={activeSection === 'about-us' ? 'cdv-active-link' : ''}
+              className={activeSection === 'about-us-id' ? 'cdv-active-link' : ''}
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('about-us-id');
@@ -112,7 +112,7 @@ const TopBar = ({ scrollThreshold }) => {
               <span>{t('about-us-label')}</span>
             </a>
             <a 
-              className={activeSection === 'spaces' ? 'cdv-active-link' : ''} 
+              className={activeSection === 'spaces-id' ? 'cdv-active-link' : ''} 
               href="#spaces-id"
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
@@ -129,14 +129,14 @@ const TopBar = ({ scrollThreshold }) => {
               }}>
               <span>Galeria</span>
             </a>
-            <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+            <a href="/#exps-id" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('exps-id');
               }}>
               <span>Experiências</span>
             </a>
-            <a href="/#exps-id" className={activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+            <a href="/#exps-id" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('exps-id');
@@ -157,11 +157,11 @@ const TopBar = ({ scrollThreshold }) => {
               <img src="/images/feedback-image-copia.png" alt="feedback"/>
             </div>
           </div>
-          <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home' ? 'cdv-active-link' : ''}`}>
+          <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home-id' ? 'cdv-active-link' : ''}`}>
             <span>{t('home-label')}</span>
           </a>
           <a href="/#about-us-id" 
-            className={`desktop-topbar-link ${activeSection === 'about-us' ? 'cdv-active-link' : ''}`}
+            className={`desktop-topbar-link ${activeSection === 'about-us-id' ? 'cdv-active-link' : ''}`}
             onClick={(e) => {
               e.preventDefault(); // Impede o comportamento padrão de navegação
               handleLinkClick('about-us-id');
@@ -169,7 +169,7 @@ const TopBar = ({ scrollThreshold }) => {
             <span>{t('about-us-label')}</span>
           </a>
           <a 
-            className={`desktop-topbar-link ${activeSection === 'spaces' ? 'cdv-active-link' : ''}`}
+            className={`desktop-topbar-link ${activeSection === 'spaces-id' ? 'cdv-active-link' : ''}`}
             href="#spaces-id"
             onClick={(e) => {
               e.preventDefault(); // Impede o comportamento padrão de navegação
@@ -179,14 +179,14 @@ const TopBar = ({ scrollThreshold }) => {
             <span>Comodidades</span>
           </a>
           <a href="/#gallery-section-id" 
-            className={`desktop-topbar-link ${activeSection === 'gallery-section' ? 'cdv-active-link' : ''}`} 
+            className={`desktop-topbar-link ${activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''}`} 
             onClick={(e) => {
               e.preventDefault(); // Impede o comportamento padrão de navegação
               handleLinkClick('gallery-section-id');
             }}>
             <span>Galeria</span>
           </a>
-          <a href="/#exps-id" className={`desktop-topbar-link ${activeSection === 'exps' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}
+          <a href="/#exps-id" className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}
             onClick={(e) => {
               e.preventDefault(); // Impede o comportamento padrão de navegação
               handleLinkClick('exps-id');

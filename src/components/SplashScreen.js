@@ -35,7 +35,7 @@ const SplashScreen = () => {
           alt="Logo"
           className={`splash-logo ${hiddenSplashLogo ? "hidden" : ""}`}
         />
-        <div class="spinner"></div>
+        <div className="spinner"></div>
       </div>
     </div>
   );

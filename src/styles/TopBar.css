@@ -347,10 +347,6 @@
   border-bottom: 1px solid #777; /* Linhas divisoras entre os itens do menu */
 }
 
-.mobile-menu a:hover {
-  background-color: #222; /* Cor de fundo ao passar o mouse */
-}
-
 .side-menu-contacts{
   font-size: 15px;
   margin-top: 20px;
@@ -376,4 +372,14 @@
 
 .mobile-menu .feedback-image{
   margin-bottom: -100px !important;
+}
+
+.mobile-menu .cdv-active-link{
+  color: white !important;
+  border-bottom: 1px solid black;
+  background-color: var(--color-primary);
+}
+
+.mobile-menu .cdv-active-link::after, .mobile-menu .cdv-active-link::before{
+  display: none;
 }
