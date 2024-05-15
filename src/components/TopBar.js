@@ -89,7 +89,7 @@ const TopBar = ({ scrollThreshold }) => {
         </div>
         <div className="links-top-bar">
           {/* Ícone do menu para dispositivos móveis e tablets */}
-          <div className="cdv-menu-icon" onClick={handleMenuToggle}>
+          <div className="cdv-menu-icon" onClick={handleMenuToggle} style={{ display: isMenuOpen ? 'none' : 'block' }}>
             <FontAwesomeIcon icon="bars" className="top-bar-icon" />
           </div>
           {/* Menu lateral */}
@@ -100,7 +100,7 @@ const TopBar = ({ scrollThreshold }) => {
                 <FontAwesomeIcon icon="times" className="times" />
               </div>
             </div>
-            <a href="/#home-id" className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
+            <a href="/#home-id" onClick={handleMenuToggle} className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
               <span>{t('home-label')}</span>
             </a>
             <a href="/#about-us-id" 
@@ -108,6 +108,7 @@ const TopBar = ({ scrollThreshold }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('about-us-id');
+                handleMenuToggle();
               }}>
               <span>{t('about-us-label')}</span>
             </a>
@@ -117,6 +118,7 @@ const TopBar = ({ scrollThreshold }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('spaces-id');
+                handleMenuToggle();
               }}
             >
               <span>Comodidades</span>
@@ -126,6 +128,7 @@ const TopBar = ({ scrollThreshold }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('gallery-section-id');
+                handleMenuToggle();
               }}>
               <span>Galeria</span>
             </a>
@@ -133,6 +136,7 @@ const TopBar = ({ scrollThreshold }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('exps-id');
+                handleMenuToggle();
               }}>
               <span>Experiências</span>
             </a>
@@ -140,6 +144,7 @@ const TopBar = ({ scrollThreshold }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('exps-id');
+                handleMenuToggle();
               }}>
               <span>Reservar</span>
             </a>
