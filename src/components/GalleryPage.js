@@ -20,7 +20,7 @@ const GalleryPage = () => {
     axios.get(`/images/${category}`)
       .then(response => {
         const imagesData = response.data.map(filename => ({
-          src: `/images/${category}/${filename}`,
+          src: `https://casa-da-vila.netlify.app/images/${category}/${filename}`,
           alt: `Image from ${category}`
         }));
         setDisplayedImages(imagesData);

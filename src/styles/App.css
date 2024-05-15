@@ -933,4 +933,23 @@ a{
   .parties-text-details{
     width: calc(100% - 119px);
   }
+
+  .img-gallery-page {
+    height: 225px !important;
+    background-size: 125%;
+  }
+
+  .img-parallax-gallery-page {
+    background-size: 135% !important;
+  }
+
+  .media-type-buttons {
+    flex-direction: column;
+    margin: 20px 0 40px 0 !important;
+  }
+
+  .media-type-buttons .cdv-button-secundary,
+  .media-type-buttons .cdv-button-primary{
+    font-size: 15px;
+  }
 }
