@@ -17,7 +17,7 @@ const GalleryPage = () => {
   }, []);
 
   const fetchImages = (category) => {
-    axios.get(`/images/${category}`)
+    axios.get(`https://casa-da-vila.netlify.app/images/${category}`)
       .then(response => {
         console.log('Response:', response);
         const imagesData = response.data.map(filename => ({
