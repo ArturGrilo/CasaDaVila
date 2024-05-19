@@ -976,12 +976,12 @@ a{
     width: calc(100% - 119px);
   }
 
-  .img-gallery-page {
+  .cdv-img-gallery-page {
     height: 225px !important;
     background-size: 125%;
   }
 
-  .img-parallax-gallery-page {
+  .cdv-img-parallax-gallery-page {
     background-size: 135% !important;
   }
 
