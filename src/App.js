@@ -21,6 +21,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import CookieBanner from "./components/CookieBanner";
 import LanguageSelector from "./components/LanguageSelector";
 import GalleryPage from "./components/GalleryPage";
+import BookingPage from "./components/Booking";
 
 const App = () => {
   const mobile = window.innerWidth < 800;
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/" element={<MainPage />} />
         <Route path="/PoliticaDePrivacidade" element={<PrivacyPolicy />} />
         <Route path="/Galeria" element={<GalleryPage />} />
+        <Route path="/Reservar" element={<BookingPage />} />
           {/* Rota da página das Aldeias Históricas */}
           <Route 
             path="/AldeiasHistoricas" 

@@ -1,0 +1,15 @@
+#booking-page-id{
+    padding-top: 120px;
+}
+
+#booking-page-id.cdv-section{
+    padding-bottom: 0;
+}
+
+#booking-page-id .cdv-title{
+    margin-top: 100px;
+}
+
+.cdv-img-parallax-gallery-page{
+    background-image: url('../Reservar.jpeg');
+}

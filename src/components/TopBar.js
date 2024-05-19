@@ -89,7 +89,7 @@ const TopBar = ({ scrollThreshold }) => {
         </div>
         <div className="links-top-bar">
           {/* Ícone do menu para dispositivos móveis e tablets */}
-          <div className="cdv-menu-icon" onClick={handleMenuToggle} style={{ display: isMenuOpen ? 'none' : 'block' }}>
+          <div className="cdv-menu-icon" onClick={handleMenuToggle}>
             <FontAwesomeIcon icon="bars" className="top-bar-icon" />
           </div>
           {/* Menu lateral */}
@@ -140,11 +140,9 @@ const TopBar = ({ scrollThreshold }) => {
               }}>
               <span>Experiências</span>
             </a>
-            <a href="/#exps-id" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+            <a href="/Reservar" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
               onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
-                handleLinkClick('exps-id');
-                handleMenuToggle();
+                  window.location.href = '/Reservar';
               }}>
               <span>Reservar</span>
             </a>
@@ -217,7 +215,9 @@ const TopBar = ({ scrollThreshold }) => {
                 </div>
               </div>
             </a>
-            <button className="desktop-topbar-link cdv-button-secundary">Reservar</button>
+            <button onClick={(e) => {
+                      window.location.href = '/Reservar';
+                    }} className="desktop-topbar-link cdv-button-secundary">Reservar</button>
         </div>
       </div>
     </div>

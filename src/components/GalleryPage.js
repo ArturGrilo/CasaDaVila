@@ -17,7 +17,7 @@ const GalleryPage = () => {
   }, []);
 
   const fetchImages = (category) => {
-    axios.get(`https://casa-da-vila.netlify.app/images/${category}`)
+    axios.get(`images/${category}`)
       .then(response => {
         console.log('Response:', response);
         const imagesData = response.data.map(filename => ({
@@ -48,9 +48,9 @@ const GalleryPage = () => {
 
   return (
     <section id="gallery-page-id" className="cdv-section">
-      <div className="img-gallery-page">
-        <div className="img-parallax-gallery-page">
-          <div className='red'></div>
+      <div className="cdv-img-gallery-page">
+        <div className="cdv-img-parallax-gallery-page">
+          <div className='cdv-red'></div>
         </div>
       </div>
       <TopBar scrollThreshold={-1} />
