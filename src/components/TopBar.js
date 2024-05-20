@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/TopBar.css";
 import { useTranslation } from 'react-i18next';
 
-const TopBar = ({ scrollThreshold }) => {
+const TopBar = ({ scrollThreshold, altScreen }) => {
   library.add(faCaretDown, faBars, faTimes); // Adicionado o ícone de menu
   
   const [activeSection, setActiveSection] = useState('');
@@ -19,7 +19,9 @@ const TopBar = ({ scrollThreshold }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > (scrollThreshold || window.innerHeight / 1.5);
+      const scrollThreshold = altScreen ? window.innerHeight * 0.25 : window.innerHeight / 1.5;
+      const isScrolled = window.scrollY > scrollThreshold;
+
       setScrolled(isScrolled);
   
       if ((location.pathname === "/SerraDaEstrela") || (location.pathname === "/SerraDaGardunha") ||
@@ -55,19 +57,19 @@ const TopBar = ({ scrollThreshold }) => {
       }
     };
   
-    const handleRouteChange = () => {
+    /*const handleRouteChange = () => {
       // Define scrolled como true se a path da rota atual não for "/"
       setScrolled(location.pathname !== "/");
-    };
+    };*/
   
     window.addEventListener("scroll", handleScroll);
-    handleRouteChange(); // Chama a função para definir scrolled ao montar o componente
+    //handleRouteChange(); // Chama a função para definir scrolled ao montar o componente
   
     // Limpeza do event listener ao desmontar o componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollThreshold, location.pathname]);
+  }, [scrollThreshold, location.pathname, altScreen]);
 
   const handleLinkClick = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
@@ -181,11 +183,10 @@ const TopBar = ({ scrollThreshold }) => {
           >
             <span>Comodidades</span>
           </a>
-          <a href="/#gallery-section-id" 
+          <a href="/Galeria" 
             className={`desktop-topbar-link ${activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''}`} 
             onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
-              handleLinkClick('gallery-section-id');
+              window.location.href = '/Galeria';
             }}>
             <span>Galeria</span>
           </a>

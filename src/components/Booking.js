@@ -7,14 +7,14 @@ const BookingPage = () => {
   return (
     <section id="booking-page-id" className="cdv-section">
       <div className="cdv-img-gallery-page">
+        <div className="cdv-title">
+          <span>Reservar</span>
+        </div>
         <div className="cdv-img-parallax-gallery-page">
           <div className='cdv-red'></div>
         </div>
       </div>
-      <TopBar scrollThreshold={-1} />
-      <div className="cdv-title">
-        <span>Reservar</span>
-      </div>
+      <TopBar scrollThreshold={-1} altScreen={true} />
       <div className="cdv-main-container">
         
       </div>

@@ -349,8 +349,9 @@ a{
 
 
 .cdv-img-gallery-page{
+  position: relative;
   overflow: hidden;
-  height: 590px;
+  height: 45vh;
   background-color: var(--color-primary);
 }
 
@@ -978,11 +979,6 @@ a{
 
   .cdv-img-gallery-page {
     height: 225px !important;
-    background-size: 125%;
-  }
-
-  .cdv-img-parallax-gallery-page {
-    background-size: 135% !important;
   }
 
   .media-type-buttons {
@@ -995,7 +991,7 @@ a{
     font-size: 15px;
   }
 
-  .cdv-img-parallax-gallery-page{
-    background-position: bottom;
+  .booking-page-id .cdv-img-parallax-gallery-page{
+    background-position: bottom 100px left 0px;
   }
 }

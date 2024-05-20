@@ -49,14 +49,14 @@ const GalleryPage = () => {
   return (
     <section id="gallery-page-id" className="cdv-section">
       <div className="cdv-img-gallery-page">
+        <div className="cdv-title">
+          <span>Galeria</span>
+        </div>
         <div className="cdv-img-parallax-gallery-page">
           <div className='cdv-red'></div>
         </div>
       </div>
-      <TopBar scrollThreshold={-1} />
-      <div className="cdv-title">
-        <span>Galeria</span>
-      </div>
+      <TopBar altScreen={true} />
       <div className="cdv-main-container">
         <div className="media-type-buttons">
           <button className={selectedCategory === 'CasaDaVilaI' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="CasaDaVilaI" onClick={() => handleCategoryChange('CasaDaVilaI')} >

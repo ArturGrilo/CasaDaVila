@@ -109,6 +109,7 @@
 .logo-container {
   max-height: 150px;
   animation: fadeIn 1s ease-in-out;
+  cursor: pointer;
 }
 
 .scrolled .logo-container{
