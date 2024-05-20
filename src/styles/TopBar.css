@@ -38,7 +38,7 @@
 
 .top-bar.scrolled {
   padding: 10px;
-  background-color: var(--color-topbar-scroll-background);
+  background-color: var(--color-topbar-scroll-background) !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-image: none;
 }

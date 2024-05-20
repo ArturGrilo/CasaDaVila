@@ -994,6 +994,11 @@ a{
     background-position: bottom;
   }
 
+  #gallery-page-id .top-bar {
+    padding: 10px;
+    background: transparent;
+  }
+
   .media-type-buttons {
     flex-direction: column;
     margin: 40px 0 !important;
