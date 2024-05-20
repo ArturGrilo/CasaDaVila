@@ -33,10 +33,6 @@
   margin-top: 100px;
 } 
 
-#gallery-page-id .logo-container img{
-  filter: grayscale(100%) brightness(200%);
-}
-
 #gallery-page-id .cdv-img-gallery-page .cdv-title{
   position: absolute;
   top: 50%;

@@ -978,12 +978,21 @@ a{
   }
 
   .cdv-img-gallery-page {
-    height: 225px !important;
+    height: 40vh !important;
+  }
+
+  #gallery-page-id .top-bar-container {
+    flex-direction: column !important;
+    justify-content: flex-end;
+  }
+
+  #gallery-page-id .cdv-img-gallery-page .cdv-title {
+    font-size: 35px !important;
   }
 
   .media-type-buttons {
     flex-direction: column;
-    margin: 20px 0 40px 0 !important;
+    margin: 40px 0 !important;
   }
 
   .media-type-buttons .cdv-button-secundary,
