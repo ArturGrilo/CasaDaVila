@@ -990,6 +990,10 @@ a{
     font-size: 35px !important;
   }
 
+  .cdv-img-parallax-gallery-page {
+    background-position: bottom;
+  }
+
   .media-type-buttons {
     flex-direction: column;
     margin: 40px 0 !important;
