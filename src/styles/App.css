@@ -991,7 +991,9 @@ a{
   }
 
   .cdv-img-parallax-gallery-page {
-    background-position: bottom;
+    background-size: 100vh;
+    background-position: center;
+    background-position-y: top;
   }
 
   #gallery-page-id .top-bar {
@@ -1007,9 +1009,5 @@ a{
   .media-type-buttons .cdv-button-secundary,
   .media-type-buttons .cdv-button-primary{
     font-size: 15px;
-  }
-
-  .booking-page-id .cdv-img-parallax-gallery-page{
-    background-position: bottom 100px left 0px;
   }
 }
