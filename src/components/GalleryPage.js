@@ -3,7 +3,7 @@ import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { faTimes} from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GalleryPage = () => {
@@ -17,14 +17,19 @@ const GalleryPage = () => {
   }, []);
 
   const fetchImages = (category) => {
-    axios.get(`images/${category}`)
+    axios.get(`/images/${category}`)
       .then(response => {
         console.log('Response:', response);
-        const imagesData = response.data.map(filename => ({
-          src: `/images/${category}/${filename}`,
-          alt: `Image from ${category}`
-        }));
-        setDisplayedImages(imagesData);
+
+        if (Array.isArray(response.data)) {
+          const imagesData = response.data.map(filename => ({
+            src: `${process.env.PUBLIC_URL}/images/${category}/${filename}`,
+            alt: `Image from ${category}`
+          }));
+          setDisplayedImages(imagesData);
+        } else {
+          console.error('Unexpected response format:', response.data);
+        }
       })
       .catch(error => {
         console.error('Error fetching images:', error);
@@ -79,7 +84,7 @@ const GalleryPage = () => {
         {/* Modal */}
         <div className={`modal${modalOpen ? ' open' : ''}`} onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times"  onClick={closeModal}/>
+            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closeModal}/>
             <img src={selectedImage} alt="Imagem Modal" />
           </div>
         </div>
