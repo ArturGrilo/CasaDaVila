@@ -21,14 +21,14 @@
     "react-i18next": "^14.1.0",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.20.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,5 +50,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Casa da Vila - Website Welcome to Casa da Vila! This is a website designed to showcase our charming local accommodation and provide visitors with essential information about their stay.",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.91.0"
   }
 }

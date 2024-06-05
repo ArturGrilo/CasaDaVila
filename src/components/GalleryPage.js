@@ -1,10 +1,10 @@
-import '../styles/GalleryPage.css';
-import TopBar from "../components/TopBar";
-import Footer from "../components/Footer";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import TopBar from "../components/TopBar";
+import Footer from "../components/Footer";
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../styles/GalleryPage.css';
 
 const GalleryPage = () => {
   const [displayedImages, setDisplayedImages] = useState([]);
@@ -16,24 +16,23 @@ const GalleryPage = () => {
     fetchImages('CasaDaVilaI');
   }, []);
 
-  const fetchImages = (category) => {
-    axios.get(`/images/${category}`)
-      .then(response => {
-        console.log('Response:', response);
+  const fetchImages = async (category) => {
+    try {
+      const response = await axios.get(`/images/${category}`);
+      console.log('Response:', response);
 
-        if (Array.isArray(response.data)) {
-          const imagesData = response.data.map(filename => ({
-            src: `${process.env.PUBLIC_URL}/images/${category}/${filename}`,
-            alt: `Image from ${category}`
-          }));
-          setDisplayedImages(imagesData);
-        } else {
-          console.error('Unexpected response format:', response.data);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching images:', error);
-      });
+      if (Array.isArray(response.data)) {
+        const imagesData = response.data.map(filename => ({
+          src: `${process.env.PUBLIC_URL}/images/${category}/${filename}`,
+          alt: `Image from ${category}`
+        }));
+        setDisplayedImages(imagesData);
+      } else {
+        console.error('Unexpected response format:', response.data);
+      }
+    } catch (error) {
+      console.error('Error fetching images:', error);
+    }
   };
 
   const handleCategoryChange = (category) => {
@@ -64,15 +63,15 @@ const GalleryPage = () => {
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
         <div className="media-type-buttons">
-          <button className={selectedCategory === 'CasaDaVilaI' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="CasaDaVilaI" onClick={() => handleCategoryChange('CasaDaVilaI')} >
-            <span>Casa Da Vila I</span>
-          </button>
-          <button className={selectedCategory === 'CasaDaVilaII' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="CasaDaVilaII" onClick={() => handleCategoryChange('CasaDaVilaII')} >
-            <span>Casa Da Vila II</span>
-          </button>
-          <button className={selectedCategory === 'Exterior' ? 'cdv-button-secundary' : 'cdv-button-primary'} name="category" value="Exterior" onClick={() => handleCategoryChange('Exterior')} >
-            <span>Exterior</span>
-          </button>
+          {['CasaDaVilaI', 'CasaDaVilaII', 'Exterior'].map(category => (
+            <button
+              key={category}
+              className={selectedCategory === category ? 'cdv-button-secundary' : 'cdv-button-primary'}
+              onClick={() => handleCategoryChange(category)}
+            >
+              <span>{category.replace('CasaDaVila', 'Casa Da Vila ')}</span>
+            </button>
+          ))}
         </div>
         <div className="media-display">
           {displayedImages.map((image, index) => (
@@ -81,13 +80,14 @@ const GalleryPage = () => {
             </div>
           ))}
         </div>
-        {/* Modal */}
-        <div className={`modal${modalOpen ? ' open' : ''}`} onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closeModal}/>
-            <img src={selectedImage} alt="Imagem Modal" />
+        {modalOpen && (
+          <div className="modal open" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closeModal}/>
+              <img src={selectedImage} alt="Imagem Modal" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <Footer />
     </section>
