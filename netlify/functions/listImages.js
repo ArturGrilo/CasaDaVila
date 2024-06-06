@@ -12,6 +12,7 @@ exports.handler = async function(event, context) {
       body: JSON.stringify(files),
     };
   } catch (error) {
+    console.error('Error reading images directory:', error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Failed to read images directory' }),
