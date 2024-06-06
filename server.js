@@ -3,29 +3,33 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-// Middleware to serve static files
+// Servir arquivos estáticos da pasta 'build'
 app.use(express.static(path.join(__dirname, 'build')));
 
+// Rota para buscar imagens
 app.get('/images/:category', (req, res) => {
   const category = req.params.category;
-  const categoryPath = path.join(__dirname, 'public/images', category);
+  const directoryPath = path.join(__dirname, 'public', 'images', category);
 
-  fs.readdir(categoryPath, (err, files) => {
+  fs.readdir(directoryPath, (err, files) => {
     if (err) {
-      return res.status(500).send('Error reading directory');
+      return res.status(500).send('Unable to scan directory');
     }
 
-    res.json(files);
+    // Filtra apenas arquivos de imagem (opcional)
+    const imageFiles = files.filter(file => /\.(jpe?g|png|gif|svg)$/i.test(file));
+
+    res.json(imageFiles);
   });
 });
 
-// Serve the React app for any other requests
+// Rota para lidar com todas as outras requisições e servir o HTML
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

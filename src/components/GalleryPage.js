@@ -18,7 +18,7 @@ const GalleryPage = () => {
 
   const fetchImages = async (category) => {
     try {
-      const response = await axios.get(`/images/${category}`);
+      const response = await axios.get(`/.netlify/functions/listImages?category=${category}`);
       console.log('Response:', response);
 
       if (Array.isArray(response.data)) {
