@@ -3,7 +3,9 @@ const path = require('path');
 
 exports.handler = async function(event, context) {
   const category = event.queryStringParameters.category || 'CasaDaVilaI';
-  const imagesDir = path.resolve(__dirname, '../images', category);
+
+  // Determine the correct path based on the environment
+  const imagesDir = path.resolve(__dirname, process.env.NODE_ENV === 'production' ? '../../images' : '../images', category);
 
   console.log(`Category: ${category}`);
   console.log(`Images directory: ${imagesDir}`);
