@@ -29,7 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "postbuild": "cp -R public/images build/images",
+    "postbuild": "cp -R public/images netlify/images",
     "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
