@@ -9,6 +9,6 @@
   status = 200
 
 [[redirects]]
-  from = "/images/*"
-  to = "/.netlify/functions/listImages"
+  from = "build/images/*"
+  to = "/netlify/functions/listImages"
   status = 200
