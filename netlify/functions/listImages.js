@@ -4,7 +4,7 @@ const path = require('path');
 exports.handler = async function(event, context) {
   const category = event.queryStringParameters.category || 'CasaDaVilaI';
 
-  const imagesDir = path.join(__dirname, '..', '..', 'images', 'CasaDaVilaI');
+  const imagesDir = path.join(__dirname, '..', '..', 'build', 'images', 'CasaDaVilaI');
 
   console.log(`Category: ${category}`);
   console.log(`Images directory: ${imagesDir}`);
