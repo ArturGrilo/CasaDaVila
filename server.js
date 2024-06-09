@@ -1,28 +1,26 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Servir arquivos estáticos da pasta 'build'
+// Serve static files from the 'build' folder (React application)
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Rota para buscar imagens
+// Serve images from the 'images' folder (outside of 'build')
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+// Rota para buscar imagens por categoria (optional)
+// If you don't need to filter images by category, remove this route
 app.get('/images/:category', (req, res) => {
   const category = req.params.category;
-  const directoryPath = path.join(__dirname, 'public', 'images', category);
+  const imagePath = path.join(__dirname, 'images', category); // Adjust path as needed
 
-  fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-      return res.status(500).send('Unable to scan directory');
-    }
+  // Implement logic to fetch and send image data based on category (optional)
+  // ...
 
-    // Filtra apenas arquivos de imagem (opcional)
-    const imageFiles = files.filter(file => /\.(jpe?g|png|gif|svg)$/i.test(file));
-
-    res.json(imageFiles);
-  });
+  // Example: Send a generic response if category-based filtering is not implemented
+  res.json({ message: 'Image category filtering not implemented.' });
 });
 
 // Rota para lidar com todas as outras requisições e servir o HTML
