@@ -348,14 +348,27 @@ a{
 
 
 
-.cdv-img-gallery-page{
+
+.cdv-img-alt-page{
   position: relative;
   overflow: hidden;
   height: 45vh;
   background-color: var(--color-primary);
+  margin-bottom: 40px;
 }
 
-.cdv-img-parallax-gallery-page{
+.cdv-img-alt-page .cdv-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  margin-top: 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 65px;
+}
+
+.cdv-img-parallax-alt-page{
   height: 100%;
   width: 100%;
   background-image: url('../gallery-break-section.jpeg');
@@ -365,7 +378,7 @@ a{
   background-color: rgba(80,0,0,.3);
 }
 
-.cdv-img-gallery-page img {
+.cdv-img-alt-page img {
   width: 100%;
   height: auto;
 
@@ -727,10 +740,6 @@ a{
     margin-left: 0;
   }
 
-  #experiences-id {
-    padding-top: 160px;
-  }
-
   #experiences-id .cdv-text{
     text-align: center;
   }
@@ -977,26 +986,29 @@ a{
     width: calc(100% - 119px);
   }
 
-  .cdv-img-gallery-page {
+  .cdv-img-alt-page {
     height: 40vh !important;
   }
 
-  #gallery-page-id .top-bar-container {
+  #gallery-page-id .top-bar-container,
+  #experiences-id .top-bar-container {
     flex-direction: column !important;
     justify-content: flex-end;
   }
 
-  #gallery-page-id .cdv-img-gallery-page .cdv-title {
+  #gallery-page-id .cdv-img-alt-page .cdv-title,
+  #experiences-id .cdv-img-alt-page .cdv-title {
     font-size: 35px !important;
   }
 
-  .cdv-img-parallax-gallery-page {
+  .cdv-img-parallax-alt-page {
     background-size: 100vh;
     background-position: center;
     background-position-y: top;
   }
 
-  #gallery-page-id .top-bar {
+  #gallery-page-id .top-bar,
+  #experiences-id .top-bar {
     padding: 10px;
     background: transparent;
   }

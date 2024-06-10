@@ -74,6 +74,10 @@ const GalleryPage = () => {
   //eslint-disable-next-line
   useEffect(() => {
     setDisplayedImages(images[selectedCategory]);
+    const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
+    elements.forEach(element => {
+      element.style.backgroundImage = `url(images/HomeOutside5.jpeg)`; // Altera para a primeira imagem da categoria
+    });
   }, );
 
   const handleCategoryChange = (category) => {
@@ -92,11 +96,11 @@ const GalleryPage = () => {
 
   return (
     <section id="gallery-page-id" className="cdv-section">
-      <div className="cdv-img-gallery-page">
+      <div className="cdv-img-alt-page">
         <div className="cdv-title">
           <span>Galeria</span>
         </div>
-        <div className="cdv-img-parallax-gallery-page">
+        <div className="cdv-img-parallax-alt-page">
           <div className='cdv-red'></div>
         </div>
       </div>

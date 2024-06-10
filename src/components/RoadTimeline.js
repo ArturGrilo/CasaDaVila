@@ -5,23 +5,34 @@ import { faPersonWalking, faFlag, faTree } from '@fortawesome/free-solid-svg-ico
 import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
 
-function RoadTimeline({ title, description, routes, bottomLogo, isNature, isParties, month, location }) {
+function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNature, isParties, month, location }) {
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {
+        if(imgpath !== ""){
+            const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
+            elements.forEach(element => {
+                element.style.backgroundImage = `url(images/`+ imgpath + `)`;
+            });
+        }
         window.scrollTo(0, 0);
         setShowContent(true);
-    }, []);
+    }, [imgpath]);
 
     return (
         <section id="experiences-id" className="cdv-section">
             {showContent && (
                 <div>
-                    <TopBar scrollThreshold={-1} />
-                    <div className="cdv-main-container">
+                    <div className="cdv-img-alt-page">
                         <div className="cdv-title">
                             <span>{title}</span>
                         </div>
+                        <div className="cdv-img-parallax-alt-page">
+                            <div className='cdv-red'></div>
+                        </div>
+                    </div>
+                    <TopBar altScreen={true} />
+                    <div className="cdv-main-container">
                         <div className="cdv-text">
                             {description.map((text, index) => (
                                 <span key={index}>{text}</span>

@@ -43,6 +43,7 @@ const App = () => {
           <Route 
             path="/AldeiasHistoricas" 
             element={<RoadTimeline 
+                        imgpath="Experiencias/AldeiasHistoricas.png"
                         title="Aldeias Históricas"
                         description={[
                             "A Casa da Vila é um verdadeiro tesouro para os entusiastas do Patrimônio e da História.",
