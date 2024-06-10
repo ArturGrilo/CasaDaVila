@@ -1010,4 +1010,8 @@ a{
   .media-type-buttons .cdv-button-primary{
     font-size: 15px;
   }
+
+  .media-item img{
+    height: 350px !important;
+  }
 }
