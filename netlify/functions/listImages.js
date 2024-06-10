@@ -5,7 +5,8 @@ exports.handler = async function(event, context) {
   const category = event.queryStringParameters.category || 'CasaDaVilaI';
 
   try {
-    const imagesDir = path.join('build', 'images', category);
+    const imagesDir = path.join('public', 'images', category);
+    console.log('Trying to access directory:', imagesDir); // Add this line
     const files = fs.readdirSync(imagesDir);
     return {
       statusCode: 200,
