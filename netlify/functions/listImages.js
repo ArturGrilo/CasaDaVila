@@ -9,12 +9,11 @@ exports.handler = async function(event, context) {
 
   console.log(`Category: ${category}`);
   console.log(`Root directory: ${rootDir}`);
+  // Listar as pastas na raiz do projeto
+  const folders = fs.readdirSync(rootDir).filter(file => fs.statSync(path.join(rootDir, file)).isDirectory());
+  console.log(`Folders in root directory: ${folders}`);
 
   try {
-    // Listar as pastas na raiz do projeto
-    const folders = fs.readdirSync(rootDir).filter(file => fs.statSync(path.join(rootDir, file)).isDirectory());
-    console.log(`Folders in root directory: ${folders}`);
-
     // Caminho da pasta de imagens
     const imagesDir = path.join(rootDir, 'build', 'images', category);
     console.log(`Images directory: ${imagesDir}`);
