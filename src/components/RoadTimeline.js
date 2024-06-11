@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "../styles/RoadTimeline.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonWalking, faFlag, faTree } from '@fortawesome/free-solid-svg-icons';
@@ -8,16 +8,31 @@ import Footer from "../components/Footer";
 function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNature, isParties, month, location }) {
     const [showContent, setShowContent] = useState(false);
 
-    useEffect(() => {
-        if(imgpath !== ""){
-            const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
+    const applyBackgroundImage = useCallback(() => {
+        const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
+        if (elements.length > 0) {
             elements.forEach(element => {
-                element.style.backgroundImage = `url(images/`+ imgpath + `)`;
+            element.style.backgroundImage = `url(/images/${imgpath})`;
             });
+            return true;
         }
-        window.scrollTo(0, 0);
-        setShowContent(true);
+        return false;
     }, [imgpath]);
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    setShowContent(true);
+
+    if (imgpath !== "") {
+        const interval = setInterval(() => {
+        if (applyBackgroundImage()) {
+            clearInterval(interval); // Stop checking once the image is applied
+        }
+        }, 100); // Check every 100ms
+
+        return () => clearInterval(interval); // Cleanup interval on component unmount
+    }
+    }, [imgpath, applyBackgroundImage]);
 
     return (
         <section id="experiences-id" className="cdv-section">

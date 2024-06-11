@@ -61,6 +61,7 @@ const App = () => {
                     />} 
             />
           <Route path="/AldeiasDoXisto" element={<RoadTimeline 
+                                                      imgpath="Experiencias/AldeiasDoXisto.jpeg"
                                                       title="Aldeias do Xisto"
                                                       description={[
                                                           "Entre as sinuosas serras da Estrela, Açor e Gardunha, ou nas margens serenas dos rios Tejo, Ocreza e Zêzere, encontra-se entrelaçada a rede das 27 aldeias do Xisto, um tesouro inestimável da nossa região e herança.",
@@ -74,6 +75,7 @@ const App = () => {
                                                       bottomLogo= "/images/AldeiasDoXisto.png"
                                                     />} />
           <Route path="/SerraDaGardunha" element={<RoadTimeline 
+                                                      imgpath="Experiencias/SerraDaGardunha.jpeg"
                                                       title="Serra da Gardunha"
                                                       description={[
                                                           "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
@@ -88,6 +90,7 @@ const App = () => {
                                                       isNature={true}
                                                     />} />
           <Route path="/SerraDaEstrela" element={<RoadTimeline 
+                                                      imgpath="Experiencias/SerraEstrela.jpeg"
                                                       title="Serra da Estrela"
                                                       description={[
                                                           "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
@@ -102,6 +105,7 @@ const App = () => {
                                                       isNature={true}
                                                     />} />
           <Route path="/Alpedrinha" element={<RoadTimeline 
+                                                      imgpath=""
                                                       title="Alpedrinha"
                                                       description={[
                                                           "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
@@ -118,6 +122,7 @@ const App = () => {
                                                       isNature={false}
                                                     />} />
           <Route path="/Romarias" element={<RoadTimeline 
+                                                      imgpath="Experiencias/AnjoDaGuarda.jpeg"
                                                       title="Festas e Romarias"
                                                       description={[
                                                           "Explore as melhores festas de Alpedrinha e arredores.",
