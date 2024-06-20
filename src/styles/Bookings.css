@@ -29,8 +29,12 @@
     padding-bottom: 0;
 }
 
-#booking-page-id .top-bar a{
-    color: white;
+#booking-page-id .cdv-active-link::before {
+    top: 2px;
+}
+
+.reservation-form .cdv-text{
+    text-align: left;
 }
 
 #booking-page-id .cdv-img-gallery-page .cdv-title{
@@ -43,3 +47,80 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     font-size: 65px;
 }
+
+
+/* Bookings.css */
+
+.cdv-main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .reservation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .reservation-call, .reservation-form {
+    flex: 1;
+    min-width: 300px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-call h2, .reservation-form h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .reservation-call p, .reservation-form form {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .reservation-call a {
+    font-size: 1.2rem;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .reservation-call a:hover {
+    text-decoration: underline;
+  }
+  
+  .reservation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .reservation-form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .reservation-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    font-size: 25px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reservation-container {
+      flex-direction: column;
+    }
+  }
+  

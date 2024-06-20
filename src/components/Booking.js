@@ -16,6 +16,17 @@ const BookingPage = () => {
       return false;
   }, []);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.elements['name'].value;
+    const date = form.elements['date'].value;
+    const message = `Reserva para ${name} no dia ${date}.`;
+
+    const whatsappUrl = `https://wa.me/351964849002?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
     const interval = setInterval(() => {
@@ -39,7 +50,29 @@ const BookingPage = () => {
       </div>
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
-        
+        <div className="reservation-container scrolled">
+          <div className="reservation-call">
+            <div className='cdv-card-details-text'>Faça sua reserva por telefone</div>
+            <p>Para reservar, ligue para: <a href="tel:+351964849002">+351 964 849 002</a></p>
+          </div>
+
+          <div className='cdv-active-link'>ou</div>
+
+          <div className="reservation-form">
+            <div className='cdv-card-details-text'>Preencha o formulário abaixo</div>
+            <form onSubmit={handleSubmit}>
+              <div>
+                <div className='cdv-text' htmlFor="name">Nome:</div>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+              <div className='cdv-text' htmlFor="date">Data da Reserva:</div>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <button className='cdv-button-secundary' type="submit">Enviar Reserva</button>
+            </form>
+          </div>
+        </div>
       </div>
       <Footer />
     </section>
