@@ -1,17 +1,32 @@
+#booking-page-id .top-bar-container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+#booking-page-id .logo-container,
+#booking-page-id .logo-container img{
+    max-height: 100px;
+}
+  
+#booking-page-id .links-top-bar a {
+    font-size: 24px;
+}
+  
+#booking-page-id .links-top-bar {
+    gap: 20px;
+    justify-content: flex-end;
+}
+  
+#booking-page-id .links-top-bar .cdv-button-secundary {
+    font-size: 26px;
+}
+
 #booking-page-id{
     padding-top: 0px;
 }
 
 #booking-page-id.cdv-section{
     padding-bottom: 0;
-}
-
-#booking-page-id .cdv-title{
-    margin-top: 100px;
-}
-
-#booking-page-id .cdv-img-parallax-gallery-page{
-    background-image: url('../Reservar.jpeg');
 }
 
 #booking-page-id .top-bar a{

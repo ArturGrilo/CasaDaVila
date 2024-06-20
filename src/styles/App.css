@@ -992,13 +992,15 @@ a{
   }
 
   #gallery-page-id .top-bar-container,
-  #experiences-id .top-bar-container {
+  #experiences-id .top-bar-container,
+  #booking-page-id .top-bar-container {
     flex-direction: column !important;
     justify-content: flex-end;
   }
 
   #gallery-page-id .cdv-img-alt-page .cdv-title,
-  #experiences-id .cdv-img-alt-page .cdv-title {
+  #experiences-id .cdv-img-alt-page .cdv-title,
+  #booking-page-id .cdv-img-alt-page .cdv-title {
     font-size: 35px !important;
   }
 
@@ -1009,7 +1011,8 @@ a{
   }
 
   #gallery-page-id .top-bar,
-  #experiences-id .top-bar {
+  #experiences-id .top-bar,
+  #booking-page-id .top-bar {
     padding: 10px;
     background: transparent;
   }
