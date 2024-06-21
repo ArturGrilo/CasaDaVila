@@ -33,7 +33,7 @@ const BookingPage = () => {
     const newErrors = {};
 
     if (checkInDateObj < currentDate) {
-      newErrors.checkInDate = 'Data de check-in inválida.';
+      newErrors.checkInDate = 'A data de check-in deve ser no futuro.';
     }
     if (checkOutDateObj <= checkInDateObj) {
       newErrors.checkOutDate = 'A data de check-out deve ser após a data de check-in.';
@@ -68,13 +68,13 @@ const BookingPage = () => {
 
   useEffect(() => {
     const currentDate = new Date();
-    const currentHour = currentDate.getHours();
-    const defaultCheckInDate = new Date(currentDate);
+    const currentHour = currentDate.getUTCHours() + 1; // Hora atual em Portugal (UTC+1)
 
     if (currentHour >= 13) {
-      defaultCheckInDate.setDate(defaultCheckInDate.getDate() + 1);
+      currentDate.setDate(currentDate.getDate() + 1);
     }
 
+    const defaultCheckInDate = new Date(currentDate);
     const defaultCheckOutDate = new Date(defaultCheckInDate);
     defaultCheckOutDate.setDate(defaultCheckOutDate.getDate() + 1);
 
