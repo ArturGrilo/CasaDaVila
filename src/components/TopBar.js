@@ -24,10 +24,13 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
 
       setScrolled(isScrolled);
   
+      // Define a seção ativa com base no scroll
       if ((location.pathname === "/SerraDaEstrela") || (location.pathname === "/SerraDaGardunha") ||
           (location.pathname === "/AldeiasHistoricas") || (location.pathname === "/AldeiasDoXisto") ||
-          (location.pathname === "/Romarias")) {
-        setActiveSection('exps');
+          (location.pathname === "/Romarias") || (location.pathname === "/Alpedrinha")) {
+        setActiveSection('exps-id');
+      }else if(location.pathname === "/Galeria"){
+        setActiveSection('gallery-section-id');
       } else if (topBarRef.current) {
         const topBarHeight = topBarRef.current.offsetHeight;
         const homeSection = document.getElementById('home-id');
@@ -57,13 +60,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
       }
     };
   
-    /*const handleRouteChange = () => {
-      // Define scrolled como true se a path da rota atual não for "/"
-      setScrolled(location.pathname !== "/");
-    };*/
-  
     window.addEventListener("scroll", handleScroll);
-    //handleRouteChange(); // Chama a função para definir scrolled ao montar o componente
   
     // Limpeza do event listener ao desmontar o componente
     return () => {
@@ -76,6 +73,8 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
     if (sectionElement) {
       const sectionTop = sectionElement.offsetTop - 120;
       window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${sectionId}`;
     }
   };
 
@@ -110,46 +109,39 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('about-us-id');
-                handleMenuToggle();
               }}>
               <span>{t('about-us-label')}</span>
             </a>
             <a 
               className={activeSection === 'spaces-id' ? 'cdv-active-link' : ''} 
-              href="#spaces-id"
+              href="/#spaces-id"
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('spaces-id');
-                handleMenuToggle();
               }}
             >
               <span>Comodidades</span>
             </a>
-            <a href="/#gallery-section-id" 
-              className={activeSection === 'gallery-section' ? 'cdv-active-link' : ''} 
+            <a href="/Galeria" 
+              className={activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''} 
               onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
-                handleLinkClick('gallery-section-id');
-                handleMenuToggle();
+                window.location.href = '/Galeria';
               }}>
               <span>Galeria</span>
             </a>
-            <a href="/#exps-id" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
+            <a href="/#exps-id" 
               onClick={(e) => {
                 e.preventDefault(); // Impede o comportamento padrão de navegação
                 handleLinkClick('exps-id');
-                handleMenuToggle();
-              }}>
+              }}
+              className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
               <span>Experiências</span>
             </a>
-            <a href="/Reservar" className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}
-              onClick={(e) => {
-                  window.location.href = '/Reservar';
-              }}>
+            <a href="/Reservar" className={activeSection === 'reservar-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
               <span>Reservar</span>
             </a>
             <div className="side-menu-contacts">
-              <span onClick={() => window.location.href = 'mailto:contato@meusite.com'}>
+              <span onClick={() => window.location.href = 'mailto:casa_da_vila@gmail.com'}>
                 casa_da_vila@gmail.com
               </span>
               <span>(+351) 964 849 002</span>
@@ -190,35 +182,37 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             }}>
             <span>Galeria</span>
           </a>
-          <a href="/#exps-id" className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}
-            onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
-              handleLinkClick('exps-id');
-            }}>
+          <a href="/#exps-id"
+          onClick={(e) => {
+            e.preventDefault(); // Impede o comportamento padrão de navegação
+            handleLinkClick('exps-id');
+          }}
+          className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}>
             <span>Experiências</span>
-            <div className="dropdown-menu-container">
-              <div className="dropdown-menu-sub-container">
-                <a href="/AldeiasHistoricas">
-                  <div className="dropdown-menu-option">Aldeias Históricas</div>
-                </a>
-                <a href="/AldeiasDoXisto">
-                  <div className="dropdown-menu-option">Aldeias Do Xisto</div>
-                </a>
-                <a href="/SerraDaGardunha">
-                  <div className="dropdown-menu-option">Serra da Gardunha</div>
-                </a>
-                <a href="/SerraDaEstrela">
-                  <div className="dropdown-menu-option">Serra da Estrela</div>
-                </a>
-                <a href="/Romarias">
-                  <div className="dropdown-menu-option">Festas e Romarias</div>
-                </a>
+               <div className="dropdown-menu-container">
+                <div className="dropdown-menu-sub-container">
+                  <a href="/AldeiasHistoricas">
+                    <div className="dropdown-menu-option">Aldeias Históricas</div>
+                  </a>
+                  <a href="/AldeiasDoXisto">
+                    <div className="dropdown-menu-option">Aldeias Do Xisto</div>
+                  </a>
+                  <a href="/SerraDaGardunha">
+                    <div className="dropdown-menu-option">Serra da Gardunha</div>
+                  </a>
+                  <a href="/SerraDaEstrela">
+                    <div className="dropdown-menu-option">Serra da Estrela</div>
+                  </a>
+                  <a href="/Romarias">
+                    <div className="dropdown-menu-option">Festas e Romarias</div>
+                  </a>
                 </div>
               </div>
-            </a>
-            <button onClick={(e) => {
-                      window.location.href = '/Reservar';
-                    }} className="desktop-topbar-link cdv-button-secundary">Reservar</button>
+          </a>
+          <button onClick={(e) => {
+            e.preventDefault(); // Impede o comportamento padrão de navegação
+            window.location.href = '/Reservar';
+          }} className="desktop-topbar-link cdv-button-secundary">Reservar</button>
         </div>
       </div>
     </div>

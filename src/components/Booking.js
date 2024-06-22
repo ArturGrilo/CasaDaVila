@@ -59,10 +59,12 @@ const BookingPage = () => {
       if (children > 0) {
         message += `- Número de Crianças: ${children}\n`;
       }
-      message += `- Observações: ${form.elements['observations'].value}`;
+      if (form.elements['observations'].value.trim() !== '') { 
+        message += `- Observações: ${form.elements['observations'].value}`;
+      }
 
-      const whatsappUrl = `https://wa.me/351969303119?text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
+      const whatsappUrl = `whatsapp://send?phone=+351964849002&text=${encodeURIComponent(message)}`;
+      window.location.href = whatsappUrl;
     }
   };
 
@@ -103,11 +105,11 @@ const BookingPage = () => {
       </div>
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
-        <div class='tag-desconto'>
-          <div class="tag-triangle"></div>
-          <div class="tag-content">
-              <span class="desconto-text">-10%</span>
-              <span class="desconto-text-bigger">No site</span>
+        <div className='tag-desconto'>
+          <div className="tag-triangle"></div>
+          <div className="tag-content">
+              <span className="desconto-text">-10%</span>
+              <span className="desconto-text-bigger">No site</span>
           </div>
       </div>
         <div className="reservation-container">

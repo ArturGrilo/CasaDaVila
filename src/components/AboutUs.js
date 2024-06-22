@@ -1,7 +1,29 @@
-import React from "react";
+import React from 'react';
 import "../styles/AboutUs.css";
 
 function AboutUs() {
+  /*useEffect(() => {
+    const scrollToAboutUs = () => {
+      // Calcular a altura da top bar
+      const topBarHeight = document.querySelector('.top-bar').offsetHeight;
+    
+      // Obter o elemento com o ID about-us-id
+      const element = document.getElementById('about-us-id');
+    
+      if (element) {
+        // Calcular o topo do elemento em relação ao topo da página
+        const elementPosition = element.offsetTop - topBarHeight;
+    
+        // Fazer scroll suave para o elemento ajustado pela altura da top bar
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    scrollToAboutUs();
+  }, []);*/
 
   return (
     <section id="about-us-id" className="cdv-section">

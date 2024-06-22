@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Footer from "./components/Footer";
 import Feedback from "./components/Feedback";
 import TopBar from "./components/TopBar";
@@ -25,10 +25,31 @@ import BookingPage from "./components/Booking";
 
 const App = () => {
   const mobile = window.innerWidth < 800;
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        const elementPosition = element.offsetTop - 80;
+
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth',
+        });
+      }
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [location.hash]);
 
   return (
     <div>  
-      <ScrollToTop />
       <SplashScreen />
       <WhatsAppLink />
       <ButtonTop />
@@ -36,6 +57,7 @@ const App = () => {
       <Routes>
         {/* Rota da página principal */}
         <Route path="/" element={<MainPage />} />
+        <Route path="/about-us-id" element={<AboutUs />} />
         <Route path="/PoliticaDePrivacidade" element={<PrivacyPolicy />} />
         <Route path="/Galeria" element={<GalleryPage />} />
         <Route path="/Reservar" element={<BookingPage />} />
@@ -160,16 +182,6 @@ const MainPage = () => {
       <Footer />
     </div>
   );
-};
-
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Rolagem para o topo da página
-  }, [pathname]);
-
-  return null; // Não renderizar nenhum elemento adicional
 };
 
 export default App;
