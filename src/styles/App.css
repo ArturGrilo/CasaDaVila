@@ -42,6 +42,16 @@ a{
   text-decoration: none;
 }
 
+input[type="date"] {
+  /* Resetando estilos padrões */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Definindo a cor desejada para o texto */
+  color: #333 !important; /* Cor desejada para o texto */
+}
+
 /*--------------------------------------------*/
 /* 2 - Buttons                                */
 /*--------------------------------------------*/
