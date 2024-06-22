@@ -103,7 +103,14 @@ const BookingPage = () => {
       </div>
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
-        <div className="reservation-container scrolled">
+        <div class='tag-desconto'>
+          <div class="tag-triangle"></div>
+          <div class="tag-content">
+              <span class="desconto-text">-10%</span>
+              <span class="desconto-text-bigger">No site</span>
+          </div>
+      </div>
+        <div className="reservation-container">
           <div className="reservation-call">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faPhoneVolume} className="cdv-card-icon"/>

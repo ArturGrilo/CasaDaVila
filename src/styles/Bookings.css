@@ -44,10 +44,11 @@
     font-size: 65px;
 }
 
-.cdv-main-container {
+#booking-page-id .cdv-main-container {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -138,6 +139,44 @@
     max-width: 100%;
 }
 
+
+
+
+.tag-desconto {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.tag-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 220px solid transparent; /* Altura do triângulo */
+    border-right: 260px solid var(--color-primary); /* Cor do triângulo */
+}
+
+.tag-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+.desconto-text-bigger {
+    font-size: 26px; /* Tamanho do texto maior */
+}
+
+.desconto-text {
+    font-size: 42px; /* Tamanho do texto menor */
+    font-weight: bold; /* Texto em negrito */
+}
+
   
 .reservation-form form {
     display: flex;
@@ -166,7 +205,7 @@
     }
     
     .reservation-title, .reservation-title.alt{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .reservation-container {
@@ -179,5 +218,18 @@
 
     .reservation-form {
         margin-top: 120px;
+    }
+
+    .desconto-text-bigger {
+        font-size: 16px; /* Tamanho do texto maior */
+    }
+    
+    .desconto-text {
+        font-size: 22px; /* Tamanho do texto menor */
+    }
+
+    .tag-triangle {
+        border-bottom: 120px solid transparent; /* Altura do triângulo */
+        border-right: 140px solid var(--color-primary); /* Cor do triângulo */
     }
 } 
