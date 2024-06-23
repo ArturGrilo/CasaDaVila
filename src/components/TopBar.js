@@ -1,20 +1,20 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Adicionado o ícone de menu
+import { faCaretDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; 
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/TopBar.css";
 import { useTranslation } from 'react-i18next';
 
 const TopBar = ({ scrollThreshold, altScreen }) => {
-  library.add(faCaretDown, faBars, faTimes); // Adicionado o ícone de menu
+  library.add(faCaretDown, faBars, faTimes);
   
   const [activeSection, setActiveSection] = useState('');
   const topBarRef = useRef(null);
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar a abertura e fechamento do menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -24,7 +24,6 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
 
       setScrolled(isScrolled);
   
-      // Define a seção ativa com base no scroll
       if ((location.pathname === "/SerraDaEstrela") || (location.pathname === "/SerraDaGardunha") ||
           (location.pathname === "/AldeiasHistoricas") || (location.pathname === "/AldeiasDoXisto") ||
           (location.pathname === "/Romarias") || (location.pathname === "/Alpedrinha")) {
@@ -61,8 +60,8 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
     };
   
     window.addEventListener("scroll", handleScroll);
+    handleScroll();  // Execute handleScroll initially to set the correct active section
   
-    // Limpeza do event listener ao desmontar o componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -79,7 +78,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
   };
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); // Alterna entre aberto e fechado
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -89,11 +88,9 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
           <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo" className="logo" />
         </div>
         <div className="links-top-bar">
-          {/* Ícone do menu para dispositivos móveis e tablets */}
           <div className="cdv-menu-icon" onClick={handleMenuToggle}>
             <FontAwesomeIcon icon="bars" className="top-bar-icon" />
           </div>
-          {/* Menu lateral */}
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
             <div className="logo-container">
               <img src="/images/Logo/CasaDaVilaLogo.png" alt="Logo" className="logo" />
@@ -107,7 +104,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             <a href="/#about-us-id" 
               className={activeSection === 'about-us-id' ? 'cdv-active-link' : ''}
               onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
+                e.preventDefault();
                 handleLinkClick('about-us-id');
               }}>
               <span>{t('about-us-label')}</span>
@@ -116,35 +113,35 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               className={activeSection === 'spaces-id' ? 'cdv-active-link' : ''} 
               href="/#spaces-id"
               onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
+                e.preventDefault();
                 handleLinkClick('spaces-id');
               }}
             >
-              <span>Comodidades</span>
+              <span>{t('spaces-label')}</span>
             </a>
             <a href="/Galeria" 
               className={activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''} 
               onClick={(e) => {
                 window.location.href = '/Galeria';
               }}>
-              <span>Galeria</span>
+              <span>{t('gallery-label')}</span>
             </a>
             <a href="/#exps-id" 
               onClick={(e) => {
-                e.preventDefault(); // Impede o comportamento padrão de navegação
+                e.preventDefault();
                 handleLinkClick('exps-id');
               }}
               className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
-              <span>Experiências</span>
+              <span>{t('experiences-label')}</span>
             </a>
             <a href="/Reservar" className={activeSection === 'reservar-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
-              <span>Reservar</span>
+              <span>{t('reservar-label')}</span>
             </a>
             <div className="side-menu-contacts">
               <span onClick={() => window.location.href = 'mailto:casadavila.alpedrinha@hotmail.com'}>
-              casadavila.alpedrinha@hotmail.com
+              {t('contact-email')}
               </span>
-              <span>(+351) 964 849 002</span>
+              <span>{t('contact-phone')}</span>
               <div>
                 <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
                 <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon"/>
@@ -160,7 +157,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
           <a href="/#about-us-id" 
             className={`desktop-topbar-link ${activeSection === 'about-us-id' ? 'cdv-active-link' : ''}`}
             onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
+              e.preventDefault();
               handleLinkClick('about-us-id');
             }}>
             <span>{t('about-us-label')}</span>
@@ -169,50 +166,50 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             className={`desktop-topbar-link ${activeSection === 'spaces-id' ? 'cdv-active-link' : ''}`}
             href="#spaces-id"
             onClick={(e) => {
-              e.preventDefault(); // Impede o comportamento padrão de navegação
+              e.preventDefault();
               handleLinkClick('spaces-id');
             }}
           >
-            <span>Comodidades</span>
+            <span>{t('spaces-label')}</span>
           </a>
           <a href="/Galeria" 
             className={`desktop-topbar-link ${activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''}`} 
             onClick={(e) => {
               window.location.href = '/Galeria';
             }}>
-            <span>Galeria</span>
+            <span>{t('gallery-label')}</span>
           </a>
           <a href="/#exps-id"
           onClick={(e) => {
-            e.preventDefault(); // Impede o comportamento padrão de navegação
+            e.preventDefault();
             handleLinkClick('exps-id');
           }}
           className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}>
-            <span>Experiências</span>
+            <span>{t('experiences-label')}</span>
                <div className="dropdown-menu-container">
                 <div className="dropdown-menu-sub-container">
                   <a href="/AldeiasHistoricas">
-                    <div className="dropdown-menu-option">Aldeias Históricas</div>
+                    <div className="dropdown-menu-option">{t('historical-villages-label')}</div>
                   </a>
                   <a href="/AldeiasDoXisto">
-                    <div className="dropdown-menu-option">Aldeias Do Xisto</div>
+                    <div className="dropdown-menu-option">{t('shale-villages-label')}</div>
                   </a>
                   <a href="/SerraDaGardunha">
-                    <div className="dropdown-menu-option">Serra da Gardunha</div>
+                    <div className="dropdown-menu-option">{t('gardunha-mountain-label')}</div>
                   </a>
                   <a href="/SerraDaEstrela">
-                    <div className="dropdown-menu-option">Serra da Estrela</div>
+                    <div className="dropdown-menu-option">{t('estrela-mountain-label')}</div>
                   </a>
                   <a href="/Romarias">
-                    <div className="dropdown-menu-option">Festas e Romarias</div>
+                    <div className="dropdown-menu-option">{t('festivals-label')}</div>
                   </a>
                 </div>
               </div>
           </a>
           <button onClick={(e) => {
-            e.preventDefault(); // Impede o comportamento padrão de navegação
+            e.preventDefault();
             window.location.href = '/Reservar';
-          }} className="desktop-topbar-link cdv-button-secundary">Reservar</button>
+          }} className="desktop-topbar-link cdv-button-secundary">{t('reservar-label')}</button>
         </div>
       </div>
     </div>

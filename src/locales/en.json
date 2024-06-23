@@ -1,4 +1,44 @@
 {
     "home-label": "Home",
-    "about-us-label": "About Us"
+    "about-us-label": "About Us",
+    "spaces-label": "Amenities",
+    "gallery-label": "Gallery",
+    "experiences-label": "Experiences",
+    "reservar-label": "Book",
+    "historical-villages-label": "Historical Villages",
+    "shale-villages-label": "Shale Villages",
+    "gardunha-mountain-label": "Gardunha Mountain",
+    "estrela-mountain-label": "Estrela Mountain",
+    "festivals-label": "Festivals",
+    "contact-email": "casadavila.alpedrinha@hotmail.com",
+    "contact-phone": "(+351) 964 849 002",
+    "about-us": {
+        "title": "About Us",
+        "paragraph1": "Hello! I'm Maria da Conceição, but you can call me São. It is with great pleasure that I present to you the story behind Casa da Vila. This journey began with a precious inheritance left by my parents: an abandoned stone house, waiting for a new life. I then decided to embark on this exciting adventure of reconstruction, a true labor of love and dedication in honor of my parents.",
+        "paragraph2": "Little by little, with a heart full of dreams, I gave life to this space that is now Casa da Vila.",
+        "paragraph3": "Even though I was already close to retirement, I couldn't stop working. I found in decoration and the art of receiving people my great passions, and decided to unite these two worlds in this project. Every detail, from the carefully chosen furniture to the small surprises I prepared for our guests, reflects my dedication to providing a truly welcoming and memorable stay.",
+        "paragraph4": "With love,",
+        "signature": "Maria da Conceição Ferreira da Silva"
+    },
+    "booking": {
+        "book": "Book",
+        "onWebsite": "On the website",
+        "phone": "Phone",
+        "email": "Email",
+        "or": "or",
+        "fillForm": "Fill out the form below",
+        "name": "Name",
+        "checkInDate": "Check-in Date",
+        "checkOutDate": "Check-out Date",
+        "adults": "Number of Adults",
+        "children": "Number of Children",
+        "observations": "Observations",
+        "sendReservation": "Send Reservation",
+        "errors": {
+          "checkInFuture": "Check-in date must be in the future.",
+          "checkOutAfterCheckIn": "Check-out date must be after the check-in date.",
+          "checkOutMaxTwoMonths": "The interval between dates cannot be more than 2 months."
+        },
+        "reservationFor": "Reservation for"
+    }
 }

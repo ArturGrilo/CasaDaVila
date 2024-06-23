@@ -457,13 +457,31 @@ input[type="date"] {
   }
 
   .cdv-flag-container{
+    z-index: 9999 !important;
     bottom: 10px !important; /* Distância do fundo da janela de visualização */
-    left: 10px !important;
+    left: 12px !important;
+  }
+
+  .whatsapp-link {
+    button {
+        width: 32px;
+        height: 32px;
+    }
+  }
+
+  .whatsapp-link {
+    .whatsapp-icon {
+        color: #fff;
+        font-size: 22px;
+    }
   }
 
   .go-to-top-link {
-    bottom: 65px; /* Distância do fundo da janela de visualização */
+    bottom: 45px;
     right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
   }
 
   .cdv-title {

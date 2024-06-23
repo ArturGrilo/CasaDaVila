@@ -10,9 +10,8 @@
     color: white; /* Cor do texto */
     cursor: pointer; /* Cursor do mouse como um ponteiro */
     padding: 18px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 3px; /* Bordas arredondadas */
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
   }
   
   .go-to-top-link:hover {

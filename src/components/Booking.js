@@ -1,12 +1,14 @@
-import '../styles/Bookings.css';
-import TopBar from "../components/TopBar";
-import Footer from "../components/Footer";
 import React, { useEffect, useCallback, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TopBar from "../components/TopBar";
+import Footer from "../components/Footer";
+import "../styles/Bookings.css";
 
 const BookingPage = () => {
+  const { t } = useTranslation(['booking', 'common']); // Carrega as traduções dos namespaces 'booking' e 'common'
   const [errors, setErrors] = useState({});
   const [checkInDate, setCheckInDate] = useState('');
   const [checkOutDate, setCheckOutDate] = useState('');
@@ -33,13 +35,13 @@ const BookingPage = () => {
     const newErrors = {};
 
     if (checkInDateObj < currentDate) {
-      newErrors.checkInDate = 'A data de check-in deve ser no futuro.';
+      newErrors.checkInDate = t('booking:errors.checkInFuture');
     }
     if (checkOutDateObj <= checkInDateObj) {
-      newErrors.checkOutDate = 'A data de check-out deve ser após a data de check-in.';
+      newErrors.checkOutDate = t('booking:errors.checkOutAfterCheckIn');
     }
     if (dateDifference > 60) {
-      newErrors.checkOutDate = 'O intervalo entre as datas não pode ser maior que 2 meses.';
+      newErrors.checkOutDate = t('booking:errors.checkOutMaxTwoMonths');
     }
 
     setErrors(newErrors);
@@ -52,15 +54,15 @@ const BookingPage = () => {
     const name = form.elements['name'].value;
 
     if (validateDates(checkInDate, checkOutDate)) {
-      let message = `Reserva para ${name}:\n`;
-      message += `- Data de Check-in: ${checkInDate}\n`;
-      message += `- Data de Check-out: ${checkOutDate}\n`;
-      message += `- Número de Adultos: ${adults}\n`;
+      let message = `${t('booking:reservationFor')} ${name}:\n`;
+      message += `- ${t('booking:checkInDate')}: ${checkInDate}\n`;
+      message += `- ${t('booking:checkOutDate')}: ${checkOutDate}\n`;
+      message += `- ${t('booking:adults')}: ${adults}\n`;
       if (children > 0) {
-        message += `- Número de Crianças: ${children}\n`;
+        message += `- ${t('booking:children')}: ${children}\n`;
       }
       if (form.elements['observations'].value.trim() !== '') { 
-        message += `- Observações: ${form.elements['observations'].value}`;
+        message += `- ${t('booking:observations')}: ${form.elements['observations'].value}`;
       }
 
       const whatsappUrl = `whatsapp://send?phone=+351964849002&text=${encodeURIComponent(message)}`;
@@ -97,7 +99,7 @@ const BookingPage = () => {
     <section id="booking-page-id" className="cdv-section">
       <div className="cdv-img-alt-page">
         <div className="cdv-title">
-          <span>Reservar</span>
+          <span>{t('booking:book')}</span>
         </div>
         <div className="cdv-img-parallax-alt-page">
           <div className='cdv-red'></div>
@@ -108,40 +110,40 @@ const BookingPage = () => {
         <div className='tag-desconto'>
           <div className="tag-triangle"></div>
           <div className="tag-content">
-              <span className="desconto-text">-10%</span>
-              <span className="desconto-text-bigger">No site</span>
+            <span className="desconto-text">-10%</span>
+            <span className="desconto-text-bigger">{t('booking:onWebsite')}</span>
           </div>
-      </div>
+        </div>
         <div className="reservation-container">
           <div className="reservation-call">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faPhoneVolume} className="cdv-card-icon"/>
             </div>
-            <div className='reservation-text'>Telemóvel</div>
+            <div className='reservation-text'>{t('common:contact-phone')}</div>
             <a className='reservation-title' href="tel:+351964849002">+351 964 849 002</a>
           </div>
           <div className="reservation-call">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faEnvelope} className="cdv-card-icon"/>
             </div>
-            <div className='reservation-text'>Email</div>
+            <div className='reservation-text'>{t('common:contact-email')}</div>
             <a className='reservation-title alt' href="mailto:casadavila.alpedrinha@hotmail.com">casadavila.alpedrinha@hotmail.com</a>
           </div>
         </div>
-        <div className='cdv-active-link'>ou</div>
+        <div className='cdv-active-link'>{t('booking:or')}</div>
 
         <div className="reservation-form">
           <div className='reservation-call-icon'>
             <FontAwesomeIcon icon={faWhatsapp} className="cdv-card-icon"/>
           </div>
-          <div className='reservation-text'>Preencha o formulário abaixo</div>
+          <div className='reservation-text'>{t('booking:fillForm')}</div>
           <form onSubmit={handleSubmit}>
             <div>
-              <label className='cdv-text' htmlFor="name">Nome:</label>
+              <label className='cdv-text' htmlFor="name">{t('booking:name')}:</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div>
-              <label className='cdv-text' htmlFor="check-in-date">Data de Check-in:</label>
+              <label className='cdv-text' htmlFor="check-in-date">{t('booking:checkInDate')}:</label>
               <input 
                 type="date" 
                 id="check-in-date" 
@@ -153,7 +155,7 @@ const BookingPage = () => {
               {errors.checkInDate && <div className="error-text">{errors.checkInDate}</div>}
             </div>
             <div>
-              <label className='cdv-text' htmlFor="check-out-date">Data de Check-out:</label>
+              <label className='cdv-text' htmlFor="check-out-date">{t('booking:checkOutDate')}:</label>
               <input 
                 type="date" 
                 id="check-out-date" 
@@ -165,7 +167,7 @@ const BookingPage = () => {
               {errors.checkOutDate && <div className="error-text">{errors.checkOutDate}</div>}
             </div>
             <div>
-              <label className='cdv-text' htmlFor="adults">Número de Adultos:</label>
+              <label className='cdv-text' htmlFor="adults">{t('booking:adults')}:</label>
               <input 
                 type="number" 
                 id="adults" 
@@ -176,7 +178,7 @@ const BookingPage = () => {
               />
             </div>
             <div>
-              <label className='cdv-text' htmlFor="children">Número de Crianças:</label>
+              <label className='cdv-text' htmlFor="children">{t('booking:children')}:</label>
               <input 
                 type="number" 
                 id="children" 
@@ -187,7 +189,7 @@ const BookingPage = () => {
               />
             </div>
             <div>
-              <label className='cdv-text' htmlFor="observations">Observações:</label>
+              <label className='cdv-text' htmlFor="observations">{t('booking:observations')}:</label>
               <textarea 
                 id="observations" 
                 name="observations" 
@@ -195,7 +197,7 @@ const BookingPage = () => {
                 style={{ width: '100%', resize: 'none' }} 
               ></textarea>
             </div>
-            <button className='cdv-button-secundary' type="submit">Enviar Reserva</button>
+            <button className='cdv-button-secundary' type="submit">{t('booking:sendReservation')}</button>
           </form>
         </div>
       </div>

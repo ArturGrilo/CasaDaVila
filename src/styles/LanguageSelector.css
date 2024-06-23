@@ -1,19 +1,19 @@
-.cdv-flag-container{
-    position: fixed; /* Botão fixo na tela */
-    bottom: 5%; /* Distância do fundo da janela de visualização */
-    left: 30px; /* Distância da direita da janela de visualização */
-    z-index: 99; /* Certifique-se de que o botão esteja acima de outros elementos */
-    border: none; /* Sem borda */
-    outline: none; /* Sem destaque de foco */
-    color: white; /* Cor do texto */
-    cursor: pointer; /* Cursor do mouse como um ponteiro */
-    border-radius: 10px; /* Bordas arredondadas */
+.cdv-flag-container {
+    position: fixed;
+    bottom: 5%;
+    left: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: auto;
 }
 
-.cdv-country-icon{
+.cdv-country-icon {
     text-transform: uppercase;
     padding: 10px;
     font-size: 20px;
@@ -25,11 +25,36 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-.cdv-country-icon.active-language{
+.cdv-country-icon.active-language {
     font-weight: bold;
     background-color: var(--color-primary);
 }
 
-.cdv-country-icon:hover{
+.cdv-country-icon:hover {
     font-weight: bold;
+}
+
+.cdv-options {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .cdv-flag-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cdv-country-icon.active-language + .cdv-options {
+        display: flex;
+        gap: 5px;
+    }
+
+    .cdv-country-icon{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        box-shadow: none;
+        padding: 6px;
+    }
 }

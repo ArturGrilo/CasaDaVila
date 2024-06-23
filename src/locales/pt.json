@@ -1,4 +1,44 @@
 {
     "home-label": "Home",
-    "about-us-label": "Sobre Nós"
+    "about-us-label": "Sobre Nós",
+    "spaces-label": "Comodidades",
+    "gallery-label": "Galeria",
+    "experiences-label": "Experiências",
+    "reservar-label": "Reservar",
+    "historical-villages-label": "Aldeias Históricas",
+    "shale-villages-label": "Aldeias Do Xisto",
+    "gardunha-mountain-label": "Serra da Gardunha",
+    "estrela-mountain-label": "Serra da Estrela",
+    "festivals-label": "Festas e Romarias",
+    "contact-email": "casadavila.alpedrinha@hotmail.com",
+    "contact-phone": "(+351) 964 849 002",
+    "about-us": {
+        "title": "Sobre nós",
+        "paragraph1": "Olá! Sou a Maria da Conceição, mas pode tratar-me por São. É com imenso prazer que lhe apresento a história por trás da Casa da Vila. Esta jornada começou com uma preciosa herança deixada pelos meus pais: uma casa de pedra abandonada, à espera de uma nova vida. Decidi então embarcar nesta emocionante aventura de reconstrução, uma verdadeira obra de amor e dedicação em honra dos meus progenitores.",
+        "paragraph2": "Aos poucos, com o coração cheio de sonhos, dei vida a este espaço que agora é a Casa da Vila.",
+        "paragraph3": "Apesar de já estar perto da reforma, não consegui parar de trabalhar. Encontrei na decoração e na arte de receber pessoas as minhas grandes paixões, e decidi unir esses dois mundos neste projeto. Cada detalhe, desde os móveis escolhidos com carinho até às pequenas surpresas que preparei para os nossos hóspedes, reflete a minha dedicação em proporcionar uma estadia verdadeiramente acolhedora e memorável.",
+        "paragraph4": "Com carinho,",
+        "signature": "Maria da Conceição Ferreira da Silva"
+    },
+    "booking": {
+        "book": "Reservar",
+        "onWebsite": "No site",
+        "phone": "Telemóvel",
+        "email": "Email",
+        "or": "ou",
+        "fillForm": "Preencha o formulário abaixo",
+        "name": "Nome",
+        "checkInDate": "Data de Check-in",
+        "checkOutDate": "Data de Check-out",
+        "adults": "Número de Adultos",
+        "children": "Número de Crianças",
+        "observations": "Observações",
+        "sendReservation": "Enviar Reserva",
+        "errors": {
+          "checkInFuture": "A data de check-in deve ser no futuro.",
+          "checkOutAfterCheckIn": "A data de check-out deve ser após a data de check-in.",
+          "checkOutMaxTwoMonths": "O intervalo entre as datas não pode ser maior que 2 meses."
+        },
+        "reservationFor": "Reserva para"
+    }
 }
