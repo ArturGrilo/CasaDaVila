@@ -141,8 +141,8 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               <span>Reservar</span>
             </a>
             <div className="side-menu-contacts">
-              <span onClick={() => window.location.href = 'mailto:casa_da_vila@gmail.com'}>
-                casa_da_vila@gmail.com
+              <span onClick={() => window.location.href = 'mailto:casadavila.alpedrinha@hotmail.com'}>
+              casadavila.alpedrinha@hotmail.com
               </span>
               <span>(+351) 964 849 002</span>
               <div>

@@ -129,4 +129,6 @@
 
 .modal-content img{
   height: 100%;
+  max-width: 97vw;
+  object-fit: cover;
 }

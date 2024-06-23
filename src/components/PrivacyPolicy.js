@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
                 <p>Podemos atualizar esta política de privacidade periodicamente. Recomendamos que você revise esta página regularmente para estar ciente de quaisquer alterações.</p>
 
                 <div className='cdv-sub-title'>Contate-nos</div>
-                <p>Se você tiver alguma dúvida ou preocupação sobre nossa política de privacidade, entre em contato conosco através deste endereço de email arturgriloo1994@hotmail.com ou através deste número de telemóvel (+351) 969 303 119.</p>
+                <p>Se você tiver alguma dúvida ou preocupação sobre nossa política de privacidade, entre em contato conosco através deste endereço de email casadavila.alpedrinha@hotmail.com ou através deste número de telemóvel (+351) 969 303 119.</p>
             </div>
             <Footer />
         </div>

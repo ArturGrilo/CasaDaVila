@@ -40,8 +40,8 @@ function Footer() {
             </div>
             <div className="footer-column-3">
               <span className="footer-title">Contactos</span>
-              <span className="footer-text" onClick={() => window.location.href = 'mailto:contato@meusite.com'}>
-                casa_da_vila@gmail.com
+              <span className="footer-text" onClick={() => window.location.href = 'mailto:casadavila.alpedrinha@hotmail.com'}>
+                casadavila.alpedrinha@hotmail.com
               </span>
               <span className="footer-text">Tel: (+351) 964 849 002</span>
               <div>
