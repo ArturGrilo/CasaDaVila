@@ -406,7 +406,7 @@ input[type="date"] {
 
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1900px) {
   .logo{
     max-height: 120px;
   }
