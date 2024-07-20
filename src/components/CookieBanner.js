@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import "../styles/CookieBanner.css";
 
 const CookieBanner = () => {
+    const { t } = useTranslation();
+
     useEffect(() => {
         // Verifica se o banner de cookies já foi aceito pelo usuário
         const cookiesAccepted = localStorage.getItem('cookiesAccepted');
@@ -48,9 +51,9 @@ const CookieBanner = () => {
     return (
         <div id="cookie-banner" className="cookie-banner">
             <div className="cookie-content">
-                <p>Este site utiliza cookies para garantir a melhor experiência para você.</p>
-                <button className="cdv-button-secundary" id="accept-cookies">Aceitar cookies</button>
-                <a href="/PoliticaDePrivacidade" className='cdv-link'>Saiba mais</a>
+                <p>{t('cookieBanner.message')}</p>
+                <button className="cdv-button-secundary" id="accept-cookies">{t('cookieBanner.accept')}</button>
+                <a href="/PoliticaDePrivacidade" className='cdv-link'>{t('cookieBanner.learnMore')}</a>
             </div>
         </div>
     );

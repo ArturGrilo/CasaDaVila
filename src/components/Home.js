@@ -8,7 +8,7 @@ const Home = () => {
     "/images/HomeOutside5.jpeg",
     "/images/HomeInside2.jpeg",
     "/images/HomePageImage.jpeg"
-  ], []); // Empty dependency array ensures that images is only initialized once
+  ], []); 
 
   useEffect(() => {
     const interval = setInterval(() => {

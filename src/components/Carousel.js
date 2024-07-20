@@ -13,7 +13,7 @@ const Carousel = ({ images }) => {
     }, 3000); // Intervalo de 5 segundos
 
     return () => clearInterval(intervalId); // Limpa o intervalo quando o componente é desmontado
-  }, []); // Executa apenas uma vez ao montar o componente
+  }, []);
 
   const settings = {
     dots: true,

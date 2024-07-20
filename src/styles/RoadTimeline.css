@@ -108,6 +108,7 @@
 }
 
 .cdv-road-to-icon{
+  display: none !important;
   gap: 40px;
   padding-right: 10px;
   position: absolute;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import "../styles/LanguageSelector.css";
 
+
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('languagePreference') || 'pt');
@@ -9,10 +10,10 @@ const LanguageSelector = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const changeLanguage = (language) => {
-    window.location.reload();
     localStorage.setItem('languagePreference', language);
     setSelectedLanguage(language);
     i18n.changeLanguage(language);
+    window.location.replace('/');
     if (isMobile) setShowOptions(false);
   };
 

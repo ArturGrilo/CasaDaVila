@@ -138,7 +138,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               <span>{t('reservar-label')}</span>
             </a>
             <div className="side-menu-contacts">
-              <span onClick={() => window.location.href = 'mailto:casadavila.alpedrinha@hotmail.com'}>
+              <span onClick={() => window.location.href = 'mailto:casadavila.pt@hotmail.com'}>
               {t('contact-email')}
               </span>
               <span>{t('contact-phone')}</span>

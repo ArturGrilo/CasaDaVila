@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import "../styles/Rooms.css";
-import { faArrowRight, faTimes} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Spaces from './Spaces'
+import Spaces from './Spaces';
 
 function Rooms() {
+  const { t } = useTranslation();
   const [popupOpen, setPopupOpen] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState(0);
 
@@ -23,28 +25,20 @@ function Rooms() {
     <section id="spaces-id" className="cdv-section">
       <div className="cdv-main-container">
         <div className="cdv-title">
-          <span>Comodidades</span>
+          <span>{t('rooms.amenities')}</span>
         </div>
         <div className="cdv-text">
-          <span>
-            Casa Da Vila - Alojamento Local é uma casa de pedra renovada, dividida em dois apartamentos 
-            no rés-do-chão e primeiro andar.
-          </span>
-          <span>
-            O exterior mantém o estilo típico da região, com portas e janelas em tons de vinho, refletindo
-             a cor das cerejas do Fundão.
-          </span>
-          <span>
-            O interior combina rusticidade com um design limpo e acolhedor.
-          </span>
+          <span>{t('rooms.description1')}</span>
+          <span>{t('rooms.description2')}</span>
+          <span>{t('rooms.description3')}</span>
         </div>
         <div className="rooms-grid">
           <div className="cdv-card" onClick={() => openPopup(1)}>
             <img src="/images/RC_6.jpeg" alt="Imagem 2"/>
             <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Apartamento rés de chão</div>
+              <div className="cdv-card-details-title">{t('rooms.groundFloorApartment')}</div>
               <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
+                <span>{t('rooms.seeMore')}</span>
                 <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
               </div>
             </div>
@@ -52,9 +46,9 @@ function Rooms() {
           <div className="cdv-card" onClick={() => openPopup(2)}>
             <img src="/images/PS_3.jpeg" alt="Casa Da Vila - Piso Superior"/>
             <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Apartamento duplex</div>
+              <div className="cdv-card-details-title">{t('rooms.duplexApartment')}</div>
               <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
+                <span>{t('rooms.seeMore')}</span>
                 <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
               </div>
             </div>
@@ -63,7 +57,7 @@ function Rooms() {
         <div className={`cdv-popup ${popupOpen ? 'cdv-popup-open' : ''}`}>
           <div className="cdv-popup-content">
             <Spaces space={selectedRoom} />
-            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times"  onClick={closePopup}/>
+            <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closePopup}/>
           </div>
         </div>
       </div>

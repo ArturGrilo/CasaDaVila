@@ -7,7 +7,6 @@ const ButtonTop = () => {
     useEffect(() => {
         // Adiciona o evento de rolagem quando o componente for montado
         window.addEventListener("scroll", scrollFunction);
-        // Remove o evento de rolagem quando o componente for desmontado
         return () => {
             window.removeEventListener("scroll", scrollFunction);
         };

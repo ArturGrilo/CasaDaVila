@@ -1,106 +1,81 @@
 import "../styles/Experiences.css";
-import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 function Experiences() {
-  /*const videoRef = useRef(null);
-
-  useEffect(() => {
-    const playVideo = () => {
-      const video = videoRef.current;
-      if (video.paused) {
-        video.play();
-      }
-    };
-
-    // Reproduzir o vídeo automaticamente após 1 segundo
-    setTimeout(() => {
-      playVideo();
-    }, 1000); // Atraso de 1 segundo
-
-    // Remover o áudio do vídeo para permitir a reprodução automática
-    const video = videoRef.current;
-    video.muted = true;
-
-    // Adicionar um evento de carga do vídeo para garantir que o vídeo esteja pronto para a reprodução
-    video.addEventListener('canplay', playVideo);
-
-    // Remover o evento de carga quando o componente for desmontado
-    return () => {
-      video.removeEventListener('canplay', playVideo);
-    };
-  }, []);*/
+  const { t } = useTranslation();
 
   return (
     <section id="exps-id" className="cdv-section">
       <div className="cdv-main-container">
         <div className="cdv-title">
-          <span>Experiências</span>
+          <span>{t('experiences.title')}</span>
         </div>
         <div className='experiences-interval'>
-        <div className="cdv-grid">
-          <a className="cdv-card" href="/Alpedrinha">
-            <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Alpedrinha</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+          <div className="cdv-grid">
+            <a className="cdv-card" href={t('routes.alpedrinha')}>
+              <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.alpedrinha')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/AldeiasHistoricas">
-            <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Aldeias Históricas</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+            </a>
+            <a className="cdv-card" href={t('routes.historicalVillages')}>
+              <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.historicalVillages')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/AldeiasDoXisto">
-            <img src="/images/Experiencias/AldeiasDoXisto.jpeg" alt="Aldeias Do Xisto"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Aldeias do Xisto</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+            </a>
+            <a className="cdv-card" href={t('routes.schistVillages')}>
+              <img src="/images/Experiencias/AldeiasDoXisto.jpeg" alt="Aldeias Do Xisto"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.schistVillages')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/SerraDaGardunha">
-            <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Serra da Gardunha</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+            </a>
+            <a className="cdv-card" href={t('routes.gardunhaMountain')}>
+              <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.gardunhaMountain')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/SerraDaEstrela">
-            <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Serra da Estrela</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+            </a>
+            <a className="cdv-card" href={t('routes.estrelaMountain')}>
+              <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.estrelaMountain')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-          <a className="cdv-card" href="/Romarias">
-            <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Serra Da Estrela"/>
-            <div className="cdv-card-details">
-              <div className="cdv-card-details-title">Festas e Romarias</div>
-              <div className="cdv-card-details-see-more">
-                <span>Ver mais</span>
-                <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+            </a>
+            <a className="cdv-card" href={t('routes.festivals')}>
+              <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Festas e Romarias"/>
+              <div className="cdv-card-details">
+                <div className="cdv-card-details-title">{t('experiences.festivities')}</div>
+                <div className="cdv-card-details-see-more">
+                  <span>{t('experiences.seeMore')}</span>
+                  <FontAwesomeIcon icon={faArrowRight} className="cdv-card-icon"/>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

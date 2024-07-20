@@ -406,9 +406,180 @@ input[type="date"] {
 
 
 
+@media only screen and (max-width: 1300px) {
+  .logo{
+    max-height: 120px;
+  }
+
+  .links-top-bar{
+    gap: 25px;
+  }
+
+  .links-top-bar a {
+    font-size: 20px;
+  }
+
+  .links-top-bar .cdv-button-secundary {
+    font-size: 20px;
+  }
+
+  .cdv-country-icon {
+    font-size: 15px !important;
+    padding: 11px 8px !important;
+  }
+
+  .whatsapp-link {
+    button {
+        font-size: 12px;
+        font-weight: bold;
+        width: 38px;
+        height: 40px;
+    }
+  }
+
+  .whatsapp-link {
+    .whatsapp-icon {
+        font-size: 30px;
+    }
+  }
+
+  .cdv-title {
+    font-size: 30px;
+  }
+
+  .cdv-text {
+    font-size: 18px;
+  }
+
+  .cdv-text {
+    font-size: 20px;
+  }
+
+  .scrolled .links-top-bar a {
+    font-size: 16px;
+  }
+
+  .scrolled .links-top-bar .cdv-button-secundary {
+    font-size: 18px;
+  }
+
+  .scrolled .logo {
+    max-height: 80px;
+  }
+
+  .scrolled .top-bar-container,
+  .top-bar-container {
+    padding: 0 20px;
+  }
+
+  .go-to-top-link {
+    bottom: calc(5% + 45px);
+    padding: 13px;
+  }
+
+  #words-section-id span {
+    font-size: 35px !important;
+  }
+
+  .cdv-button-secundary {
+    padding: 10px;
+  }
+
+  .about-us-signature {
+    font-size: 30px;
+  }
+
+  #words-section-id img {
+    width: 260px !important;
+    left: calc(50% - 130px) !important;
+  }
+
+  #words-section-id{
+    height: 220px !important;
+  }
+
+  .cdv-card-details-title {
+    font-size: 25px;
+  }
+
+  #gallery-section-id .cdv-button-primary {
+    font-size: 28px !important;
+  }
+
+  #gallery-section-id {
+    height: 220px !important;
+  }
+
+  .rooms-grid {
+    gap: 40px;
+  }
+
+  .cdv-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .cdv-card-details {
+    height: 70px;
+  }
+
+  .cdv-card-details-see-more {
+    font-size: 18px;
+  }
+
+  .break-section-title {
+    font-size: 37px;
+  }
+
+  .break-section-text {
+    font-size: 20px;
+  }
+
+  .cdv-button-primary {
+    font-size: 20px;
+  }
+
+  .feedback-aspas{
+    font-size: 4em;
+  }
+
+  .feedback-text{
+    font-size: 22px;
+  }
+
+  .feedback-text {
+    height: 160px;
+  }
+
+  .feedback-author,
+  .feedback-country {
+    font-size: 18px;
+  }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .footer-text{
+    font-size: 16px;
+  }
+
+  .footer-copyright-text {
+    font-size: 16px;
+  }
+
+  .cdv-site-credits {
+    font-size: 14px;
+  }
+
+  .footer-bigger-icon {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 870px) {
   .logo{
     max-height: 100px;
   }
@@ -454,6 +625,7 @@ input[type="date"] {
   .whatsapp-link{
     bottom: 10px;
     right: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4)
   }
 
   .cdv-flag-container{
@@ -482,6 +654,7 @@ input[type="date"] {
     width: 32px;
     height: 32px;
     padding: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   }
 
   .cdv-title {

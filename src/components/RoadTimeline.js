@@ -20,18 +20,18 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
     }, [imgpath]);
 
     useEffect(() => {
-    window.scrollTo(0, 0);
-    setShowContent(true);
+        window.scrollTo(0, 0);
+        setShowContent(true);
 
-    if (imgpath !== "") {
-        const interval = setInterval(() => {
-        if (applyBackgroundImage()) {
-            clearInterval(interval); // Stop checking once the image is applied
+        if (imgpath !== "") {
+            const interval = setInterval(() => {
+            if (applyBackgroundImage()) {
+                clearInterval(interval); // Stop checking once the image is applied
+            }
+            }, 100); // Check every 100ms
+
+            return () => clearInterval(interval); // Cleanup interval on component unmount
         }
-        }, 100); // Check every 100ms
-
-        return () => clearInterval(interval); // Cleanup interval on component unmount
-    }
     }, [imgpath, applyBackgroundImage]);
 
     return (

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Feedback.css";
+import { useTranslation } from 'react-i18next';
 
 const Feedback = () => {
-  const [feedbacks] = useState([
-    { text: "A casa é muito acolhedora e bem equipada. Fomos muito bem recebidos. Uma experiência a repetir.", author: "Manuel", country: "Portugal" },
-    { text: "Tudo espetacular, casa limpa e cozinha com o essencial para se cozinhar. Dona São super simpática.", author: "Alexandra", country: "Portugal" },
-    { text: "Aconchego, conforto e decoração. Mas, também, a disponibilidade e simpatia da proprietária.", author: "Pedro", country: "Portugal" },
-    { text: "Excelente aproveitamento das áreas. Boa iluminação natural. Bastante privacidade.", author: "Martins", country: "Portugal" },
-  ]);
+  const { t } = useTranslation();
+  const feedbacks = t('feedback.testimonials', { returnObjects: true });
 
   const [currentFeedbackIndex, setCurrentFeedbackIndex] = useState(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
@@ -38,7 +35,7 @@ const Feedback = () => {
     <section id="feedback-id" className="feedback-section">
       <div className="feedback-main-container">
         <div className="cdv-title">
-          <span>Testemunhos</span>
+          <span>{t('feedback.title')}</span>
         </div>
         <div className="feedback-aspas">"</div>
         <div className={`feedback-text-container ${fadeClass}`}>

@@ -10,8 +10,14 @@
     "gardunha-mountain-label": "Gardunha Mountain",
     "estrela-mountain-label": "Estrela Mountain",
     "festivals-label": "Festivals",
-    "contact-email": "casadavila.alpedrinha@hotmail.com",
+    "contact-email": "casadavila.pt@hotmail.com",
     "contact-phone": "(+351) 964 849 002",
+    "whatsAppLink": {
+      "text": "Chat on WhatsApp"
+    },
+    "gallery":{
+        "text": "Gallery"
+    },
     "about-us": {
         "title": "About Us",
         "paragraph1": "Hello! I'm Maria da Conceição, but you can call me São. It is with great pleasure that I present to you the story behind Casa da Vila. This journey began with a precious inheritance left by my parents: an abandoned stone house, waiting for a new life. I then decided to embark on this exciting adventure of reconstruction, a true labor of love and dedication in honor of my parents.",
@@ -40,5 +46,316 @@
           "checkOutMaxTwoMonths": "The interval between dates cannot be more than 2 months."
         },
         "reservationFor": "Reservation for"
-    }
+    },
+    "words-break-section": {
+        "simplicity": "Simplicity",
+        "comfort": "Comfort",
+        "history": "History",
+        "separator": "•"
+    },
+    "rooms": {
+        "amenities": "Amenities",
+        "description1": "Casa Da Vila - Local Accommodation is a renovated stone house, divided into two apartments on the ground floor and first floor.",
+        "description2": "The exterior maintains the typical style of the region, with doors and windows in wine tones, reflecting the color of Fundão cherries.",
+        "description3": "The interior combines rusticity with a clean and cozy design.",
+        "groundFloorApartment": "Casa Da Vila I",
+        "duplexApartment": "Casa Da Vila II",
+        "seeMore": "See more"
+    },
+    "gallery-break-section": {
+        "viewGallery": "View our gallery"
+    },
+    "experiences": {
+        "title": "Experiences",
+        "seeMore": "See more",
+        "alpedrinha": "Alpedrinha",
+        "historicalVillages": "Historical Villages",
+        "schistVillages": "Schist Villages",
+        "gardunhaMountain": "Gardunha Mountain",
+        "estrelaMountain": "Estrela Mountain",
+        "festivities": "Festivities and Pilgrimages"
+    },
+    "routes": {
+        "historicalVillages": "/en/HistoricalVillages",
+        "schistVillages": "/en/SchistVillages",
+        "gardunhaMountain": "/en/GardunhaMountain",
+        "estrelaMountain": "/en/EstrelaMountain",
+        "alpedrinha": "/en/Alpedrinha",
+        "festivals": "/en/Festivals"
+    },
+    "RoadTimelineHistorical": {
+        "title": "Historical Villages",
+        "description": [
+          "Casa da Vila is a true treasure for Heritage and History enthusiasts.",
+          "Located in a region surrounded by various Historical Villages, such as our neighbor Castelo Novo, Monsanto, Belmonte, and Sortelha.",
+          "From here, you can embark on an authentic journey through time, exploring the heart of Portugal.",
+          "Enjoy our suggested itinerary, we hope you like it!"
+        ],
+        "routes": [
+          {
+            "title": "Castelo Novo (6.5km)",
+            "description": [
+              "In the heart of Serra da Gardunha, Castelo Novo rises in shades of green and gray.",
+              "In the heart of Serra da Gardunha, the Historical Village of Castelo Novo rises in shades of green and gray. Built on granite, Castelo Novo preserves a unique architectural heritage."
+            ],
+            "image": "/images/CasteloNovo.jpeg"
+          },
+          {
+            "title": "Monsanto (41km)",
+            "description": [
+              "Perched on a hilltop that commands views from most horizons. A unique charm.",
+              "Perched on a hilltop that commands views from most horizons, the Historical Village of Monsanto holds a unique charm."
+            ],
+            "image": "/images/Monsanto.jpeg"
+          },
+          {
+            "title": "Belmonte (44km)",
+            "description": [
+              "Land of Pedro Álvares Cabral, offering a wide view of Serra da Estrela.",
+              "Land of Pedro Álvares Cabral, located in the heart of Cova da Beira and with a wide view of the eastern slope of Serra da Estrela, the village of Belmonte fully justifies the characteristics that gave it its name."
+            ],
+            "image": "/images/Belmonte.jpeg"
+          },
+          {
+            "title": "Sortelha (56.5km)",
+            "description": [
+              "Its urban and architectural features have remained unchanged since the Renaissance.",
+              "Sortelha is one of the most beautiful and ancient Portuguese villages, having maintained its urban and architectural features unchanged since the Renaissance to this day."
+            ],
+            "image": "/images/Sortelha.jpeg"
+          }
+        ],
+        "bottomLogo": "/images/HistoricalVillagesOfPortugal.png"
+    },
+    "RoadTimelineSchist": {
+      "title": "Schist Villages",
+      "description": [
+          "Among the winding mountains of Estrela, Açor, and Gardunha, or along the serene banks of the Tejo, Ocreza, and Zêzere rivers, lies the network of the 27 Schist Villages, an invaluable treasure of our region and heritage.",
+          "For adventurers seeking this immense historical, cultural, and natural wealth, Casa Da Vila suggests two of the most captivating Schist Villages that, curiously, are located in our municipality of Fundão.",
+          "Enjoy our suggested itinerary, and we hope you like it!"
+      ],
+      "routes": [
+        { 
+            "title": "Barroca (39.8km)", 
+            "description": [
+                "On a small hill, flanked by two streams, near the Zêzere river.",
+                "The oldest part of the village is situated along a small hill, flanked by two deeply carved streams, forming a set perpendicular to the course of the Zêzere, with which it borders."
+            ], 
+            "image": "/images/Barroca.png" 
+        },
+        { 
+            "title": "Janeiro de Cima (52.1km)", 
+            "description": [
+                "Walk through the maze of winding streets where the houses reveal their characteristic schist facades.",
+                "Janeiro de Cima is located on the left bank of the Zêzere, surrounded by an extensive blanket of agricultural land. Walk through the maze of winding streets where the houses reveal their characteristic schist facades."
+            ],
+            "image": "/images/JaneiroDeCima.jpeg" 
+        }
+      ], 
+      "bottomLogo": "logo-aldeias-xisto.png"
+    },
+    "RoadTimelineGardunha": {
+      "title": "Gardunha Mountain",
+      "description": [
+          "Explore its trails and marvel at the stunning panoramic views as you venture through the slopes of this imposing mountain range.",
+          "Come and explore this regional treasure and be enchanted by its unique beauty.",
+          "Enjoy our suggested itinerary, and we hope you like it!"
+      ],
+      "routes": [
+          {
+              "title": "Hiking Trails, Trail Running, or MTB",
+              "description": [
+                  "Traverse the Routes of Serra da Gardunha, an immersive and fascinating journey.",
+                  "Explore the Routes of Serra da Gardunha, an immersive and fascinating journey through the Natura 2000 natural reserve and the Naturtejo Geopark."
+              ],
+              "image": "/images/PercursosGardunha.jpg"
+          },
+          {
+              "title": "Casa do Guarda",
+              "description": [
+                  "Spacious leisure areas and a stunning view of the majestic surrounding mountains.",
+                  "At this charming spot, you will find spacious leisure areas equipped with tables, barbecue grills, and spaces to prepare delicious outdoor meals, along with a stunning view of the majestic surrounding mountains."
+              ],
+              "image": "/images/CasaDoGuarda.jpeg"
+          }
+      ],
+      "bottomLogo": "logo-serra-gardunha.png",
+      "isNature": true
+  },
+  "RoadTimelineEstrela": {
+    "title": "Estrela Mountain",
+    "description": [
+        "Explore its trails and marvel at the stunning panoramic views as you venture through the slopes of this imposing mountain range.",
+        "Come and explore this regional treasure and be enchanted by its unique beauty.",
+        "Enjoy our suggested itinerary, and we hope you like it!"
+    ],
+    "routes": [
+        {
+            "title": "Torre",
+            "description": [
+                "The highest point in mainland Portugal, standing at 1993 meters above sea level.",
+                "The highest point in mainland Portugal, standing at 1993 meters above sea level. A 7-meter tower has been constructed to symbolically bring the highest point to 2000 meters."
+            ],
+            "image": "/images/Experiencias/SerraEstrela.jpeg"
+        },
+        {
+            "title": "Seia",
+            "description": [
+                "One of the most important cities located at the foot of the Serra da Estrela Natural Park.",
+                "Situated at 550 meters altitude, Seia is one of the most important cities located at the foot of the Serra da Estrela Natural Park and a gateway to the highest point in mainland Portugal (Torre)."
+            ],
+            "image": "/images/Seia.jpeg"
+        }
+    ],
+    "bottomLogo": "logo-serra-estrela.png"
+  },
+  "RoadTimelineAlpedrinha": {
+    "title": "Alpedrinha",
+    "description": [
+        "Explore its trails and marvel at the stunning panoramic views as you venture through the slopes of this imposing region.",
+        "Come and explore this regional treasure and be enchanted by its unique beauty.",
+        "Enjoy our suggested itinerary, and we hope you like it!"
+    ],
+    "routes": [
+        {
+            "title": "Palácio do Picadeiro",
+            "description": [
+                "18th-century palace. Recently restored and transformed into a cultural museum.",
+                "Built in the 18th century by a magistrate, this mansion went through various hands and functions, from a court to a hospital and even a newspaper printing press. Abandoned for years, it was recently restored and turned into a cultural museum."
+            ],
+            "image": "/images/Alpedrinha/Picadeiro_2.jpeg" 
+        },
+        {
+            "title": "Chafariz D. João V",
+            "description": [
+                "Built by order of D. João V. It is structured in two levels with a U-shaped staircase, in Baroque style.",
+                "Built by order of D. João V. It is structured in two levels with a U-shaped staircase. This Baroque fountain is made of granite and consists of a bastion with three faces, each with its own spout."
+            ],
+            "image": "/images/Alpedrinha/Chafariz_D_Joao_V.jpeg"
+        },
+        { 
+            "title": "Paços do Concelho", 
+            "description": [
+                "Former town hall building, constructed in 1680, with a rectangular plan and three floors.",
+                "The former town hall building, constructed in 1680, has a rectangular plan with three floors. Between 1972 and 1973, it underwent restoration work and was later home to the Parish Council and a recreational association."
+            ],
+            "image": "/images/Alpedrinha/PacosConcelho.jpeg"
+        },
+        { 
+            "title": "Terreiro de Santo António", 
+            "description": [
+                "Historic square in Alpedrinha known for its architectural charm and historical significance.",
+                "Terreiro de Santo António is a historic square in Alpedrinha with notable architectural charm and historical importance. It reflects the rich heritage of the region."
+            ],
+            "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg" 
+        }
+    ],
+    "bottomLogo": "logo-alpedrinha.png"
+  },
+  "RoadTimelineFestivals": {
+    "title": "Festivals and Pilgrimages",
+    "description": [
+        "Explore the best festivals in Alpedrinha and the surrounding areas.",
+        "Enjoy our suggestions, and we hope you like them!"
+    ],
+    "routes": [
+        { 
+            "title": "Cherry Festival", 
+            "location": "Alcongosta", 
+            "month": "June", 
+            "image": "/images/Romarias/FestaDaCereja.jpeg" 
+        },
+        { 
+            "title": "Guardian Angel", 
+            "location": "Alpedrinha", 
+            "month": "August", 
+            "image": "/images/Experiencias/AnjoDaGuarda.jpeg" 
+        },
+        { 
+            "title": "Chocalhos", 
+            "location": "Alpedrinha", 
+            "month": "September", 
+            "image": "/images/Romarias/Chocalhos.jpeg" 
+        },
+        { 
+            "title": "Míscaros", 
+            "location": "Alcaide", 
+            "month": "November", 
+            "image": "/images/Miscaros.jpeg" 
+        }
+    ],
+    "bottomLogo": "logo-festivais.png"
+  },
+  "reservationBreakSection": {
+    "title": "Book the Casa Da Vila",
+    "text": "Check availability and make your reservation by clicking below",
+    "bookButton": "Book",
+    "priceFrom": "From",
+    "priceValue": "80€*"
+  },
+  "feedback": {
+    "title": "Testimonials",
+    "testimonials": [
+      {
+        "text": "The house is very cozy and well equipped. We were very well received. An experience to repeat.",
+        "author": "Manuel",
+        "country": "Portugal"
+      },
+      {
+        "text": "Everything was spectacular, clean house and kitchen with essentials for cooking. Mrs. São is super friendly.",
+        "author": "Alexandra",
+        "country": "Portugal"
+      },
+      {
+        "text": "Cozy, comfortable and well-decorated. But also, the availability and friendliness of the owner.",
+        "author": "Pedro",
+        "country": "Portugal"
+      },
+      {
+        "text": "Excellent use of space. Good natural lighting. Plenty of privacy.",
+        "author": "Martins",
+        "country": "Portugal"
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "informationCollected": "Information Collected",
+    "informationCollectedDetails": "When using our website, we may collect the following information:",
+    "personalInformation": "Personal information provided voluntarily, such as name, email address, and phone number, when filling out forms or interacting with the site.",
+    "usageData": "Usage data, including IP address, browser type, pages visited, and time spent on the site, collected automatically through tracking technologies such as cookies.",
+    "useOfInformation": "Use of Information",
+    "useOfInformationDetails": "We use the collected information for the following purposes:",
+    "provideAndMaintain": "Provide and maintain our site, including content personalization and performance analysis.",
+    "respondQueries": "Respond to user queries and requests and provide customer support.",
+    "sendMarketing": "Send marketing communications, when authorized by users.",
+    "complyWithLegal": "Comply with legal and regulatory obligations.",
+    "sharingOfInformation": "Sharing of Information",
+    "sharingOfInformationDetails": "We do not share your personal information with third parties, except when necessary to comply with legal obligations, protect our rights, or in case of merger or acquisition.",
+    "cookiesAndTechnologies": "Cookies and Similar Technologies",
+    "cookiesAndTechnologiesDetails": "Our site uses cookies and similar technologies to personalize content, analyze site usage, and provide targeted advertising. By continuing to browse the site, you agree to the use of cookies.",
+    "dataSecurity": "Data Security",
+    "dataSecurityDetails": "We implement appropriate security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.",
+    "yourRights": "Your Rights",
+    "yourRightsDetails": "You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us through the channels provided in this document.",
+    "changesToPolicy": "Changes to this Policy",
+    "changesToPolicyDetails": "We may update this privacy policy periodically. We recommend that you review this page regularly to be aware of any changes.",
+    "contactUs": "Contact Us",
+    "contactUsDetails": "If you have any questions or concerns about our privacy policy, please contact us at this email address casadavila.pt@hotmail.com or at this phone number (+351) 969 303 119."
+  },
+  "cookieBanner": {
+    "message": "This site uses cookies to ensure you get the best experience.",
+    "accept": "Accept cookies",
+    "learnMore": "Learn more"
+  },
+  "footer": {
+    "location": "Location",
+    "address": "Rua da Fonte, 2",
+    "city": "Alpedrinha",
+    "postalCode": "6230-058",
+    "contacts": "Contacts",
+    "email": "casadavila.pt@hotmail.com",
+    "phone": "Tel: (+351) 964 849 002",
+    "credits": "Developed by Artur and Ana Rita"
+  }  
 }

@@ -127,7 +127,7 @@ const BookingPage = () => {
               <FontAwesomeIcon icon={faEnvelope} className="cdv-card-icon"/>
             </div>
             <div className='reservation-text'>{t('common:contact-email')}</div>
-            <a className='reservation-title alt' href="mailto:casadavila.alpedrinha@hotmail.com">casadavila.alpedrinha@hotmail.com</a>
+            <a className='reservation-title alt' href="mailto:casadavila.pt@hotmail.com">casadavila.pt@hotmail.com</a>
           </div>
         </div>
         <div className='cdv-active-link'>{t('booking:or')}</div>

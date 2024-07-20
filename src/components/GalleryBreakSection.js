@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import "../styles/GalleryBreakSection.css";
 
 function GalleryBreakSection() {
+  const { t } = useTranslation();
+
   const redirectToGallery = () => {
     window.location.href = '/Galeria';
   };
@@ -13,7 +16,9 @@ function GalleryBreakSection() {
         alt="Alpedrinha - Vista do Palácio do Picadeiro"
         className="img-gallery-break-section"
       />
-      <button onClick={redirectToGallery} className="cdv-button-primary">Veja a nossa galeria</button>
+      <button onClick={redirectToGallery} className="cdv-button-primary">
+        {t('gallery-break-section.viewGallery')}
+      </button>
     </section>
   );
 }

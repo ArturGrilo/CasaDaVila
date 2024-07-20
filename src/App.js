@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Footer from "./components/Footer";
 import Feedback from "./components/Feedback";
 import TopBar from "./components/TopBar";
@@ -22,8 +22,10 @@ import CookieBanner from "./components/CookieBanner";
 import LanguageSelector from "./components/LanguageSelector";
 import GalleryPage from "./components/GalleryPage";
 import BookingPage from "./components/Booking";
+import { useTranslation } from 'react-i18next';
 
 const App = () => {
+  const { t } = useTranslation();
   const mobile = window.innerWidth < 800;
   const location = useLocation();
 
@@ -61,106 +63,85 @@ const App = () => {
         <Route path="/PoliticaDePrivacidade" element={<PrivacyPolicy />} />
         <Route path="/Galeria" element={<GalleryPage />} />
         <Route path="/Reservar" element={<BookingPage />} />
-          {/* Rota da página das Aldeias Históricas */}
-          <Route 
-            path="/AldeiasHistoricas" 
-            element={<RoadTimeline 
-                        imgpath="Experiencias/AldeiasHistoricas.png"
-                        title="Aldeias Históricas"
-                        description={[
-                            "A Casa da Vila é um verdadeiro tesouro para os entusiastas do Patrimônio e da História.",
-                            "Situada em uma região cercada por diversas Aldeias Históricas, como a nossa vizinha Castelo Novo, Monsanto, Belmonte e Sortelha.",
-                            "A partir daqui, você pode embarcar em uma autêntica viagem pelo tempo, explorando o coração de Portugal.",
-                            "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
-                        ]}
-                        routes={[
-                            { title: "Castelo Novo (6,5km)", description: mobile ? "Em plena Serra da Gardunha, Castelo Novo ergue-se em tons de verde e cinza." : "Em plena Serra da Gardunha, a Aldeia Histórica de Castelo Novo ergue-se em tons de verde e cinza. Construída sobre o granito, Castelo Novo conserva no tempo um património arquitetónico único.", image: "/images/CasteloNovo.jpeg" },
-                            { title: "Monsanto (41km)", description: mobile ? "Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes. Um encanto singular." : "Alcandorada num cabeço que se impõe ao olhar na maior parte dos horizontes, a Aldeia Histórica de Portugal de Monsanto detém um encanto singular.", image: "/images/Monsanto.jpeg" },
-                            { title: "Belmonte (44km)", description: mobile ? "Terra de Pedro Álvares Cabral, detém uma ampla vista sobre a Serra da Estrela." : "Terra de Pedro Álvares Cabral, situada em plena Cova da Beira e com ampla vista sobre a encosta oriental da Serra da Estrela, a vila de Belmonte justifica plenamente as características que lhe terão dado o nome.", image: "/images/Belmonte.jpeg" },
-                            { title: "Sortelha (56,5km)", description: mobile ? "A sua fisionomia urbana e arquitectónica permanece inalterada desde o Renascimento." : "Sortelha é uma das mais belas e antigas vilas portuguesas, tendo mantido a sua fisionomia urbana e arquitectónica inalterada desde o renascimento até aos nossos dias.", image: "/images/Sortelha.jpeg" }
-                        ]}  
-                        bottomLogo= "/images/AldeiasHistoricasPortuguesas.png"
-                    />} 
-            />
-          <Route path="/AldeiasDoXisto" element={<RoadTimeline 
-                                                      imgpath="Experiencias/AldeiasDoXisto.jpeg"
-                                                      title="Aldeias do Xisto"
-                                                      description={[
-                                                          "Entre as sinuosas serras da Estrela, Açor e Gardunha, ou nas margens serenas dos rios Tejo, Ocreza e Zêzere, encontra-se entrelaçada a rede das 27 aldeias do Xisto, um tesouro inestimável da nossa região e herança.",
-                                                          "Para os aventureiros, em busca dessa imensa riqueza histórica, cultural e natural, a Casa Da Vila sugere duas das mais cativantes Aldeias do Xisto que, curiosamente, se localizam no nosso concelho do Fundão.",
-                                                          "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
-                                                      ]}
-                                                      routes={[
-                                                          { title: "Barroca (39,8km)", description: mobile ? "Num pequeno morro, ladeado por duas linhas de água, junto ao rio Zêzere." : "A parte mais antiga da aldeia está implantada ao longo de um pequeno morro, ladeado por duas linhas de água profundamente cavadas, formando um conjunto perpendicular ao curso do Zêzere, com o qual confina.", image: "/images/Barroca.png" },
-                                                          { title: "Janeiro de Cima (52,1km)", description: mobile ? "Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto." : "Janeiro de Cima encontra-se na margem esquerda do Zêzere, rodeada por uma extensa manta de terrenos agrícolas. Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto.", image: "/images/JaneiroDeCima.jpeg" }
-                                                      ]}  
-                                                      bottomLogo= "/images/AldeiasDoXisto.png"
-                                                    />} />
-          <Route path="/SerraDaGardunha" element={<RoadTimeline 
-                                                      imgpath="Experiencias/SerraDaGardunha.jpeg"
-                                                      title="Serra da Gardunha"
-                                                      description={[
-                                                          "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
-                                                          "Venha explorar este tesouro da região e deixe-se encantar pela sua beleza singular.",
-                                                          "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
-                                                      ]}
-                                                      routes={[
-                                                          { title: "Percursos pedestres, trail ou btt", description: mobile ? "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante." : "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante na reserva natural da Rede Natura 2000 e no Geopark Naturtejo.", image: "/images/PercursosGardunha.jpg" },
-                                                          { title: "Casa do Guarda", description: mobile ? "Amplas áreas de lazer e uma vista deslumbrante das majestosas serras circundantes." : "Neste local encantador, aguardam-no amplas áreas de lazer, equipadas com mesas, churrasqueiras, espaços para preparar deliciosas refeições ao ar livre e ainda oferece uma vista deslumbrante das majestosas serras circundantes.", image: "/images/CasaDoGuarda.jpeg" }
-                                                      ]}  
-                                                      bottomLogo="/images/AldeiasDoXisto.png"
-                                                      isNature={true}
-                                                    />} />
-          <Route path="/SerraDaEstrela" element={<RoadTimeline 
-                                                      imgpath="Experiencias/SerraEstrela.jpeg"
-                                                      title="Serra da Estrela"
-                                                      description={[
-                                                          "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
-                                                          "Venha explorar este tesouro da região e deixe-se encantar pela sua beleza singular.",
-                                                          "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
-                                                      ]}
-                                                      routes={[
-                                                          { title: "Torre", description: mobile ? "Ponto mais alto de Portugal Continental com 1993 metros acima do nível do mar." : "Ponto mais alto de Portugal Continental com 1993 metros acima do nível do mar. Uma torre de 7 metros foi construída de forma que o ponto mais alto alcance simbolicamente 2 000 metros.", image: "/images/Experiencias/SerraEstrela.jpeg" },
-                                                          { title: "Seia", description: mobile ? "Uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela." : "Situada a 550 metros de altitude, Seia é uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela e uma porta de entrada para o ponto mais alto de Portugal Continental (Torre).", image: "/images/Seia.jpeg" }
-                                                      ]}  
-                                                      bottomLogo="/images/AldeiasDoXisto.png"
-                                                      isNature={true}
-                                                    />} />
-          <Route path="/Alpedrinha" element={<RoadTimeline 
-                                                      imgpath=""
-                                                      title="Alpedrinha"
-                                                      description={[
-                                                          "Explore os seus trilhos e maravilhe-se com as vistas panorâmicas deslumbrantes enquanto se aventura pelas encostas desta serra imponente.",
-                                                          "Venha explorar este tesouro da região e deixe-se encantar pela sua beleza singular.",
-                                                          "Aproveite a nossa sugestão de roteiro, esperemos que goste!"
-                                                      ]}
-                                                      routes={[
-                                                          { title: "Palácio do Picadeiro", description: mobile ? "Palácio do século XVIII. Foi recentemente recuperado e transformado num museu cultural.": "Construído no século XVIII por um magistrado, o solar passou por várias mãos e funções, desde tribunal a hospital e até tipografia de jornal. Abandonado durante anos, foi recuperado recentemente e transformado num museu cultural.", image: "/images/Alpedrinha/Picadeiro_2.jpeg" },
-                                                          { title: "Chafariz D. João V", description: mobile ? "Construído a mando de D. João V. Estrutura-se em dois níveis, com escadaria em U, de estilo barroco." : "Construído a mando de D. João V. Estrutura-se em dois níveis, com escadaria em U. É um chafariz barroco e edificado em granito. É constituído por um baluarte com três faces cada uma com a sua respetiva bica.", image: "/images/Alpedrinha/Chafariz_D_Joao_V.jpeg" },
-                                                          { title: "Paços do Concelho", description: mobile ? "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três pisos." : "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três e um piso. Entre 1972 e 1973 sofreu obras de restauração, sendo depois aqui instalada a Junta de Freguesia e uma associação recreativa.", image: "/images/Alpedrinha/PacosConcelho.jpeg" },
-                                                          { title: "Terreiro de Santo António", description: mobile ? "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três pisos." : "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três e um piso. Entre 1972 e 1973 sofreu obras de restauração, sendo depois aqui instalada a Junta de Freguesia e uma associação recreativa.", image: "/images/Alpedrinha/TerreiroStAntonio.jpeg" }
-                                                      ]}  
-                                                      bottomLogo=""
-                                                      isNature={false}
-                                                    />} />
-          <Route path="/Romarias" element={<RoadTimeline 
-                                                      imgpath="Experiencias/AnjoDaGuarda.jpeg"
-                                                      title="Festas e Romarias"
-                                                      description={[
-                                                          "Explore as melhores festas de Alpedrinha e arredores.",
-                                                          "Aproveite as nossas sugestões, esperemos que goste!"
-                                                      ]}
-                                                      routes={[
-                                                          { title: "Festa da Cereja", location: "Alcongosta", month: "Junho", image: "/images/Romarias/FestaDaCereja.jpeg" },
-                                                          { title: "Anjo da Guarda", location: "Alpedrinha", month: "Agosto", image: "/images/Experiencias/AnjoDaGuarda.jpeg" },
-                                                          { title: "Chocalhos", location: "Alpedrinha", month: "Setembro", image: "/images/Romarias/Chocalhos.jpeg" },
-                                                          { title: "Míscaros", location: "Alcaide", month: "Novembro", image: "/images/Miscaros.jpeg" }
-                                                      ]}  
-                                                      bottomLogo="/images/AldeiasDoXisto.png"
-                                                      isNature={false}
-                                                      isParties={true}
-                                                    />} />
-        </Routes>
+        {/* Rota da página das Aldeias Históricas */}
+        <Route 
+          path={t('routes.historicalVillages')}
+          element={<RoadTimeline 
+                      imgpath="Experiencias/AldeiasHistoricas.png"
+                      title={t('RoadTimelineHistorical.title')}
+                      description={t('RoadTimelineHistorical.description', { returnObjects: true })}
+                      routes={t('RoadTimelineHistorical.routes', { returnObjects: true }).map(route => ({
+                        ...route,
+                        description: route.description[mobile ? 0 : 1]
+                      }))}
+                      bottomLogo={t('RoadTimelineHistorical.bottomLogo')}
+                  />} 
+        />
+        <Route path={t('routes.schistVillages')} 
+        element={<RoadTimeline 
+                      imgpath="Experiencias/AldeiasDoXisto.jpeg"
+                      title={t('RoadTimelineSchist.title')}
+                      description={t('RoadTimelineSchist.description', { returnObjects: true })}
+                      routes={t('RoadTimelineSchist.routes', { returnObjects: true }).map(route => ({
+                          ...route,
+                          description: route.description[mobile ? 0 : 1]
+                      }))}
+                      bottomLogo={t('RoadTimelineSchist.bottomLogo')}
+                  />} 
+          />
+          <Route path={t('routes.gardunhaMountain')} 
+          element={<RoadTimeline 
+                      imgpath="Experiencias/SerraDaGardunha.jpeg"
+                      title={t('RoadTimelineGardunha.title')}
+                      description={t('RoadTimelineGardunha.description', { returnObjects: true })}
+                      routes={t('RoadTimelineGardunha.routes', { returnObjects: true }).map(route => ({
+                          ...route,
+                          description: route.description[mobile ? 0 : 1]
+                      }))}
+                      bottomLogo={t('RoadTimelineGardunha.bottomLogo')}
+                      isNature={true}
+                  />} 
+        />
+        <Route path={t('routes.estrelaMountain')} 
+        element={<RoadTimeline 
+                      imgpath="Experiencias/SerraEstrela.jpeg"
+                      title={t('RoadTimelineEstrela.title')}
+                      description={t('RoadTimelineEstrela.description', { returnObjects: true })}
+                      routes={t('RoadTimelineEstrela.routes', { returnObjects: true }).map(route => ({
+                          ...route,
+                          description: route.description[mobile ? 0 : 1]
+                      }))}
+                      bottomLogo={t('RoadTimelineEstrela.bottomLogo')}
+                      isNature={true}
+                  />} 
+        />
+        <Route path={t('routes.alpedrinha')} 
+        element={<RoadTimeline 
+                      imgpath=""
+                      title={t('RoadTimelineAlpedrinha.title')}
+                      description={t('RoadTimelineAlpedrinha.description', { returnObjects: true })}
+                      routes={t('RoadTimelineAlpedrinha.routes', { returnObjects: true }).map(route => ({
+                          ...route,
+                          description: route.description[mobile ? 0 : 1]
+                      }))}
+                      bottomLogo={t('RoadTimelineAlpedrinha.bottomLogo')}
+                      isNature={false}
+                  />} 
+        />
+        <Route path={t('routes.festivals')} 
+        element={<RoadTimeline 
+                      imgpath="Experiencias/AnjoDaGuarda.jpeg"
+                      title={t('RoadTimelineFestivals.title')}
+                      description={t('RoadTimelineFestivals.description', { returnObjects: true })}
+                      routes={t('RoadTimelineFestivals.routes', { returnObjects: true })}
+                      bottomLogo={t('RoadTimelineFestivals.bottomLogo')}
+                      isNature={false}
+                      isParties={true}
+                  />} 
+        />
+        {/* Fallback route */}
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
       <CookieBanner />
     </div>
   );
