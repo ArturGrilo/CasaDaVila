@@ -406,7 +406,7 @@ input[type="date"] {
 
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   .logo{
     max-height: 120px;
   }
@@ -575,6 +575,10 @@ input[type="date"] {
   .footer-bigger-icon {
     font-size: 25px;
     margin-left: 20px;
+  }
+  
+  .splash-logo {
+    height: 300px; 
   }
 }
 
