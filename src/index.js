@@ -10,6 +10,10 @@ import enTranslation from './locales/en.json';
 import ptTranslation from './locales/pt.json';
 import frTranslation from './locales/fr.json';
 import esTranslation from './locales/es.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importando o CSS do AOS
+
+AOS.init(); //Inicialização do AOS para animações
 
 // Adicione os arquivos de tradução ao i18next
 i18n

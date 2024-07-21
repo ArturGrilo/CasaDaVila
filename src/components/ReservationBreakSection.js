@@ -8,9 +8,9 @@ function ReservationBreakSection() {
   return (
     <section id="break-section-id" className="cdv-section alt">
       <div id="break-sub-section-id">
-        <span className="break-section-title">{t('reservationBreakSection.title')}</span>
-        <span className="break-section-text">{t('reservationBreakSection.text')}</span>
-        <div className="break-section-button-container">
+        <span className="break-section-title" data-aos="fade-up">{t('reservationBreakSection.title')}</span>
+        <span className="break-section-text" data-aos="fade-up">{t('reservationBreakSection.text')}</span>
+        <div className="break-section-button-container" data-aos="fade-up">
           <button className="cdv-button-primary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
             {t('reservationBreakSection.bookButton')}
           </button>

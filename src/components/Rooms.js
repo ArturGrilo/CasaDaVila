@@ -24,16 +24,16 @@ function Rooms() {
   return (
     <section id="spaces-id" className="cdv-section">
       <div className="cdv-main-container">
-        <div className="cdv-title">
+        <div className="cdv-title" data-aos="fade-up">
           <span>{t('rooms.amenities')}</span>
         </div>
         <div className="cdv-text">
-          <span>{t('rooms.description1')}</span>
-          <span>{t('rooms.description2')}</span>
-          <span>{t('rooms.description3')}</span>
+          <span data-aos="fade-up">{t('rooms.description1')}</span>
+          <span data-aos="fade-up">{t('rooms.description2')}</span>
+          <span data-aos="fade-up">{t('rooms.description3')}</span>
         </div>
         <div className="rooms-grid">
-          <div className="cdv-card" onClick={() => openPopup(1)}>
+          <div data-aos="fade-left" className="cdv-card" onClick={() => openPopup(1)}>
             <img src="/images/RC_6.jpeg" alt="Imagem 2"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">{t('rooms.groundFloorApartment')}</div>
@@ -43,7 +43,7 @@ function Rooms() {
               </div>
             </div>
           </div>
-          <div className="cdv-card" onClick={() => openPopup(2)}>
+          <div className="cdv-card" data-aos="fade-right" onClick={() => openPopup(2)}>
             <img src="/images/PS_3.jpeg" alt="Casa Da Vila - Piso Superior"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">{t('rooms.duplexApartment')}</div>

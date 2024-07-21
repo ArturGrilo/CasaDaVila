@@ -34,11 +34,11 @@ const Feedback = () => {
   return (
     <section id="feedback-id" className="feedback-section">
       <div className="feedback-main-container">
-        <div className="cdv-title">
+        <div className="cdv-title" data-aos="fade-up">
           <span>{t('feedback.title')}</span>
         </div>
         <div className="feedback-aspas">"</div>
-        <div className={`feedback-text-container ${fadeClass}`}>
+        <div className={`feedback-text-container ${fadeClass}`} data-aos="fade-up">
           <div className="feedback-text">{feedbacks[currentFeedbackIndex].text}</div>
           <div className="feedback-author">{feedbacks[currentFeedbackIndex].author}</div>
           <div className="feedback-country">{feedbacks[currentFeedbackIndex].country}</div>

@@ -10,12 +10,12 @@ function Experiences() {
   return (
     <section id="exps-id" className="cdv-section">
       <div className="cdv-main-container">
-        <div className="cdv-title">
+        <div className="cdv-title" data-aos="fade-up">
           <span>{t('experiences.title')}</span>
         </div>
         <div className='experiences-interval'>
           <div className="cdv-grid">
-            <a className="cdv-card" href={t('routes.alpedrinha')}>
+            <a className="cdv-card" data-aos="fade-left" href={t('routes.alpedrinha')}>
               <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.alpedrinha')}</div>
@@ -25,7 +25,7 @@ function Experiences() {
                 </div>
               </div>
             </a>
-            <a className="cdv-card" href={t('routes.historicalVillages')}>
+            <a className="cdv-card" data-aos="fade-right" href={t('routes.historicalVillages')}>
               <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.historicalVillages')}</div>
@@ -35,7 +35,7 @@ function Experiences() {
                 </div>
               </div>
             </a>
-            <a className="cdv-card" href={t('routes.schistVillages')}>
+            <a className="cdv-card" data-aos="fade-left" href={t('routes.schistVillages')}>
               <img src="/images/Experiencias/AldeiasDoXisto.jpeg" alt="Aldeias Do Xisto"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.schistVillages')}</div>
@@ -45,7 +45,7 @@ function Experiences() {
                 </div>
               </div>
             </a>
-            <a className="cdv-card" href={t('routes.gardunhaMountain')}>
+            <a className="cdv-card" data-aos="fade-right" href={t('routes.gardunhaMountain')}>
               <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.gardunhaMountain')}</div>
@@ -55,7 +55,7 @@ function Experiences() {
                 </div>
               </div>
             </a>
-            <a className="cdv-card" href={t('routes.estrelaMountain')}>
+            <a className="cdv-card" data-aos="fade-left" href={t('routes.estrelaMountain')}>
               <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.estrelaMountain')}</div>
@@ -65,7 +65,7 @@ function Experiences() {
                 </div>
               </div>
             </a>
-            <a className="cdv-card" href={t('routes.festivals')}>
+            <a className="cdv-card" data-aos="fade-right" href={t('routes.festivals')}>
               <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Festas e Romarias"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.festivities')}</div>

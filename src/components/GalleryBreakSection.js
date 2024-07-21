@@ -16,7 +16,7 @@ function GalleryBreakSection() {
         alt="Alpedrinha - Vista do Palácio do Picadeiro"
         className="img-gallery-break-section"
       />
-      <button onClick={redirectToGallery} className="cdv-button-primary">
+      <button onClick={redirectToGallery} data-aos="fade-up" className="cdv-button-primary">
         {t('gallery-break-section.viewGallery')}
       </button>
     </section>
