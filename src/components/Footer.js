@@ -43,10 +43,10 @@ function Footer() {
         </div>
         <div className="footer-column-3">
           <span className="footer-title">{t('footer.contacts')}</span>
-          <span className="footer-text" onClick={() => window.location.href = `mailto:${t('footer.email')}`}>
+          <span className="footer-text" style={{ textDecoration: "none !important" }} onClick={() => window.location.href = `mailto:${t('footer.email')}`}>
             {t('footer.email')}
           </span>
-          <span className="footer-text">{t('footer.phone')}</span>
+          <span className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone')}</span>
           <div>
             <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon" />
             <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon" />
