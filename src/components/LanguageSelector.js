@@ -62,6 +62,11 @@ const LanguageSelector = () => {
                   <span>FR</span>
                 </div>
               )}
+              {selectedLanguage !== 'es' && (
+                <div className='cdv-country-icon' onClick={() => changeLanguage('es')} title="Select Spanish as the language">
+                  <span>ES</span>
+                </div>
+              )}
             </div>
           )}
         </>
