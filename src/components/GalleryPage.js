@@ -123,7 +123,7 @@ const GalleryPage = () => {
         <div className="media-display">
           {displayedImages.map((image, index) => (
             <div key={index} className="media-item" onClick={() => openModal(image)}>
-              <img src={image} alt={`Imagem from ${selectedCategory}`} />
+              <img src={image} alt={`Imagem from ${selectedCategory}`}/>
             </div>
           ))}
         </div>

@@ -108,10 +108,10 @@ const BookingPage = () => {
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
         <div className="cdv-text" style={{ textAlign: "left", marginBottom: "80px"}}>
-          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }}>{t('booking.paragraph1')}</span>
-          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }}>{t('booking.paragraph2')}</span>
-          <span>{t('booking.paragraph3')}</span>
-          <span>{t('booking.paragraph4')}</span>
+          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph1')}</span>
+          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph2')}</span>
+          <span data-aos="fade-up">{t('booking.paragraph3')}</span>
+          <span data-aos="fade-up">{t('booking.paragraph4')}</span>
         </div>
         <div className='tag-desconto'>
           <div className="tag-triangle"></div>
@@ -121,14 +121,14 @@ const BookingPage = () => {
           </div>
         </div>
         <div className="reservation-container">
-          <div className="reservation-call">
+          <div className="reservation-call" data-aos="fade-up">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faPhoneVolume} className="cdv-card-icon"/>
             </div>
             <div className='reservation-text'>{t('contact-phone')}</div>
             <a className='reservation-title' href="tel:+351964849002">+351 964 849 002</a>
           </div>
-          <div className="reservation-call">
+          <div className="reservation-call" data-aos="fade-up">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faEnvelope} className="cdv-card-icon"/>
             </div>
@@ -136,19 +136,19 @@ const BookingPage = () => {
             <a className='reservation-title alt' href="mailto:casadavila.pt@hotmail.com">casadavila.pt@hotmail.com</a>
           </div>
         </div>
-        <div className='cdv-active-link'>{t('booking.or')}</div>
+        <div className='cdv-active-link' data-aos="fade-up">{t('booking.or')}</div>
 
         <div className="reservation-form">
-          <div className='reservation-call-icon'>
+          <div className='reservation-call-icon' data-aos="fade-up">
             <FontAwesomeIcon icon={faWhatsapp} className="cdv-card-icon"/>
           </div>
-          <div className='reservation-text'>{t('booking.fillForm')}</div>
+          <div className='reservation-text' data-aos="fade-up">{t('booking.fillForm')}</div>
           <form onSubmit={handleSubmit}>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="name">{t('booking.name')}:</label>
               <input type="text" id="name" name="name" required />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="check-in-date">{t('booking.checkInDate')}:</label>
               <input 
                 type="date" 
@@ -160,7 +160,7 @@ const BookingPage = () => {
               />
               {errors.checkInDate && <div className="error-text">{errors.checkInDate}</div>}
             </div>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="check-out-date">{t('booking.checkOutDate')}:</label>
               <input 
                 type="date" 
@@ -172,7 +172,7 @@ const BookingPage = () => {
               />
               {errors.checkOutDate && <div className="error-text">{errors.checkOutDate}</div>}
             </div>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="adults">{t('booking.adults')}:</label>
               <input 
                 type="number" 
@@ -183,7 +183,7 @@ const BookingPage = () => {
                 required 
               />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="children">{t('booking.children')}:</label>
               <input 
                 type="number" 
@@ -194,7 +194,7 @@ const BookingPage = () => {
                 min="0" 
               />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <label className='cdv-text' htmlFor="observations">{t('booking.observations')}:</label>
               <textarea 
                 id="observations" 

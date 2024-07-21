@@ -40,7 +40,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                 <div>
                     <div className="cdv-img-alt-page">
                         <div className="cdv-title">
-                            <span>{title}</span>
+                            <span data-aos="fade-up">{title}</span>
                         </div>
                         <div className="cdv-img-parallax-alt-page">
                             <div className='cdv-red'></div>
@@ -48,7 +48,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                     </div>
                     <TopBar altScreen={true} />
                     <div className="cdv-main-container">
-                        <div className="cdv-text">
+                        <div className="cdv-text" data-aos="fade-up">
                             {description.map((text, index) => (
                                 <span key={index}>{text}</span>
                             ))}
@@ -63,7 +63,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                                 <div className="cdv-month parties">{route.month}</div>
                                                 <div className="cdv-empty-container parties"></div>
                                                 <div className="cdv-dot-container parties"></div>
-                                                <div className="cdv-text parties">
+                                                <div className="cdv-text parties" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}>
                                                     <div className="parties-text-details">
                                                         <div className="parties-seta-title">
                                                             <div className="seta-esquerda"></div>
@@ -101,7 +101,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                 <div className={`cdv-road-from-dashed-line ${isNature ? 'nature-color' : ''}`}></div>   
                                 {routes.map((route, index) => (
                                     <div className="cdv-road-container" key={index}>
-                                        <div className="cdv-road-text-container">
+                                        <div className="cdv-road-text-container" data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}>
                                             <div className="cdv-title">{route.title}</div>
                                             <div className="cdv-text">{route.description}</div>
                                         </div>
