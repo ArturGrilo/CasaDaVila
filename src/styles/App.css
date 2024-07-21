@@ -631,36 +631,36 @@ input[type="date"] {
   }
 
   .whatsapp-link{
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4)
   }
 
   .cdv-flag-container{
     z-index: 9999 !important;
-    bottom: 10px !important; /* Distância do fundo da janela de visualização */
+    bottom: 20px !important; /* Distância do fundo da janela de visualização */
     left: 12px !important;
   }
 
   .whatsapp-link {
     button {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 42px;
     }
   }
 
   .whatsapp-link {
     .whatsapp-icon {
         color: #fff;
-        font-size: 22px;
+        font-size: 26px;
     }
   }
 
   .go-to-top-link {
-    bottom: 45px;
+    bottom: 65px;
     right: 10px;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 42px;
     padding: 6px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   }
