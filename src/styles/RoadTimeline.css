@@ -7,7 +7,6 @@
 }
 
 #experiences-id .top-bar-container{
-  gap: 0px;
   flex-direction: row;
   justify-content: space-between;
 }

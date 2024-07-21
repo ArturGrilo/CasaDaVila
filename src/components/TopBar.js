@@ -75,6 +75,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
     } else {
       window.location.href = `/#${sectionId}`;
     }
+    setIsMenuOpen(false);
   };
 
   const handleMenuToggle = () => {
