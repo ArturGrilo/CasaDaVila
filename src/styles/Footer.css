@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.footer *{
+  text-decoration: none !important;
+}
+
 .footer-container{
   max-width: 1200px;
   width: 100%;

@@ -10,6 +10,7 @@ function ReservationBreakSection() {
       <div id="break-sub-section-id">
         <span className="break-section-title" data-aos="fade-up">{t('reservationBreakSection.title')}</span>
         <span className="break-section-text" data-aos="fade-up">{t('reservationBreakSection.text')}</span>
+        <span className="break-section-asterisco-text" data-aos="fade-up">{t('reservationBreakSection.asteriscotext')}</span>
         <div className="break-section-button-container" data-aos="fade-up">
           <button className="cdv-button-primary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
             {t('reservationBreakSection.bookButton')}

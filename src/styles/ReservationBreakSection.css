@@ -39,6 +39,12 @@
   font-size: 28px;
 }
 
+.break-section-asterisco-text{
+  margin-top: -20px;
+  font-size: 16px;
+  color: white;
+}
+
 #break-section-id img{
   position: absolute;
   top: 0;
