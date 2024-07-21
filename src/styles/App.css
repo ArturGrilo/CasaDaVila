@@ -614,7 +614,7 @@ input[type="date"] {
 
   .scrolled .cdv-menu-icon{
     right: 10px;
-    top: calc(50% - 7px);
+    top: calc(50% - 15px);
   }
 
   .desktop-topbar-link{
@@ -632,7 +632,7 @@ input[type="date"] {
 
   .whatsapp-link{
     bottom: 20px;
-    right: 10px;
+    right: 12px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4)
   }
 
@@ -658,7 +658,7 @@ input[type="date"] {
 
   .go-to-top-link {
     bottom: 65px;
-    right: 10px;
+    right: 12px;
     width: 36px;
     height: 42px;
     padding: 6px;
