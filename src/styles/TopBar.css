@@ -256,6 +256,10 @@
   color: var(--color-primary) !important;
 }
 
+.scrolled .mobile-menu .dropdown-menu-link.cdv-active-link span{
+  color: white !important;
+}
+
 .scrolled .cdv-active-link{
   color: var(--color-primary) !important;
 }

@@ -9,6 +9,7 @@ import { initReactI18next } from 'react-i18next';
 import enTranslation from './locales/en.json';
 import ptTranslation from './locales/pt.json';
 import frTranslation from './locales/fr.json';
+import esTranslation from './locales/es.json';
 
 // Adicione os arquivos de tradução ao i18next
 i18n
@@ -24,6 +25,9 @@ i18n
       pt: {
         translation: ptTranslation,
       },
+      es: {
+        translation: esTranslation,
+      }
     },
     lng: localStorage.getItem('languagePreference') || 'pt', // Define o idioma inicial baseado no localStorage
     fallbackLng: 'pt', // Idioma de fallback

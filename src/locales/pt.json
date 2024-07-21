@@ -43,7 +43,11 @@
         "errorCheckInFuture": "A data de check-in deve ser no futuro.",
         "errorCheckOutAfterCheckIn": "A data de check-out deve ser após a data de check-in.",
         "errorCheckOutMaxTwoMonths": "O intervalo entre as datas não pode ser maior que 2 meses.",
-        "reservationFor": "Reserva para"
+        "reservationFor": "Reserva para",
+        "paragraph1": "Agradecemos o seu interesse em reservar a sua estadia connosco!",
+        "paragraph2": "Por favor, note que a sua reserva só será considerada confirmada após contacto direto com o gestor das reservas. Após submeter o seu pedido de reserva, o nosso gestor entrará em contacto consigo para confirmar todos os detalhes e assegurar que a sua estadia será conforme o desejado.",
+        "paragraph3": "Para garantir a confirmação rápida e eficaz da sua reserva, recomendamos que entre em contacto direto connosco através do número de telefone fornecido na página. Esta é a forma mais eficiente de verificar a disponibilidade e finalizar a sua reserva de forma segura.",
+        "paragraph4": "Estamos ao seu dispor para qualquer dúvida ou esclarecimento adicional. Agradecemos a sua compreensão e esperamos receber a sua visita em breve!"
     },
     "words-break-section": {
         "simplicity": "Simplicidade",
@@ -369,5 +373,6 @@
     "cable_tv": "Televisão c/ canais por cabo",
     "double_single_beds": "1 cama de casal + 2 camas de solteiro",
     "balcony": "1 varanda",
-    "reserve": "Reservar"
+    "reserve": "Reservar",
+    "exterior": "exterior"
 }

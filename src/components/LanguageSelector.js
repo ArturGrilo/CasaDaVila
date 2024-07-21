@@ -67,7 +67,7 @@ const LanguageSelector = () => {
         </>
       ) : (
         <>
-          <div className={`cdv-country-icon ${selectedLanguage === 'pt' ? 'active-language' : ''}`} onClick={() => changeLanguage('pt')} title="Select Portuguese as the language">
+          <div className={`cdv-country-icon ${selectedLanguage === 'pt' ? 'active-language' : ''}`} onClick={() => changeLanguage('pt')} title="Selecionar Português como linguagem">
             <span>PT</span>
           </div>
           <div className={`cdv-country-icon ${selectedLanguage === 'en' ? 'active-language' : ''}`} onClick={() => changeLanguage('en')} title="Select English as the language">
@@ -75,6 +75,9 @@ const LanguageSelector = () => {
           </div>
           <div className={`cdv-country-icon ${selectedLanguage === 'fr' ? 'active-language' : ''}`} onClick={() => changeLanguage('fr')} title="Select French as the language">
             <span>FR</span>
+          </div>
+          <div className={`cdv-country-icon ${selectedLanguage === 'es' ? 'active-language' : ''}`} onClick={() => changeLanguage('es')} title="Select Spanish as the language">
+            <span>ES</span>
           </div>
         </>
       )}

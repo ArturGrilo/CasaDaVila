@@ -116,7 +116,7 @@ const GalleryPage = () => {
               className={selectedCategory === category ? 'cdv-button-secundary' : 'cdv-button-primary'}
               onClick={() => handleCategoryChange(category)}
             >
-              <span>{category.replace('CasaDaVila', 'Casa Da Vila ')}</span>
+                <span>{category === 'Exterior' ? t('exterior') : category.replace('CasaDaVila', 'Casa Da Vila ')}</span>
             </button>
           ))}
         </div>

@@ -56,7 +56,11 @@
         "errorCheckInFuture": "La date d'arrivée doit être à l'avenir.",
         "errorCheckOutAfterCheckIn": "La date de départ doit être après la date d'arrivée.",
         "errorCheckOutMaxTwoMonths": "L'intervalle entre les dates ne peut pas dépasser 2 mois.",
-        "reservationFor": "Réservation pour"
+        "reservationFor": "Réservation pour",
+        "paragraph1": "Nous vous remercions de votre intérêt pour réserver votre séjour chez nous !",
+        "paragraph2": "Veuillez noter que votre réservation ne sera considérée comme confirmée qu'après un contact direct avec le gestionnaire des réservations. Après avoir soumis votre demande de réservation, notre gestionnaire prendra contact avec vous pour confirmer tous les détails et s'assurer que votre séjour sera conforme à vos attentes.",
+        "paragraph3": "Pour garantir une confirmation rapide et efficace de votre réservation, nous vous recommandons de nous contacter directement via le numéro de téléphone fourni sur la page. C'est le moyen le plus efficace pour vérifier la disponibilité et finaliser votre réservation en toute sécurité.",
+        "paragraph4": "Nous sommes à votre disposition pour toute question ou clarification supplémentaire. Nous vous remercions de votre compréhension et espérons vous accueillir bientôt !"
     },
     "words-break-section": {
         "simplicity": "Simplicité",
@@ -382,5 +386,6 @@
     "cable_tv": "Télévision avec chaînes câblées",
     "double_single_beds": "1 lit double + 2 lits simples",
     "balcony": "1 balcon",
-    "reserve": "Réserver"               
+    "reserve": "Réserver",
+    "exterior": "Extérieur"           
 }

@@ -107,6 +107,12 @@ const BookingPage = () => {
       </div>
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
+        <div className="cdv-text" style={{ textAlign: "left", marginBottom: "80px"}}>
+          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }}>{t('booking.paragraph1')}</span>
+          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }}>{t('booking.paragraph2')}</span>
+          <span>{t('booking.paragraph3')}</span>
+          <span>{t('booking.paragraph4')}</span>
+        </div>
         <div className='tag-desconto'>
           <div className="tag-triangle"></div>
           <div className="tag-content">
