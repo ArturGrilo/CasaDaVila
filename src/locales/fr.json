@@ -20,9 +20,9 @@
     },
     "about-us": {
         "title": "À propos de nous",
-        "paragraph1": "Bonjour ! Je m'appelle Maria da Conceição, mais vous pouvez m'appeler São. C'est avec un immense plaisir que je vous présente l'histoire derrière la Casa da Vila. Ce voyage a commencé avec un précieux héritage laissé par mes parents : une maison en pierre abandonnée, en attente d'une nouvelle vie. J'ai donc décidé de me lancer dans cette aventure excitante de reconstruction, un véritable travail d'amour et de dévotion en l'honneur de mes parents.",
-        "paragraph2": "Peu à peu, avec le cœur rempli de rêves, j'ai donné vie à cet espace qui est maintenant la Casa da Vila.",
-        "paragraph3": "Même proche de la retraite, je n'ai pas pu m'arrêter de travailler. J'ai trouvé dans la décoration et l'art de recevoir des gens mes grandes passions, et j'ai décidé d'unir ces deux mondes dans ce projet. Chaque détail, des meubles soigneusement choisis aux petites surprises que j'ai préparées pour nos invités, reflète mon dévouement à offrir un séjour vraiment accueillant et mémorable.",
+        "paragraph1": "Bonjour ! Je suis Maria da Conceição, mais vous pouvez m'appeler São.",
+        "paragraph2": "C'est avec grand plaisir que je vous présente l'histoire de mon dernier projet de vie. Tout a commencé avec une maison en pierre abandonnée, en attente d'une nouvelle vie, où je me suis lancée dans l'aventure passionnante de sa reconstruction. Une véritable œuvre d'amour et de dévouement qui a progressivement donné vie à cet espace nouveau et accueillant, la Casa da Vila.",
+        "paragraph3": "Même si je suis proche de la retraite, je n'ai pas pu arrêter de travailler. J'ai trouvé mes grandes passions dans la décoration et l'art de recevoir des personnes, et j'ai décidé de combiner ces deux mondes dans ce projet. Chaque détail, des meubles choisis avec soin aux petites surprises que j'ai préparées pour nos invités, reflète ma dévotion à offrir un séjour véritablement chaleureux et mémorable.",
         "paragraph4": "Avec affection,",
         "signature": "Maria da Conceição Ferreira da Silva"
     },
@@ -368,5 +368,19 @@
         "email": "casadavila.pt@hotmail.com",
         "phone": "Tél : (+351) 964 849 002",
         "credits": "Développé par Artur et Ana Rita"
-    }                    
+    },
+    "ground_floor_apartment": "Appartement Rez-de-chaussée",
+    "duplex_apartment": "Appartement Duplex",
+    "max_adults": "4 adultes maximum",
+    "baby_notice": "1/2 bébé(s) avec préavis",
+    "double_bed": "1 Chambre, lit double",
+    "sofa_bed": "1 canapé-lit",
+    "fast_free_wifi": "Wifi rapide et gratuit",
+    "air_conditioning": "Climatisation",
+    "private_bathroom": "Salle de bain privée",
+    "fully_equipped_kitchen": "Cuisine entièrement équipée",
+    "cable_tv": "Télévision avec chaînes câblées",
+    "double_single_beds": "1 lit double + 2 lits simples",
+    "balcony": "1 balcon",
+    "reserve": "Réserver"               
 }

@@ -20,8 +20,8 @@
     },
     "about-us": {
         "title": "Sobre nós",
-        "paragraph1": "Olá! Sou a Maria da Conceição, mas pode tratar-me por São. É com imenso prazer que lhe apresento a história por trás da Casa da Vila. Esta jornada começou com uma preciosa herança deixada pelos meus pais: uma casa de pedra abandonada, à espera de uma nova vida. Decidi então embarcar nesta emocionante aventura de reconstrução, uma verdadeira obra de amor e dedicação em honra dos meus progenitores.",
-        "paragraph2": "Aos poucos, com o coração cheio de sonhos, dei vida a este espaço que agora é a Casa da Vila.",
+        "paragraph1": "Olá! Sou a Maria da Conceição, mas pode tratar-me por São.",
+        "paragraph2": "É com imenso prazer que lhe apresento a história do meu mais recente projeto de vida. Tudo começou com uma casa de pedra abandonada, à espera de uma nova vida, onde embarquei na emocionante aventura da sua reconstrução. Uma verdadeira obra de amor e dedicação que aos poucos deu vida a este novo e acolhedor espaço, a Casa da Vila.",
         "paragraph3": "Apesar de já estar perto da reforma, não consegui parar de trabalhar. Encontrei na decoração e na arte de receber pessoas as minhas grandes paixões, e decidi unir esses dois mundos neste projeto. Cada detalhe, desde os móveis escolhidos com carinho até às pequenas surpresas que preparei para os nossos hóspedes, reflete a minha dedicação em proporcionar uma estadia verdadeiramente acolhedora e memorável.",
         "paragraph4": "Com carinho,",
         "signature": "Maria da Conceição Ferreira da Silva"
@@ -355,5 +355,19 @@
         "email": "casadavila.pt@hotmail.com",
         "phone": "Tel: (+351) 964 849 002",
         "credits": "Desenvolvido por Artur e Ana Rita"
-    }   
+    },
+    "ground_floor_apartment": "Apartamento rés de chão",
+    "duplex_apartment": "Apartamento Duplex",
+    "max_adults": "4 adultos máximo",
+    "baby_notice": "1/2 bebé(s) com aviso prévio",
+    "double_bed": "1 Quarto, cama de casal",
+    "sofa_bed": "1 sofá cama",
+    "fast_free_wifi": "Wifi rápido e gratuito",
+    "air_conditioning": "Ar condicionado",
+    "private_bathroom": "Casa de banho privativa",
+    "fully_equipped_kitchen": "Cozinha totalmente equipada",
+    "cable_tv": "Televisão c/ canais por cabo",
+    "double_single_beds": "1 cama de casal + 2 camas de solteiro",
+    "balcony": "1 varanda",
+    "reserve": "Reservar"
 }

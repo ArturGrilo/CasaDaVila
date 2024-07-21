@@ -11,7 +11,9 @@ function ReservationBreakSection() {
         <span className="break-section-title">{t('reservationBreakSection.title')}</span>
         <span className="break-section-text">{t('reservationBreakSection.text')}</span>
         <div className="break-section-button-container">
-          <button className="cdv-button-primary">{t('reservationBreakSection.bookButton')}</button>
+          <button className="cdv-button-primary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
+            {t('reservationBreakSection.bookButton')}
+          </button>
           <div id="break-sub-section-id" className="price">
             <span className="break-section-text">{t('reservationBreakSection.priceFrom')}</span>
             <span className="break-section-title">{t('reservationBreakSection.priceValue')}</span>

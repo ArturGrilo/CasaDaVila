@@ -765,13 +765,14 @@ input[type="date"] {
 
   .space-main-container {
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
   }
 
   #rooms-popup {
-    height: 100%;
+    height: calc(100% - 20px);
     overflow: hidden;
     overflow-y: auto;
+    padding: 10px;
   }
 
   .slick-dots li button:before {
@@ -788,30 +789,44 @@ input[type="date"] {
     height: 8px;
   }
 
-  .slick-dots {
+  #spaces-id .slick-dots {
     color: white;
-    bottom: ≤¨5px;
+    bottom: 35px;
+  }
+
+  .space-1-info{
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .carousel-container {
     width: 100%;
     margin-bottom: 0px;
-    height: 30%;
+    height: 50%;
     order: 1;
   }
 
   .cdv-popup-content {
-    width: 90vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .cdv-popup-times {
+    right: 10px;
+    top: 15px;
   }
 
   .space-1 {
     width: 100%;
+    height: 50%;
   }
 
   .commodity-list {
     gap: 15px;
     justify-content: left;
+    height: calc(100% - 130px);
   }
 
   .commodity-item {

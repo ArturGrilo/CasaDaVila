@@ -5,8 +5,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWifi, faShower, faFireBurner, faTv, faBed, faCouch, faPerson, faBaby, faBinoculars } from '@fortawesome/free-solid-svg-icons';
 import { faSnowflake } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 function Spaces({ space }) {
+  const { t } = useTranslation();
+
   const space1_Images = [
     "/images/RC_1.jpeg",
     "/images/RC_2.jpeg",
@@ -51,44 +54,49 @@ function Spaces({ space }) {
             </div>
             <div className="space-1">
               <div className="space-1-info">
-                <div className="cdv-title" style={{ justifyContent: "left", fontSize: "30px" }}>Apartamento rés de chão</div>
+                <div className="cdv-title" style={{ justifyContent: "left", fontSize: "30px" }}>{t('ground_floor_apartment')}</div>
                 <div className="commodity-list">
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faPerson} className="commodity-icon"/>
-                    <span>4 adultos máximo</span>
+                    <span>{t('max_adults')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faBaby} className="commodity-icon"/>
-                    <span>1/2 bebé(s) com aviso prévio</span>
+                    <span>{t('baby_notice')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faBed} className="commodity-icon"/>
-                    <span>1 Quarto, cama de casal</span>
+                    <span>{t('double_bed')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faCouch} className="commodity-icon"/>
-                    <span>1 sofá cama</span>
+                    <span>{t('sofa_bed')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faWifi} className="commodity-icon"/>
-                    <span>Wifi rápido e gratuito</span>
+                    <span>{t('fast_free_wifi')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faSnowflake} className="commodity-icon"/>
-                    <span>Ar condicionado</span>
+                    <span>{t('air_conditioning')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faShower} className="commodity-icon"/>
-                    <span>Casa de banho privativa</span>
+                    <span>{t('private_bathroom')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faFireBurner} className="commodity-icon"/>
-                    <span>Cozinha totalmente equipada</span>
+                    <span>{t('fully_equipped_kitchen')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faTv} className="commodity-icon"/>
-                    <span>Televisão c/ canais por cabo</span>
+                    <span>{t('cable_tv')}</span>
                   </div>
+                </div>
+                <div className="rooms-reservar-button">
+                  <button className="cdv-button-secundary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
+                    {t('reserve')}
+                  </button>
                 </div>
               </div>
             </div>
@@ -97,52 +105,54 @@ function Spaces({ space }) {
 
         {space === 2 && (
           <div className="space-main-container">
-          <div className="carousel-container"> 
-            <Carousel images={space2_Images} />
-          </div>
+            <div className="carousel-container"> 
+              <Carousel images={space2_Images} />
+            </div>
             <div className="space-1">
               <div className="space-1-info">
-                <div className="cdv-title" style={{ justifyContent: "left", fontSize: "30px" }}>Apartamento Duplex</div>
+                <div className="cdv-title" style={{ justifyContent: "left", fontSize: "30px" }}>{t('duplex_apartment')}</div>
                 <div className="commodity-list">
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faPerson} className="commodity-icon"/>
-                    <span>4 adultos máximo</span>
+                    <span>{t('max_adults')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faBaby} className="commodity-icon"/>
-                    <span>1/2 bebé(s) com aviso prévio</span>
+                    <span>{t('baby_notice')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faBed} className="commodity-icon"/>
-                    <span>1 cama de casal + 2 camas de solteiro</span>
+                    <span>{t('double_single_beds')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faBinoculars} className="commodity-icon"/>
-                    <span>1 varanda</span>
+                    <span>{t('balcony')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faWifi} className="commodity-icon"/>
-                    <span>Wifi rápido e gratuito</span>
+                    <span>{t('fast_free_wifi')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faSnowflake} className="commodity-icon"/>
-                    <span>Ar condicionado</span>
+                    <span>{t('air_conditioning')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faShower} className="commodity-icon"/>
-                    <span>Casa de banho privativa</span>
+                    <span>{t('private_bathroom')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faFireBurner} className="commodity-icon"/>
-                    <span>Cozinha totalmente equipada</span>
+                    <span>{t('fully_equipped_kitchen')}</span>
                   </div>
                   <div className="commodity-item">
                     <FontAwesomeIcon icon={faTv} className="commodity-icon"/>
-                    <span>Televisão c/ canais por cabo</span>
+                    <span>{t('cable_tv')}</span>
                   </div>
                 </div>
                 <div className="rooms-reservar-button">
-                  <button className="cdv-button-secundary">Reservar</button>
+                  <button className="cdv-button-secundary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
+                    {t('reserve')}
+                  </button>
                 </div>
               </div>
             </div>
