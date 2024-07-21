@@ -104,6 +104,15 @@
   flex-direction: column;
 }
 
+.links-top-bar .mobile-menu span:hover {
+  font-weight: bold;
+  transform: scale(1);
+}
+
+.links-top-bar .mobile-menu span::after {
+  display: none;
+}
+
 .logo-container {
   max-height: 150px;
   animation: fadeIn 1s ease-in-out;
