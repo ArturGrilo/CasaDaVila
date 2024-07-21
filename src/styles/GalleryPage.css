@@ -89,16 +89,16 @@
   align-items: center; /* Centralizar as mídias verticalmente */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 908px) {
   .media-display {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 20px; /* Reduzir espaçamento */
   }
 }
 
 @media (max-width: 480px) {
   .media-display {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Ajuste para dispositivos pequenos */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste para dispositivos pequenos */
     gap: 15px; /* Reduzir ainda mais o espaçamento */
   }
 }

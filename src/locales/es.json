@@ -291,6 +291,7 @@
     "reservationBreakSection": {
         "title": "Reservar la Casa da Vila",
         "text": "Consulta la disponibilidad y realiza tu reserva haciendo clic a continuación",
+        "asteriscotext": "*Los precios pueden variar a lo largo del año debido a la estacionalidad. Por favor, póngase en contacto con el propietario del alojamiento para confirmar el importe final de su estancia.",
         "bookButton": "Reservar",
         "priceFrom": "Desde",
         "priceValue": "80€*"
