@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import "../styles/RoadTimeline.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPersonWalking, faFlag, faTree } from '@fortawesome/free-solid-svg-icons';
+import { faPersonWalking, faCarSide, faFlag, faTree } from '@fortawesome/free-solid-svg-icons';
 import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
 
@@ -92,7 +92,8 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                 </div>
                                 <div className="cdv-road-from-icon-2">
                                     <FontAwesomeIcon icon={faTree} className="commodity-icon"/>
-                                    <FontAwesomeIcon icon={faPersonWalking} className="commodity-icon"/>
+                                    {isNature ? <FontAwesomeIcon icon={faPersonWalking} className="commodity-icon"/> : 
+                                    <FontAwesomeIcon icon={faCarSide} className="commodity-icon"/>}
                                     <FontAwesomeIcon icon={faTree} className="commodity-icon .nature-color"/>
                                     <FontAwesomeIcon icon={faTree} className="commodity-icon .nature-color"/>
                                 </div>

@@ -14,19 +14,35 @@
 #gallery-page-id .logo-container,
 #gallery-page-id .logo-container img{
   max-height: 100px;
+  padding-bottom: 13px;
 }
 
 #gallery-page-id .links-top-bar a {
   font-size: 24px;
 }
 
+#gallery-page-id .links-top-bar .cdv-button-secundary {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 2000px) {
+  #gallery-page-id .logo-container,
+  #gallery-page-id .logo-container img{
+    max-height: 80px;
+  }
+  
+  #gallery-page-id .links-top-bar a {
+    font-size: 16px;
+  }
+
+  #gallery-page-id .links-top-bar .cdv-button-secundary {
+    font-size: 18px;
+  }
+}
+
 #gallery-page-id .links-top-bar {
   gap: 20px;
   justify-content: flex-end;
-}
-
-#gallery-page-id .links-top-bar .cdv-button-secundary {
-  font-size: 26px;
 }
 
 #gallery-page-id.cdv-section{

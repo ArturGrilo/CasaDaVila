@@ -7,6 +7,7 @@
 }
 
 #experiences-id .top-bar-container{
+  gap: 0px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -14,19 +15,35 @@
 #experiences-id .logo-container,
 #experiences-id .logo-container img{
   max-height: 100px;
+  padding-bottom: 13px;
 }
 
 #experiences-id .links-top-bar a {
   font-size: 24px;
 }
 
+#experiences-id .links-top-bar .cdv-button-secundary {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 2000px) {
+  #experiences-id .logo-container,
+  #experiences-id .logo-container img{
+    max-height: 80px;
+  }
+  
+  #experiences-id .links-top-bar a {
+    font-size: 16px;
+  }
+
+  #experiences-id .links-top-bar .cdv-button-secundary {
+    font-size: 18px;
+  }
+}
+
 #experiences-id .links-top-bar {
   gap: 20px;
   justify-content: flex-end;
-}
-
-#experiences-id .links-top-bar .cdv-button-secundary {
-  font-size: 26px;
 }
 
 .cdv-road-timeline{
@@ -65,7 +82,7 @@
 
 .cdv-road-from-icon{
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   top: -160px;
   left: calc(-50vw + 50% + 2px);
@@ -76,7 +93,7 @@
   display: flex;
   align-items: center;
   top: -110px;
-  left: calc(-50vw + 50% + 230px);
+  left: 30px;
 }
 
 .cdv-road-from-icon-2 svg, .cdv-road-to-icon-2 svg{

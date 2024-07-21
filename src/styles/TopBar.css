@@ -52,6 +52,7 @@
 
 .dropdown-menu-link{
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown-menu-link:hover .top-bar-icon{
@@ -62,7 +63,7 @@
 .dropdown-menu-container{
   display: none;
   position: absolute;
-  padding-top: 20px;
+  margin-top: 40px;
   width: max-content;
   right: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -71,12 +72,13 @@
 .dropdown-menu-sub-container{
   background-color: var(--color-background-light);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .dropdown-menu-option{
   color: var(--color-text-dark);
   text-shadow: none;
-  padding: 20px;
+  padding: 15px 10px;
   border-bottom: 1px solid lightgray;
   text-align: center;
   font-size: 20px;
@@ -94,10 +96,6 @@
 
 .dropdown-menu-option:first-child:hover{
   border-radius: 8px 8px 0 0;
-}
-
-.dropdown-menu-option:last-child{
-  border: none;
 }
 
 .dropdown-menu-link:hover .dropdown-menu-container,
@@ -175,6 +173,20 @@
   justify-content: flex-end;
 }
 
+.scrolled .cdv-active-link::before, .scrolled .cdv-active-link::after {
+  background-color: var(--color-primary);
+}
+
+.scrolled .links-top-bar a:hover::after{
+  content: ''; /* Adiciona conteúdo aos pseudo-elementos */
+  position: absolute; /* Posiciona os pseudo-elementos absolutamente em relação ao elemento pai */
+  left: 0; /* Posiciona os pseudo-elementos no canto esquerdo do elemento pai */
+  right: 0; /* Posiciona os pseudo-elementos no canto direito do elemento pai */
+  height: 2px; /* Define a altura das linhas */
+  bottom: -3px;
+  background-color: var(--color-primary);
+}
+
 .links-top-bar span{
   position: relative;
   font-weight: bold;
@@ -187,9 +199,9 @@
   content: '';
   position: absolute; 
   left: 0; 
-  bottom: -8px; 
+  bottom: -4px; 
   width: 100%;
-  height: 4px; 
+  height: 2px; 
   background-color: var(--color-topbar-scroll-background); 
   opacity: 0; 
   transition: opacity 0.3s ease; 
@@ -205,10 +217,15 @@
 }
 
 .links-top-bar a{
+  position: relative;
   text-decoration: none;
   color: var(--color-topbar-scroll-background);
   font-size: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.links-top-bar .dropdown-menu-link{
+  display: flex;
 }
 
 .scrolled .links-top-bar a{
@@ -233,6 +250,10 @@
   font-weight: bolder; /* Mudar o peso da fonte para dar destaque */
   color: white !important;
   position: relative; /* Para que os pseudo-elementos fiquem posicionados relativamente a este elemento */
+}
+
+.scrolled .dropdown-menu-link.cdv-active-link span{
+  color: var(--color-primary) !important;
 }
 
 .scrolled .cdv-active-link{

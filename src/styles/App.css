@@ -580,6 +580,10 @@ input[type="date"] {
   .splash-logo {
     height: 300px; 
   }
+
+  .dropdown-menu-option {
+    font-size: 14px;
+  }
 }
 
 
@@ -614,7 +618,7 @@ input[type="date"] {
   }
 
   .desktop-topbar-link{
-    display: none;
+    display: none !important;
   }
 
   .splash-logo-container{

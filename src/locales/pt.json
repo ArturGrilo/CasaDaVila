@@ -40,11 +40,9 @@
         "children": "Número de Crianças",
         "observations": "Observações",
         "sendReservation": "Enviar Reserva",
-        "errors": {
-          "checkInFuture": "A data de check-in deve ser no futuro.",
-          "checkOutAfterCheckIn": "A data de check-out deve ser após a data de check-in.",
-          "checkOutMaxTwoMonths": "O intervalo entre as datas não pode ser maior que 2 meses."
-        },
+        "errorCheckInFuture": "A data de check-in deve ser no futuro.",
+        "errorCheckOutAfterCheckIn": "A data de check-out deve ser após a data de check-in.",
+        "errorCheckOutMaxTwoMonths": "O intervalo entre as datas não pode ser maior que 2 meses.",
         "reservationFor": "Reserva para"
     },
     "words-break-section": {

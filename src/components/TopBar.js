@@ -179,33 +179,33 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             }}>
             <span>{t('gallery-label')}</span>
           </a>
-          <a href="/#exps-id"
-          onClick={(e) => {
-            e.preventDefault();
-            handleLinkClick('exps-id');
-          }}
-          className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}>
-            <span>{t('experiences-label')}</span>
-               <div className="dropdown-menu-container">
-                <div className="dropdown-menu-sub-container">
-                  <a href="/AldeiasHistoricas">
-                    <div className="dropdown-menu-option">{t('historical-villages-label')}</div>
-                  </a>
-                  <a href="/AldeiasDoXisto">
-                    <div className="dropdown-menu-option">{t('shale-villages-label')}</div>
-                  </a>
-                  <a href="/SerraDaGardunha">
-                    <div className="dropdown-menu-option">{t('gardunha-mountain-label')}</div>
-                  </a>
-                  <a href="/SerraDaEstrela">
-                    <div className="dropdown-menu-option">{t('estrela-mountain-label')}</div>
-                  </a>
-                  <a href="/Romarias">
-                    <div className="dropdown-menu-option">{t('festivals-label')}</div>
-                  </a>
-                </div>
+          <div className={`desktop-topbar-link ${activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}`}>
+            <a href="/#exps-id" onClick={(e) => { e.preventDefault(); handleLinkClick('exps-id');}}>
+              <span>{t('experiences-label')}</span>
+            </a>
+            <div className="dropdown-menu-container">
+              <div className="dropdown-menu-sub-container">
+                <a href={t('routes.alpedrinha')}>
+                  <div className="dropdown-menu-option">Alpedrinha</div>
+                </a>
+                <a href={t('routes.historicalVillages')}>
+                  <div className="dropdown-menu-option">{t('historical-villages-label')}</div>
+                </a>
+                <a href={t('routes.schistVillages')}>
+                  <div className="dropdown-menu-option">{t('experiences.schistVillages')}</div>
+                </a>
+                <a href={t('routes.gardunhaMountain')}>
+                  <div className="dropdown-menu-option">{t('gardunha-mountain-label')}</div>
+                </a>
+                <a href={t('routes.estrelaMountain')}>
+                  <div className="dropdown-menu-option">{t('estrela-mountain-label')}</div>
+                </a>
+                <a href={t('routes.festivals')}>
+                  <div className="dropdown-menu-option">{t('festivals-label')}</div>
+                </a>
               </div>
-          </a>
+            </div>
+          </div>
           <button onClick={(e) => {
             e.preventDefault();
             window.location.href = '/Reservar';

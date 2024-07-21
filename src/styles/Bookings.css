@@ -5,20 +5,36 @@
   
 #booking-page-id .logo-container,
 #booking-page-id .logo-container img{
-    max-height: 100px;
+  max-height: 100px;
+  padding-bottom: 13px;
 }
-  
+
 #booking-page-id .links-top-bar a {
-    font-size: 24px;
+  font-size: 24px;
+}
+
+#booking-page-id .links-top-bar .cdv-button-secundary {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 2000px) {
+  #booking-page-id .logo-container,
+  #booking-page-id .logo-container img{
+    max-height: 80px;
+  }
+  
+  #booking-page-id .links-top-bar a {
+    font-size: 16px;
+  }
+
+  #booking-page-id .links-top-bar .cdv-button-secundary {
+    font-size: 18px;
+  }
 }
   
 #booking-page-id .links-top-bar {
     gap: 20px;
     justify-content: flex-end;
-}
-  
-#booking-page-id .links-top-bar .cdv-button-secundary {
-    font-size: 26px;
 }
 
 #booking-page-id{
@@ -162,14 +178,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 8px 12px; /* Espaçamento interno */
+    padding: 8px 4px; /* Espaçamento interno */
     color: white; /* Cor do texto */
     font-size: 14px; /* Tamanho da fonte */
     text-align: center; /* Centraliza o texto */
+    align-items: flex-end;
 }
 
 .desconto-text-bigger {
-    font-size: 26px; /* Tamanho do texto maior */
+    max-width: 60%;
+    font-size: 26px; 
+    text-align: end;
 }
 
 .desconto-text {
@@ -229,7 +248,7 @@
     }
 
     .tag-triangle {
-        border-bottom: 120px solid transparent; /* Altura do triângulo */
-        border-right: 140px solid var(--color-primary); /* Cor do triângulo */
+        border-bottom: 140px solid transparent; /* Altura do triângulo */
+        border-right: 160px solid var(--color-primary); /* Cor do triângulo */
     }
 } 
