@@ -63,7 +63,7 @@
 .dropdown-menu-container{
   display: none;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 34px;
   width: max-content;
   right: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
