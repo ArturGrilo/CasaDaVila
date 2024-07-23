@@ -764,7 +764,8 @@ input[type="date"] {
 
   #spaces-id .cdv-card{
     width: 100% !important;
-    height: 50vh;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
   }
 
   .space-main-container {
@@ -1273,6 +1274,7 @@ input[type="date"] {
 
   .mobile-space-button{
     display: block;
+    bottom: 10px;
   }
   
   .desktop-space-button{

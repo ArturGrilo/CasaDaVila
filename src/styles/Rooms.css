@@ -16,7 +16,8 @@
 }
 
 #spaces-id .cdv-card{
-  width: 100% !important;
+  width: 50vh !important;
+  height: 50vh !important;
 }
 
 .img-comodidades {
