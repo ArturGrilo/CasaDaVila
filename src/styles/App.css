@@ -697,17 +697,17 @@ input[type="date"] {
   }
 
   .cookie-content p {
-      font-size: 20px !important;
+      font-size: 16px !important;
       margin-right: 0 !important;
       text-align: justify;
   }
 
   .cookie-content button{
-    font-size: 22px;
+    font-size: 16px !important;
   }
 
   .cookie-content a{
-    font-size: 22px;
+    font-size: 16px !important;
   }
 
   #words-section-id {
@@ -803,8 +803,16 @@ input[type="date"] {
   .carousel-container {
     width: 100%;
     margin-bottom: 0px;
-    height: 50%;
+    height: calc(50% + 61px);
     order: 1;
+  }
+
+  #rooms-popup .slick-list{
+    height: calc(100% - 61px);
+  }
+
+  #rooms-popup .slick-dots{
+    bottom: 55px;
   }
 
   .cdv-popup-content {
@@ -820,13 +828,13 @@ input[type="date"] {
 
   .space-1 {
     width: 100%;
-    height: 50%;
+    height: calc(50% - 61px);
   }
 
   .commodity-list {
     gap: 15px;
     justify-content: left;
-    height: calc(100% - 130px);
+    height: calc(100% - 50px);
   }
 
   .commodity-item {
@@ -1257,5 +1265,13 @@ input[type="date"] {
 
   .media-item{
     height: 350px !important;
+  }
+
+  .mobile-space-button{
+    display: block;
+  }
+  
+  .desktop-space-button{
+    display: none;
   }
 }

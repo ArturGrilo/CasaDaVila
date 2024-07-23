@@ -51,6 +51,11 @@ function Spaces({ space }) {
           <div className="space-main-container">
             <div className="carousel-container">
               <Carousel images={space1_Images} />
+              <div className="rooms-reservar-button mobile-space-button">
+                <button className="cdv-button-secundary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
+                  {t('reserve')}
+                </button>
+              </div>
             </div>
             <div className="space-1">
               <div className="space-1-info">
@@ -93,7 +98,7 @@ function Spaces({ space }) {
                     <span>{t('cable_tv')}</span>
                   </div>
                 </div>
-                <div className="rooms-reservar-button">
+                <div className="rooms-reservar-button desktop-space-button">
                   <button className="cdv-button-secundary" onClick={(e) => {e.preventDefault(); window.location.href = '/Reservar';}}>
                     {t('reserve')}
                   </button>

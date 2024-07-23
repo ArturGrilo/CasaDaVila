@@ -21,6 +21,14 @@
 }
 
 .cookie-content p {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 80px;
+}
+
+.cookie-content button{
+    font-size: 20px;
+}
+
+.cookie-content a{
+    font-size: 20px;
 }

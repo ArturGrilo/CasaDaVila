@@ -2,6 +2,10 @@
   height: 100%;
 }
 
+#rooms-popup button{
+  font-size: 17px;
+}
+
 .space-main-container{
   display: flex;
   width: 100%;
@@ -17,7 +21,16 @@
 }
 
 .carousel-container {
+  position: relative;
   width: 50%;
+}
+
+.mobile-space-button{
+  display: none;
+}
+
+.desktop-space-button{
+  display: block;
 }
 
 .slick-slide img {   
