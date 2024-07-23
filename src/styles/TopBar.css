@@ -171,7 +171,6 @@
 }
 
 .scrolled .links-top-bar .cdv-button-secundary:hover{
-  font-size: 26px;
   background-color: white;
   border-color: var(--color-primary);
   color: var(--color-primary);
