@@ -60,7 +60,7 @@ input[type="date"] {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  padding: 15px;
+  padding: 10px;
   font-size: 25px;
   border: 2px solid white;
   border-radius: 4px;
@@ -76,7 +76,7 @@ input[type="date"] {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--color-background-light);
-  padding: 15px;
+  padding: 10px;
   font-size: 25px;
   border: 2px solid var(--color-primary);
   border-radius: 4px;

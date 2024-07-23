@@ -369,6 +369,10 @@
   height: 70px;
 }
 
+.mobile-menu .logo-container, .mobile-menu .logo-container img{
+  padding-bottom: 0 !important;
+}
+
 .mobile-menu a {
   display: block;
   padding: 15px 20px;

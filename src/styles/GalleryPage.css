@@ -121,12 +121,11 @@
 .modal {
   display: none; /* Inicia oculto por padrão */
   position: fixed; /* Mantém o modal posicionado na tela */
-  z-index: 1; /* Coloca o modal sobre outros elementos */
+  z-index: 9999; /* Coloca o modal sobre outros elementos */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Adiciona rolagem quando necessário */
   background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
 }
 
@@ -136,10 +135,10 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin: 200px auto; 
+  margin: 50px auto;
   border: 1px solid #888;
-  width: min-content; /* Ajusta a largura do modal */
-  height: calc(100vh - 300px);
+  width: min-content;
+  height: calc(100vh - 100px);
   position: relative;
 }
 
