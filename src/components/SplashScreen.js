@@ -7,13 +7,25 @@ const SplashScreen = () => {
   const [changeIndex, setIndex] = useState(false);
 
   useEffect(() => {
+    //const timerSplashScreen = setTimeout(() => {
+    //  setHiddenSplashScreen(true);
+    //}, 1000);
+
+    //const timerIndex = setTimeout(() => {
+    //    setIndex(true);
+    //}, 1500);
+
+    //const timerSplashLogo = setTimeout(() => {
+    //  setHiddenSplashLogo(true);
+    //}, 100);
+
     const timerSplashScreen = setTimeout(() => {
       setHiddenSplashScreen(true);
-    }, 1000);
+    }, 100000);
 
     const timerIndex = setTimeout(() => {
         setIndex(true);
-    }, 1500);
+    }, 150000);
 
     const timerSplashLogo = setTimeout(() => {
       setHiddenSplashLogo(true);

@@ -581,6 +581,10 @@ input[type="date"] {
     height: 300px; 
   }
 
+  .spinner{
+    top: -15px;
+  }
+
   .dropdown-menu-option {
     font-size: 14px;
   }
@@ -630,7 +634,7 @@ input[type="date"] {
   }
 
   .splash-logo {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
   }
 
