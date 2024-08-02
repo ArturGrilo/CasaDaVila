@@ -12,7 +12,7 @@ const SplashScreen = () => {
     }, 1000);
 
     const timerIndex = setTimeout(() => {
-        setIndex(true);
+      setIndex(true);
     }, 1500);
 
     const timerSplashLogo = setTimeout(() => {
@@ -28,7 +28,11 @@ const SplashScreen = () => {
   }, []);
 
   return (
-    <div className={`splash-container ${hiddenSplashScreen ? "hidden" : ""} ${changeIndex ? "change-index" : ""}`}>
+    <div
+      className={`splash-container ${
+        hiddenSplashScreen ? "hidden" : ""
+      } ${changeIndex ? "change-index" : ""}`}
+    >
       <div className="splash-logo-container">
         <img
           src="/images/Logo/CasaDaVilaLogo2.png"
@@ -37,6 +41,7 @@ const SplashScreen = () => {
         />
         <div className="spinner"></div>
       </div>
+      
     </div>
   );
 };

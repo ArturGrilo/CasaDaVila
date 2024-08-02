@@ -578,7 +578,7 @@ input[type="date"] {
   }
 
   .spinner{
-    top: -15px;
+    top: -26px;
   }
 
   .dropdown-menu-option {
@@ -602,182 +602,96 @@ input[type="date"] {
     font-size: 18px;
   }
 
-  .cdv-road-timeline{
-    left: -20px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-  }
-
-  .cdv-road-from-dashed-line {
-    top: -21px;
-    border-top: 5px dashed var(--color-background-light);
+  .cdv-road {
+    height: 350px;
   }
 
   .cdv-road-from {
-    border-top: 30px solid var(--color-text-dark);
-    top: -30px;
+    top: -40px;
+    border-top: 40px solid var(--color-text-dark);
   }
 
-  .cdv-road-container{
-    width: 100%;
-    gap: 0;
-  }
-
-  .cdv-road-container:nth-child(odd) .cdv-road {
-    border-top: 30px solid var(--color-text-dark);
-    border-right: 30px solid var(--color-text-dark);
-    border-bottom: 30px solid var(--color-text-dark);
-  }
-
-  .cdv-road-text-container {
-    padding: 35px 0;
-    min-width: 50%;
-    max-width: 50%;
-  }
-
-  .cdv-road-text-container .cdv-title {
-    font-size: 18px;
-    margin: 0px;
-  }
-  
-  .cdv-road-text-container .cdv-text {
-    font-size: 15px;
-  }
-
-  .cdv-road {
-    display: flex;
-    position: relative;
-    min-width: 50%;
-    max-width: 50%;
-    aspect-ratio: 1 / 1;
-    height: auto;
-  }
-
-  .cdv-road-container:nth-child(odd) .cdv-road-image-container {
-    margin: 5px 5px 5px 10px;
-    padding: 5px 5px 5px 0;
-    box-shadow: 0px 0px 5px -1px var(--color-primary);
-  }
-
-  .cdv-road-container:nth-child(odd) .cdv-road-sub {
-    border-top: 5px dashed var(--color-background-light);
-    border-right: 5px dashed var(--color-background-light);
-    border-bottom: 5px dashed var(--color-background-light);
-  }
-
-  .cdv-road-sub {
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 15px);
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    z-index: 20;
-    width: calc(100% + 6px);
-    height: calc(100% + 25px);
-  }
-
-  .cdv-road-container:nth-child(odd) .cdv-road-sub {
-    left: calc(50% + 10px);
-  }
-
-  .cdv-road-container:nth-child(even) .cdv-road {
-    border-top: 30px solid var(--color-text-dark);
-    border-left: 30px solid var(--color-text-dark);
-    border-bottom: 30px solid var(--color-text-dark);
-  }
-
-  .cdv-road-container:nth-child(even) {
-    margin-top: -30px;
-  }
-
-  .cdv-road-container:nth-child(even) .cdv-road-sub {
-    border-top: 5px dashed var(--color-background-light);
-    border-left: 5px dashed var(--color-background-light);
-    border-bottom: 5px dashed var(--color-background-light);
-  }
-
-  .cdv-road-container:nth-child(even) .cdv-road-image-container {
-    margin: 5px 10px 5px 5px;
-    padding: 5px 0px 5px 5px;
-    box-shadow: 0px 0px 5px -1px var(--color-primary);
-  }
-
-  .cdv-road-container:nth-child(odd) {
-    margin-top: -30px;
-  }
-
-  .cdv-road-to {
-    border-top: 30px solid var(--color-text-dark);
-    right: calc(-50vw + 50% - 20px);
-  }
-
-  .cdv-road-to-dashed-line {
-    bottom: 13px;
-    border-top: 5px dashed var(--color-background-light);
-    right: calc(-50vw + 50% - 20px);
-  }
-
-  .cdv-road-to-icon, .cdv-road-to-icon-2 {
-    display: none;
-  }
-
-  .cdv-road-from-icon{
-    display: none;
+  .cdv-road-from-dashed-line {
+    top: -22px;
+    border-top: 6px dashed var(--color-background-light);
   }
 
   .cdv-road-from-icon-2 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: -55px;
-    left: 0;
+    top: -73px;
   }
 
-  .cdv-road-from-icon-2 .commodity-icon{
-    height: 25px;
-    width: 25px;
+  .fa-tree.commodity-icon {
+    height: 35px;
   }
 
-  .cdv-road-from.nature-color {
-    border-top: 30px solid #806043;
-  }
-  
-  .cdv-road-from-dashed-line.nature-color {
-    border-top: 5px dashed #422600;
+  .cdv-road-from-icon-2 svg, .cdv-road-to-icon-2 svg {
+    height: 30px;
   }
 
-  .cdv-road-container:nth-child(odd) .cdv-road.nature-color {
-    border-radius: 0 50% 50% 0px !important;
-    border-top: 30px solid #806043;
-    border-right: 30px solid #806043;
-    border-bottom: 30px solid #806043;
+  .cdv-road-container:nth-child(odd) .cdv-road {
+    border-top: 40px solid var(--color-text-dark);
+    border-right: 40px solid var(--color-text-dark);
+    border-bottom: 40px solid var(--color-text-dark);
   }
 
-  .cdv-road-container:nth-child(odd) .cdv-road-sub.nature-color {
-    border-top: 5px dashed #422600;
-    border-right: 5px dashed #422600;
-    border-bottom: 5px dashed #422600;
+  .cdv-road-container {
+    gap: 0px;
   }
 
-  .cdv-road-container:nth-child(even) .cdv-road.nature-color {
-    border-top: 30px solid #806043;
-    border-left: 30px solid #806043;
-    border-bottom: 30px solid #806043;
+  .cdv-road-container:nth-child(odd) .cdv-road-sub {
+    border-top: 6px dashed var(--color-background-light);
+    border-right: 6px dashed var(--color-background-light);
+    border-bottom: 6px dashed var(--color-background-light);
   }
 
-  .cdv-road-container:nth-child(even) .cdv-road-sub.nature-color {
-    border-top: 5px dashed #422600;
-    border-left: 5px dashed #422600;
-    border-bottom: 5px dashed #422600;
+  .cdv-road-sub {
+    height: calc(100% + 33px);
   }
 
-  .cdv-road-to.nature-color {
-    border-top: 30px solid #806043;
+  .cdv-road-container:nth-child(odd) .cdv-road-image-container {
+    margin: 10px 10px 10px 20px;
   }
 
-  .cdv-road-to-dashed-line.nature-color {
-    border-top: 5px dashed #422600;
+  .cdv-road-container:nth-child(even) .cdv-road {
+    border-top: 40px solid var(--color-text-dark);
+    border-left: 40px solid var(--color-text-dark);
+    border-bottom: 40px solid var(--color-text-dark);
+  }
+
+  .cdv-road-container:nth-child(even) {
+    margin-top: -40px;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road-image-container {
+    margin: 10px 20px 10px 10px;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road-sub {
+    border-radius: 100% 0px 0px 100%;
+    border-top: 6px dashed var(--color-background-light);
+    border-left: 6px dashed var(--color-background-light);
+    border-bottom: 6px dashed var(--color-background-light);
+  }
+
+  .cdv-road-container:nth-child(odd) .cdv-road-sub {
+    left: calc(50% + 9px);
+  }
+
+  .cdv-road-to {
+    border-top: 40px solid var(--color-text-dark);
+  }
+
+  .cdv-road-to-dashed-line {
+    bottom: 18px;
+    border-top: 6px dashed var(--color-background-light);
+  }
+
+  .cdv-road-container:nth-child(odd) {
+    margin-top: -40px;
+  }
+
+  .cdv-road-to-icon-2 {
+    bottom: 38px;
   }
 }
 
@@ -821,7 +735,7 @@ input[type="date"] {
   }
 
   .splash-logo {
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
   }
 
