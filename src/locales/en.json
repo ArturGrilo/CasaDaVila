@@ -36,10 +36,9 @@
       "errorCheckOutAfterCheckIn": "Check-out date must be after the check-in date.",
       "errorCheckOutMaxTwoMonths": "The interval between dates cannot be more than 2 months.",
       "reservationFor": "Reservation for",
-      "paragraph1": "Thank you for your interest in booking your stay with us!",
-      "paragraph2": "Please note that your reservation will only be considered confirmed after direct contact with the booking manager. After submitting your reservation request, our manager will contact you to confirm all details and ensure that your stay will be as desired.",
-      "paragraph3": "To ensure a quick and efficient confirmation of your reservation, we recommend that you contact us directly via the phone number provided on the page. This is the most effective way to check availability and finalize your booking securely.",
-      "paragraph4": "We are available for any questions or additional clarifications. Thank you for your understanding, and we look forward to welcoming you soon!"
+      "paragraph1": "Thank you for your interest in booking with us!",
+      "paragraph2": "Your reservation will only be confirmed after direct contact with the booking manager. We recommend calling us directly to ensure a quick and secure confirmation.",
+      "paragraph3": "We are available for any questions. We look forward to welcoming you soon!"
   },
     "about-us": {
       "title": "About Us",

@@ -94,10 +94,6 @@
   border-radius: 0 0 8px 8px;
 }
 
-.dropdown-menu-option:first-child:hover{
-  border-radius: 8px 8px 0 0;
-}
-
 .dropdown-menu-link:hover .dropdown-menu-container,
 .dropdown-menu-container:hover .dropdown-menu-container{
   display: flex;

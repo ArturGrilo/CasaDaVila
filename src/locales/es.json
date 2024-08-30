@@ -44,10 +44,9 @@
         "errorCheckOutAfterCheckIn": "La fecha de check-out debe ser después de la fecha de check-in.",
         "errorCheckOutMaxTwoMonths": "El intervalo entre las fechas no puede ser mayor de 2 meses.",
         "reservationFor": "Reserva para",
-        "paragraph1": "¡Agradecemos su interés en reservar su estancia con nosotros!",
-        "paragraph2": "Por favor, tenga en cuenta que su reserva solo se considerará confirmada tras el contacto directo con el gestor de reservas. Después de enviar su solicitud de reserva, nuestro gestor se pondrá en contacto con usted para confirmar todos los detalles y asegurar que su estancia será como lo deseado.",
-        "paragraph3": "Para garantizar una confirmación rápida y eficaz de su reserva, le recomendamos que se ponga en contacto directo con nosotros a través del número de teléfono proporcionado en la página. Esta es la forma más eficaz de verificar la disponibilidad y finalizar su reserva de manera segura.",
-        "paragraph4": "Estamos a su disposición para cualquier duda o aclaración adicional. Agradecemos su comprensión y esperamos recibirle pronto."
+        "paragraph1": "Gracias por su interés en reservar con nosotros!",
+        "paragraph2": "Su reserva solo se confirmará después de un contacto directo con el gestor de reservas. Le recomendamos que nos llame directamente para garantizar una confirmación rápida y segura.",
+        "paragraph3": "Estamos a su disposición para cualquier consulta. Esperamos recibirle pronto!"
       },
     "words-break-section": {
         "simplicity": "Simplicidad",

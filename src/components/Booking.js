@@ -111,7 +111,6 @@ const BookingPage = () => {
           <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph1')}</span>
           <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph2')}</span>
           <span data-aos="fade-up">{t('booking.paragraph3')}</span>
-          <span data-aos="fade-up">{t('booking.paragraph4')}</span>
         </div>
         <div className='tag-desconto'>
           <div className="tag-triangle"></div>
