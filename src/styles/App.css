@@ -611,6 +611,10 @@ input[type="date"] {
     border-top: 40px solid var(--color-text-dark);
   }
 
+  .cdv-road-from.nature-color{
+    border-top: 40px solid #806043;
+  }
+
   .cdv-road-from-dashed-line {
     top: -22px;
     border-top: 6px dashed var(--color-background-light);
@@ -632,6 +636,56 @@ input[type="date"] {
     border-top: 40px solid var(--color-text-dark);
     border-right: 40px solid var(--color-text-dark);
     border-bottom: 40px solid var(--color-text-dark);
+  }
+
+  .cdv-road-container:nth-child(odd) .cdv-road.nature-color {
+    border-radius: 0 50% 50% 0px !important;
+    border-top: 40px solid #806043;
+    border-right: 40px solid #806043;
+    border-bottom: 40px solid #806043;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road.nature-color {
+    border-top: 40px solid #806043;
+    border-left: 40px solid #806043;
+    border-bottom: 40px solid #806043;
+  }
+
+  .cdv-road-from-dashed-line.nature-color {
+    border-top: 6px dashed #422600;
+  }
+
+  .cdv-road-container:nth-child(odd) .cdv-road-sub.nature-color {
+    border-top: 6px dashed #422600;
+    border-right: 6px dashed #422600;
+    border-bottom: 6px dashed #422600;
+  }
+
+  .cdv-road-container:nth-child(even) .cdv-road-sub.nature-color {
+    border-top: 6px dashed #422600;
+    border-left: 6px dashed #422600;
+    border-bottom: 6px dashed #422600;
+  }
+
+
+  .cdv-month.parties {
+    font-size: 30px;
+  }
+
+  .cdv-title.parties {
+    font-size: 25px;
+  }
+
+  .cdv-sub-title.parties {
+    font-size: 20px;
+  }
+
+  .cdv-road-to.nature-color {
+    border-top: 40px solid #806043;
+  }
+
+  .cdv-road-to-dashed-line.nature-color {
+    border-top: 6px dashed #422600;
   }
 
   .cdv-road-container {
