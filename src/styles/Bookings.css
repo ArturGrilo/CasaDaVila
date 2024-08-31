@@ -230,13 +230,9 @@
     .reservation-container {
         flex-direction: column;
     }
-    
-    #booking-page-id .cdv-active-link{
-        display: none;
-    }
 
     .reservation-form {
-        margin-top: 120px;
+        margin-top: 20px;
     }
 
     .desconto-text-bigger {

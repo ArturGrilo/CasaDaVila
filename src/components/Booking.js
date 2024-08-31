@@ -1,7 +1,6 @@
 import React, { useEffect, useCallback, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TopBar from "../components/TopBar";
 import Footer from "../components/Footer";
@@ -109,7 +108,7 @@ const BookingPage = () => {
       <div className="cdv-main-container">
         <div className="cdv-text" style={{ textAlign: "left", marginBottom: "80px"}}>
           <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph1')}</span>
-          <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph2')}</span>
+          <span style={{ textAlign: "left", width: "calc(100% - 100px)", fontWeight: "bold" }} data-aos="fade-up">{t('booking.paragraph2')}</span>
           <span data-aos="fade-up">{t('booking.paragraph3')}</span>
         </div>
         <div className='tag-desconto'>
@@ -124,23 +123,20 @@ const BookingPage = () => {
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faPhoneVolume} className="cdv-card-icon"/>
             </div>
-            <div className='reservation-text'>{t('contact-phone')}</div>
+            <div className='reservation-text'>{t('booking.phone')}</div>
             <a className='reservation-title' href="tel:+351964849002">+351 964 849 002</a>
           </div>
           <div className="reservation-call" data-aos="fade-up">
             <div className='reservation-call-icon'>
               <FontAwesomeIcon icon={faEnvelope} className="cdv-card-icon"/>
             </div>
-            <div className='reservation-text'>{t('contact-email')}</div>
+            <div className='reservation-text'>{t('booking.email')}</div>
             <a className='reservation-title alt' href="mailto:casadavila.pt@hotmail.com">casadavila.pt@hotmail.com</a>
           </div>
         </div>
         <div className='cdv-active-link' data-aos="fade-up">{t('booking.or')}</div>
 
         <div className="reservation-form">
-          <div className='reservation-call-icon' data-aos="fade-up">
-            <FontAwesomeIcon icon={faWhatsapp} className="cdv-card-icon"/>
-          </div>
           <div className='reservation-text' data-aos="fade-up">{t('booking.fillForm')}</div>
           <form onSubmit={handleSubmit}>
             <div data-aos="fade-up">
