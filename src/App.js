@@ -139,6 +139,7 @@ const App = () => {
                       isParties={true}
                   />} 
         />
+        <Route path="/robots.txt" element={<Navigate to="/robots.txt" />} />
         {/* Fallback route */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
