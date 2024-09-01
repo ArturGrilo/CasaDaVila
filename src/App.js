@@ -79,7 +79,7 @@ const App = () => {
         />
         <Route path={t('routes.schistVillages')} 
         element={<RoadTimeline 
-                      imgpath="Experiencias/AldeiasDoXisto.jpeg"
+                      imgpath="Experiencias/AldeiasDoXisto.webp"
                       title={t('RoadTimelineSchist.title')}
                       description={t('RoadTimelineSchist.description', { returnObjects: true })}
                       routes={t('RoadTimelineSchist.routes', { returnObjects: true }).map(route => ({

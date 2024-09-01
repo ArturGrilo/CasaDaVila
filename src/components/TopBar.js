@@ -149,7 +149,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               </div>
             </div>
             <div className="feedback-image">
-              <img src="/images/feedback-image-copia.png" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img src="/images/feedback-image-copia.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
             </div>
           </div>
           <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home-id' ? 'cdv-active-link' : ''}`}>

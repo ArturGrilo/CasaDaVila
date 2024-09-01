@@ -5,7 +5,7 @@ const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const images = useMemo(() => [
-    "/images/HomeOutside5.jpeg",
+    "/images/HomeOutside5.webp",
     "/images/HomeInside2.jpeg",
     "/images/HomePageImage.jpeg"
   ], []); 

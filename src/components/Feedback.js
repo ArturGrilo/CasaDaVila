@@ -53,7 +53,7 @@ const Feedback = () => {
           ))}
         </div>
         <div className="feedback-image">
-          <img src={"/images/feedback-image-copia.png"} alt="feedback" />
+          <img src={"/images/feedback-image-copia.webp"} alt="feedback - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
         </div>
       </div>
     </section>

@@ -79,7 +79,7 @@ const GalleryPage = () => {
     setDisplayedImages(images[selectedCategory]);
     const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
     elements.forEach(element => {
-      element.style.backgroundImage = `url(images/HomeOutside5.jpeg)`; // Altera para a primeira imagem da categoria
+      element.style.backgroundImage = `url(images/HomeOutside5.webp)`; // Altera para a primeira imagem da categoria
     });
   }, );
 
@@ -123,7 +123,7 @@ const GalleryPage = () => {
         <div className="media-display">
           {displayedImages.map((image, index) => (
             <div key={index} className="media-item" onClick={() => openModal(image)}>
-              <img src={image} alt={`Imagem from ${selectedCategory}`}/>
+              <img src={image} alt={`Imagem from ${selectedCategory} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`}/>
             </div>
           ))}
         </div>
@@ -131,7 +131,7 @@ const GalleryPage = () => {
           <div className="modal open" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closeModal}/>
-              <img src={selectedImage} alt="Imagem Modal" />
+              <img src={selectedImage} alt="Imagem Modal - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
             </div>
           </div>
         )}

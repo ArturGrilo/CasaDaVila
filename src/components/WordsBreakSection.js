@@ -9,7 +9,7 @@ function WordsBreakSection() {
     <section id="words-section-id" className="cdv-section alt">
       <img
         src="/images/Logo/CasaDaVilaWhiteLogo.png"
-        alt="Alpedrinha - Vista do Palácio do Picadeiro"
+        alt="Alpedrinha - Vista do Palácio do Picadeiro - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"
         className="img-words-break-section"
         data-aos="fade-up"
       />

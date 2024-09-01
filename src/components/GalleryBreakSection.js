@@ -12,8 +12,8 @@ function GalleryBreakSection() {
   return (
     <section id="gallery-section-id" className="cdv-section alt">
       <img
-        src="/images/gallery-break-section.jpeg"
-        alt="Alpedrinha - Vista do Palácio do Picadeiro"
+        src="/images/gallery-break-section.webp"
+        alt="Alpedrinha - Vista do Palácio do Picadeiro - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"
         className="img-gallery-break-section"
       />
       <button onClick={redirectToGallery} data-aos="fade-up" className="cdv-button-primary">

@@ -27,7 +27,7 @@ const Carousel = ({ images }) => {
     <Slider ref={sliderRef} {...settings}>
       {images.map((image, index) => (
         <div key={index}>
-          <img src={image} alt={`Imagem ${index + 1}`} />
+          <img src={image} alt={`Imagem ${index + 1} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`} />
         </div>
       ))}
     </Slider>

@@ -36,7 +36,7 @@ const SplashScreen = () => {
       <div className="splash-logo-container">
         <img
           src="/images/Logo/CasaDaVilaLogo2.png"
-          alt="Logo"
+          alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"
           className={`splash-logo ${hiddenSplashLogo ? "hidden" : ""}`}
         />
         <div className="spinner"></div>

@@ -16,7 +16,7 @@ function Experiences() {
         <div className='experiences-interval'>
           <div className="cdv-grid">
             <a className="cdv-card" data-aos="fade-left" href={t('routes.alpedrinha')}>
-              <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha"/>
+              <img src="/images/Alpedrinha/Picadeiro.jpeg" alt="Alpedrinha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.alpedrinha')}</div>
                 <div className="cdv-card-details-see-more">
@@ -26,7 +26,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.historicalVillages')}>
-              <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas"/>
+              <img src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.historicalVillages')}</div>
                 <div className="cdv-card-details-see-more">
@@ -36,7 +36,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-left" href={t('routes.schistVillages')}>
-              <img src="/images/Experiencias/AldeiasDoXisto.jpeg" alt="Aldeias Do Xisto"/>
+              <img src="/images/Experiencias/AldeiasDoXisto.webp" alt="Aldeias Do Xisto - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.schistVillages')}</div>
                 <div className="cdv-card-details-see-more">
@@ -46,7 +46,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.gardunhaMountain')}>
-              <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha"/>
+              <img src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.gardunhaMountain')}</div>
                 <div className="cdv-card-details-see-more">
@@ -56,7 +56,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-left" href={t('routes.estrelaMountain')}>
-              <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela"/>
+              <img src="/images/Experiencias/SerraEstrela.jpeg" alt="Serra Da Estrela - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.estrelaMountain')}</div>
                 <div className="cdv-card-details-see-more">
@@ -66,7 +66,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.festivals')}>
-              <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Festas e Romarias"/>
+              <img src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Festas e Romarias - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.festivities')}</div>
                 <div className="cdv-card-details-see-more">
