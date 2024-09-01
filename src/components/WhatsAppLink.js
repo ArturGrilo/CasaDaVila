@@ -8,8 +8,8 @@ const WhatsAppLink = () => {
   const { t } = useTranslation();
 
   return (
-    <a href="https://wa.me/351964849002" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
-      <button>
+    <a href="https://wa.me/351964849002" target="_blank" rel="noopener noreferrer" className="whatsapp-link" aria-label="Contacte-nos pelo WhatsApp">
+      <button aria-label="Contacte-nos pelo WhatsApp">
         <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" fill="#25D366" />
         <span>{t('whatsAppLink.text')}</span>
       </button>
