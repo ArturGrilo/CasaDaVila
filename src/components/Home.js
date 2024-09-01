@@ -22,7 +22,7 @@ const Home = () => {
     <section id="home-id" className="home-section">
       {images.map((img, index) => (
         <div key={index} className={`homepage-image ${index === imageIndex ? "fade-in" : "fade-out"}`}>
-          <img src={img} alt={`Brief description of the content`} className="homepage-image-animation"/>
+          <img src={img} loading="lazy" alt={`Homepage imagem Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`} className="homepage-image-animation"/>
         </div>
       ))}
       <div className="home-main-container"></div>

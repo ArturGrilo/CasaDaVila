@@ -1443,8 +1443,4 @@ input[type="date"] {
   .feedback-text-container {
     margin: 0 10px;
   }
-
-  .footer-column-3 {
-    text-decoration: none !important;
-  }
 }
