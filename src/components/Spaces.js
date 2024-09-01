@@ -30,7 +30,7 @@ function Spaces({ space }) {
   const space2_Images = [
     "/images/PS_1.jpeg",
     "/images/PS_2.jpeg",
-    "/images/PS_3.jpeg",
+    "/images/PS_3.webp",
     "/images/PS_4.jpeg",
     "/images/PS_5.jpeg",
     "/images/PS_6.jpeg",

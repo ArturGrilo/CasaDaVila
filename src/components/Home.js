@@ -6,8 +6,8 @@ const Home = () => {
 
   const images = useMemo(() => [
     "/images/HomeOutside5.webp",
-    "/images/HomeInside2.jpeg",
-    "/images/HomePageImage.jpeg"
+    "/images/HomeInside2.webp",
+    "/images/HomePageImage.webp"
   ], []); 
 
   useEffect(() => {

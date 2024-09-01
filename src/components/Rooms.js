@@ -44,7 +44,7 @@ function Rooms() {
             </div>
           </div>
           <div className="cdv-card" data-aos="fade-right" onClick={() => openPopup(2)}>
-            <img src="/images/PS_3.jpeg" alt="Casa Da Vila - Piso Superior - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+            <img src="/images/PS_3.webp" alt="Casa Da Vila - Piso Superior - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
             <div className="cdv-card-details">
               <div className="cdv-card-details-title">{t('rooms.duplexApartment')}</div>
               <div className="cdv-card-details-see-more">
