@@ -478,4 +478,8 @@
   .links-top-bar.open {
     display: block;
   }
+
+  .feedback-image, .feedback-image img {
+    max-width: 100%;
+  }
 }
