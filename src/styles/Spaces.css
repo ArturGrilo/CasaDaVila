@@ -83,3 +83,86 @@
 #spaces-id .cdv-title{
   width: calc(100% - 40px);
 }
+
+@media only screen and (max-width: 870px) {
+  #spaces-id .cdv-text{
+    margin-bottom: 30px;
+  }
+
+  #spaces-id .cdv-card{
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+  }
+
+  .space-main-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #rooms-popup {
+    height: calc(100% - 20px);
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  #spaces-id .slick-dots {
+    color: white;
+    bottom: 35px;
+  }
+
+  .space-1-info{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #rooms-popup .slick-list{
+    height: calc(100% - 61px);
+  }
+
+  #rooms-popup .slick-dots{
+    bottom: 55px;
+  }
+
+  .space-1 {
+    width: 100%;
+    height: calc(50% - 61px);
+  }
+
+  .commodity-list {
+    gap: 15px;
+    justify-content: left;
+    height: calc(100% - 50px);
+  }
+
+  .commodity-item {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-left: -15px;
+    font-size: 15px;
+  }
+
+  #rooms-popup .cdv-title{
+    font-size: 16px !important;
+    margin-bottom: 20px;
+  }
+
+  .desktop-space-button{
+    display: none;
+  }
+
+  .mobile-space-button{
+    display: block;
+    bottom: 10px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    margin-bottom: 0px;
+    height: calc(50% + 61px);
+    order: 1;
+  }
+}

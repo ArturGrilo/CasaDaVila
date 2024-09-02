@@ -58,3 +58,19 @@
         padding: 6px;
     }
 }
+
+@media only screen and (max-width: 2000px) {
+    .cdv-country-icon {
+      font-size: 15px;
+      padding: 11px 8px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .cdv-flag-container{
+      z-index: 9999 !important;
+      bottom: 20px !important; /* Distância do fundo da janela de visualização */
+      left: 12px !important;
+      height: 40px;
+    }
+}

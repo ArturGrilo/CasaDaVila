@@ -17,4 +17,22 @@
   .go-to-top-link:hover {
     background-color: #333; /* Mudar a cor de fundo ao passar o mouse */
   }
+
+  @media only screen and (max-width: 2000px) {
+    .go-to-top-link {
+      bottom: calc(5% + 45px);
+      padding: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    .go-to-top-link {
+      bottom: 65px;
+      right: 12px;
+      width: 36px;
+      height: 42px;
+      padding: 6px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
   

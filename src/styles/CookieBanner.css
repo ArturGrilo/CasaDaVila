@@ -32,3 +32,28 @@
 .cookie-content a{
     font-size: 20px;
 }
+
+@media only screen and (max-width: 1300px) {
+    .cookie-content {
+      flex-direction: column;
+    }
+  
+    .cookie-content p {
+        margin-right: 0 !important;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .cookie-content p {
+        font-size: 16px !important;
+    }
+  
+    .cookie-content button{
+      font-size: 16px !important;
+    }
+  
+    .cookie-content a{
+      font-size: 16px !important;
+    }
+}

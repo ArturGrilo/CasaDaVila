@@ -22,3 +22,25 @@
     font-size: 50px;
     z-index: 1;
 }
+
+@media only screen and (max-width: 2000px) {
+  
+    #gallery-section-id .cdv-button-primary {
+      font-size: 28px !important;
+    }
+  
+    #gallery-section-id {
+      height: 220px !important;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+  #gallery-section-id{
+    height: 320px !important;
+    padding: 30px !important;
+  }
+  
+  #gallery-section-id .cdv-button-primary{
+    font-size: 23px !important;
+  }
+}

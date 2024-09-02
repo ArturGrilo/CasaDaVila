@@ -55,7 +55,7 @@ function Footer() {
         </div>
       </div>
       <p className="footer-copyright-text">Casa Da Vila &copy; {new Date().getFullYear()}</p>
-      <p className="cdv-site-credits">{t('footer.credits')}</p>
+      <p className="footer-site-credits">{t('footer.credits')}</p>
     </footer>
   );
 }

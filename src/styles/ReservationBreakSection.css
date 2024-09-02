@@ -59,3 +59,38 @@
   width: 100%;
   align-items: flex-end;
 }
+
+@media only screen and (max-width: 2000px) {
+  .break-section-title {
+    font-size: 37px;
+  }
+
+  .break-section-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  #break-section-id {
+    flex-direction: column;
+    padding: 90px 30px;
+  }
+
+  .break-section-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .break-section-text {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .break-section-button-container #break-sub-section-id{
+    display: flex;
+  }
+
+  #break-sub-section-id.desktop{
+    display: none;
+  }
+}

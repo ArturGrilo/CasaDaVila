@@ -32,3 +32,21 @@
   justify-content: flex-end;
   font-family: 'HandWriting', sans-serif;
 }
+
+@media only screen and (max-width: 2000px) {
+  .about-us-signature {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .about-us-signature {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .grid-about-us{
+    height: 35vh;
+    grid-gap: 10px;
+  }
+}

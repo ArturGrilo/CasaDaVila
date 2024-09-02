@@ -30,3 +30,49 @@
 .mobile-words-break-section{
     display: none;
 }
+
+@media only screen and (max-width: 2000px) {  
+    #words-section-id span {
+      font-size: 35px;
+    }
+      
+    #words-section-id img {
+        width: 260px !important;
+        left: calc(50% - 130px) !important;
+    }
+    
+    #words-section-id{
+        height: 220px !important;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    #words-section-id {
+      align-items: start !important;
+      height: 320px !important;
+    }
+  
+    #words-section-id span {
+      font-size: 30px !important;
+      text-align: center;
+    }
+  
+    #words-section-id img {
+      width: 190px !important;
+      left: calc(50% - 95px) !important;
+      height: auto !important;
+    }
+  
+    .desktop-words-break-section{
+      display: none;
+    }
+  
+    .mobile-words-break-section{
+      display: flex !important;
+      flex-direction: column;
+    }
+  
+    .mobile-words-break-section span{
+      margin-bottom: 0px !important;
+    }
+}

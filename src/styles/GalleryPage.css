@@ -25,21 +25,6 @@
   font-size: 26px;
 }
 
-@media only screen and (max-width: 2000px) {
-  #gallery-page-id .logo-container,
-  #gallery-page-id .logo-container img{
-    max-height: 80px;
-  }
-  
-  #gallery-page-id .links-top-bar a {
-    font-size: 16px;
-  }
-
-  #gallery-page-id .links-top-bar .cdv-button-secundary {
-    font-size: 18px;
-  }
-}
-
 #gallery-page-id .links-top-bar {
   gap: 20px;
   justify-content: flex-end;
@@ -89,20 +74,6 @@
   align-items: center; /* Centralizar as mídias verticalmente */
 }
 
-@media (max-width: 908px) {
-  .media-display {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 20px; /* Reduzir espaçamento */
-  }
-}
-
-@media (max-width: 480px) {
-  .media-display {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste para dispositivos pequenos */
-    gap: 15px; /* Reduzir ainda mais o espaçamento */
-  }
-}
-
 /* Estilo para cada item de mídia */
 .media-item {
   border-radius: 4px;
@@ -146,4 +117,53 @@
   height: 100%;
   max-width: 97vw;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 2000px) {
+  #gallery-page-id .logo-container,
+  #gallery-page-id .logo-container img{
+    max-height: 80px;
+  }
+  
+  #gallery-page-id .links-top-bar a {
+    font-size: 16px;
+  }
+
+  #gallery-page-id .links-top-bar .cdv-button-secundary {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 908px) {
+  .media-display {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px; /* Reduzir espaçamento */
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .media-type-buttons {
+    flex-direction: column;
+    margin: 40px 0 !important;
+  }
+
+  .media-type-buttons .cdv-button-secundary,
+  .media-type-buttons .cdv-button-primary{
+    font-size: 15px;
+  }
+
+  .media-item img{
+    height: 350px !important;
+  }
+
+  .media-item{
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-display {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste para dispositivos pequenos */
+    gap: 15px; /* Reduzir ainda mais o espaçamento */
+  }
 }

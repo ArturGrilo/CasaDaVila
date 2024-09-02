@@ -8,11 +8,12 @@
   margin-bottom: 100px;
 }
 
-.rooms-grid{
+.rooms-grid {
   display: flex;
   flex-direction: row;
   gap: 80px;
-  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
 }
 
 #spaces-id .cdv-card{
@@ -28,4 +29,19 @@
   top: 0;
   left: 0;
   opacity: 0.3;
+}
+
+@media only screen and (max-width: 2000px) {
+  .rooms-grid {
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .rooms-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
