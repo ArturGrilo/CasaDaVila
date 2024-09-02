@@ -75,7 +75,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                                         </div>
                                                     </div>
                                                     <div className="cdv-road-image-container parties">
-                                                        <img src={route.image} alt={route.title + 'Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira'} className="cdv-road-image" />
+                                                        <img loading="lazy" src={route.image} alt={route.title + 'Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira'} className="cdv-road-image" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                             <div className="cdv-road-timeline">
                                 <div className="cdv-road-from-icon">
                                     <div className="logo-container">
-                                        <img src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+                                        <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
                                     </div>
                                 </div>
                                 <div className="cdv-road-from-icon-2">
@@ -107,7 +107,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                         </div>
                                         <div className={`cdv-road ${isNature ? 'nature-color' : ''}`}>
                                             <div className="cdv-road-image-container">
-                                                <img src={route.image} alt={route.title + ' Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira'} className="cdv-road-image" />
+                                                <img loading="lazy" src={route.image} alt={route.title + ' Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira'} className="cdv-road-image" />
                                             </div>
 
                                             <div className={`cdv-road-sub ${isNature ? 'nature-color' : ''}`}></div>
@@ -119,7 +119,7 @@ function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNatur
                                 <div className="cdv-road-to-icon">
                                     <div className="logo-container">
                                         {isNature ? "" :
-                                        <img src={bottomLogo} alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />}
+                                        <img loading="lazy" src={bottomLogo} alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />}
                                     </div>
                                 </div>
                                 <div className="cdv-road-to-icon-2">

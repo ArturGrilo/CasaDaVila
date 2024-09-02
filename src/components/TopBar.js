@@ -86,7 +86,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
         <div onClick={() => window.location.href = "/#home-id"} className="logo-container">
-          <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+          <img loading="lazy" src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
         </div>
         <div className="links-top-bar">
           <div className="cdv-menu-icon" onClick={handleMenuToggle}>
@@ -94,7 +94,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
           </div>
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
             <div className="logo-container">
-              <img src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+              <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
               <div className="times-icon" onClick={handleMenuToggle}>
                 <FontAwesomeIcon icon="times" className="times" />
               </div>
@@ -149,7 +149,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               </div>
             </div>
             <div className="feedback-image">
-              <img src="/images/feedback-image-copia.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img loading="lazy" src="/images/feedback-image-copia.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
             </div>
           </div>
           <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home-id' ? 'cdv-active-link' : ''}`}>
