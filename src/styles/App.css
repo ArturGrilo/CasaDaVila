@@ -338,7 +338,6 @@ input[type="date"] {
 .cdv-flag-container{
   display: flex;
   gap: 5px;
-  height: 40px;
 }
 
 .cdv-flag-icon{
@@ -803,6 +802,7 @@ input[type="date"] {
     z-index: 9999 !important;
     bottom: 20px !important; /* Distância do fundo da janela de visualização */
     left: 12px !important;
+    height: 40px;
   }
 
   .whatsapp-link {
