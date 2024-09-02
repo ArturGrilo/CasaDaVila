@@ -123,7 +123,7 @@ const GalleryPage = () => {
         <div className="media-display">
           {displayedImages.map((image, index) => (
             <div key={index} className="media-item" onClick={() => openModal(image)}>
-              <img src={image} alt={`Imagem from ${selectedCategory} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`}/>
+              <img loading="lazy" src={image} alt={`Imagem from ${selectedCategory} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`}/>
             </div>
           ))}
         </div>
@@ -131,7 +131,7 @@ const GalleryPage = () => {
           <div className="modal open" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <FontAwesomeIcon icon={faTimes} className="cdv-popup-times" onClick={closeModal}/>
-              <img src={selectedImage} alt="Imagem Modal - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
+              <img loading="lazy" src={selectedImage} alt="Imagem Modal - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
             </div>
           </div>
         )}

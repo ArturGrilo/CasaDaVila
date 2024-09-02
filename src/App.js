@@ -58,7 +58,7 @@ const App = () => {
       <WhatsAppLink />
       <ButtonTop />
       <LanguageSelector />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div style={{ display: "none" }}></div>}>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about-us-id" element={<AboutUs />} />
@@ -153,7 +153,7 @@ const App = () => {
 const MainPage = () => {
   return (
     <div className="app-container">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div style={{ display: "none" }}></div>}>
         <TopBar />
         <Home />
         <AboutUs />

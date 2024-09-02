@@ -36,6 +36,7 @@ function Footer() {
         </div>
         <div className="footer-column-2">
           <img
+            loading="lazy"
             src="/images/Logo/CasaDaVilaWhiteLogo.png"
             alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"
             className="logo"
