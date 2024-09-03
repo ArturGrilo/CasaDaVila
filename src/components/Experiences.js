@@ -16,7 +16,7 @@ function Experiences() {
         <div className='experiences-interval'>
           <div className="cdv-grid">
             <a className="cdv-card" data-aos="fade-left" href={t('routes.alpedrinha')}>
-              <img loading="lazy" src="/images/Alpedrinha/Picadeiro.webp" alt="Alpedrinha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img src="/images/Alpedrinha/Picadeiro.webp" alt="Alpedrinha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.alpedrinha')}</div>
                 <div className="cdv-card-details-see-more">
