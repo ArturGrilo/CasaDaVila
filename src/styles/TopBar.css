@@ -398,6 +398,10 @@
   display: none;
 }
 
+.feedback-image, .feedback-image img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 2000px) {
   .logo{
     max-height: 120px;
@@ -477,9 +481,5 @@
 
   .links-top-bar.open {
     display: block;
-  }
-
-  .feedback-image, .feedback-image img {
-    max-width: 100%;
   }
 }
