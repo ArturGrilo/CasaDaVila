@@ -73,15 +73,16 @@ const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('CasaDaVilaI');
+  const [loadedCategories, setLoadedCategories] = useState({ CasaDaVilaI: true, CasaDaVilaII: false, Exterior: false });
+  const [loadingImages, setLoadingImages] = useState({});
 
-  //eslint-disable-next-line
   useEffect(() => {
+    if (!loadedCategories[selectedCategory]) {
+      setLoadedCategories(prev => ({ ...prev, [selectedCategory]: true }));
+    }
     setDisplayedImages(images[selectedCategory]);
-    const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
-    elements.forEach(element => {
-      element.style.backgroundImage = `url(images/HomeOutside5.webp)`; // Altera para a primeira imagem da categoria
-    });
-  }, );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCategory, loadedCategories]);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -95,6 +96,10 @@ const GalleryPage = () => {
   const closeModal = () => {
     setSelectedImage(null);
     setModalOpen(false);
+  };
+
+  const handleImageLoad = (src) => {
+    setLoadingImages(prev => ({ ...prev, [src]: true })); // Marca imagem como carregada
   };
 
   return (
@@ -116,14 +121,20 @@ const GalleryPage = () => {
               className={selectedCategory === category ? 'cdv-button-secundary' : 'cdv-button-primary'}
               onClick={() => handleCategoryChange(category)}
             >
-                <span>{category === 'Exterior' ? t('exterior') : category.replace('CasaDaVila', 'Casa Da Vila ')}</span>
+              <span>{category === 'Exterior' ? t('exterior') : category.replace('CasaDaVila', 'Casa Da Vila ')}</span>
             </button>
           ))}
         </div>
         <div className="media-display">
           {displayedImages.map((image, index) => (
             <div key={index} className="media-item" onClick={() => openModal(image)}>
-              <img loading="lazy" src={image} alt={`Imagem from ${selectedCategory} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`}/>
+              <img
+                className={!loadingImages[image] ? 'blurred' : 'clear'} // Aplica blur se não estiver carregada
+                loading="lazy"
+                src={image}
+                alt={`Imagem from ${selectedCategory} - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`}
+                onLoad={() => handleImageLoad(image)} // Remove o blur quando carregar
+              />
             </div>
           ))}
         </div>

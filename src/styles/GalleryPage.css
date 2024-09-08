@@ -167,3 +167,14 @@
     gap: 15px; /* Reduzir ainda mais o espaçamento */
   }
 }
+
+.blurred {
+  filter: blur(20px); /* Ajuste o valor conforme necessário */
+  transition: filter 0.5s ease-in-out;
+}
+
+/* Remove o desfoque quando a imagem estiver carregada */
+.clear {
+  filter: none;
+  transition: filter 0.5s ease-in-out;
+}
