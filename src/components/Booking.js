@@ -18,7 +18,7 @@ const BookingPage = () => {
     const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
     if (elements.length > 0) {
       elements.forEach(element => {
-        element.style.backgroundImage = `url(/images/reservar.jpg)`;
+        element.style.backgroundImage = `url(/images/reservar.webp)`;
       });
       return true;
     }
