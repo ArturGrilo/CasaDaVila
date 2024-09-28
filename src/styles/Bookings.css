@@ -216,6 +216,13 @@
     width: calc(100% - 20px);
     font-size: 25px;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .reservation-title, .reservation-title.alt{
+        font-size: 30px;
+    }
+}
   
 /* Responsive Design */
 @media (max-width: 768px) {

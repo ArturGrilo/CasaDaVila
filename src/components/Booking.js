@@ -16,12 +16,26 @@ const BookingPage = () => {
 
   const applyBackgroundImage = useCallback(() => {
     const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
+    
+    const screenWidth = window.innerWidth;
+    let imageUrl;
+  
+    // Selecionar a imagem com base na largura da tela
+    if (screenWidth <= 480) {
+      imageUrl = '/images/Reservar/reservar_480.webp';
+    } else if (screenWidth <= 800) {
+      imageUrl = '/images/Reservar/reservar_800.webp';
+    } else {
+      imageUrl = '/images/Reservar/reservar_1200.webp';
+    }
+  
     if (elements.length > 0) {
       elements.forEach(element => {
-        element.style.backgroundImage = `url(/images/reservar.webp)`;
+        element.style.backgroundImage = `url(${imageUrl})`;
       });
       return true;
     }
+    
     return false;
   }, []);
 
