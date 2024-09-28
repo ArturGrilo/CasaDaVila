@@ -72,10 +72,10 @@
 .reservation-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 40px;
     align-items: center;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
 }
   
 .reservation-call, .reservation-form {

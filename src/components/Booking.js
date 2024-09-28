@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useCallback/*, useState*/ } from "react";
 import { useTranslation } from 'react-i18next';
 import { faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,11 +8,11 @@ import "../styles/Bookings.css";
 
 const BookingPage = () => {
   const { t } = useTranslation(); // Carrega as traduções dos namespaces 'booking' e 'common'
-  const [errors, setErrors] = useState({});
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
-  const [adults, setAdults] = useState(1);
-  const [children, setChildren] = useState(0);
+  // const [errors, setErrors] = useState({});
+  // const [checkInDate, setCheckInDate] = useState('');
+  // const [checkOutDate, setCheckOutDate] = useState('');
+  // const [adults, setAdults] = useState(1);
+  // const [children, setChildren] = useState(0);
 
   const applyBackgroundImage = useCallback(() => {
     const elements = document.querySelectorAll('.cdv-img-parallax-alt-page');
@@ -25,64 +25,64 @@ const BookingPage = () => {
     return false;
   }, []);
 
-  const validateDates = (checkInDate, checkOutDate) => {
-    const checkInDateObj = new Date(checkInDate);
-    const checkOutDateObj = new Date(checkOutDate);
-    const currentDate = new Date();
-    const dateDifference = (checkOutDateObj - checkInDateObj) / (1000 * 60 * 60 * 24);
+  // const validateDates = (checkInDate, checkOutDate) => {
+  //   const checkInDateObj = new Date(checkInDate);
+  //   const checkOutDateObj = new Date(checkOutDate);
+  //   const currentDate = new Date();
+  //   const dateDifference = (checkOutDateObj - checkInDateObj) / (1000 * 60 * 60 * 24);
 
-    const newErrors = {};
+  //   const newErrors = {};
 
-    if (checkInDateObj < currentDate) {
-      newErrors.checkInDate = t('booking.errorCheckInFuture');
-    }
-    if (checkOutDateObj <= checkInDateObj) {
-      newErrors.checkOutDate = t('booking.errorCheckOutAfterCheckIn');
-    }
-    if (dateDifference > 60) {
-      newErrors.checkOutDate = t('booking.errorCheckOutMaxTwoMonths');
-    }
+  //   if (checkInDateObj < currentDate) {
+  //     newErrors.checkInDate = t('booking.errorCheckInFuture');
+  //   }
+  //   if (checkOutDateObj <= checkInDateObj) {
+  //     newErrors.checkOutDate = t('booking.errorCheckOutAfterCheckIn');
+  //   }
+  //   if (dateDifference > 60) {
+  //     newErrors.checkOutDate = t('booking.errorCheckOutMaxTwoMonths');
+  //   }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  //   setErrors(newErrors);
+  //   return Object.keys(newErrors).length === 0;
+  // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const name = form.elements['name'].value;
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const form = event.target;
+  //   const name = form.elements['name'].value;
 
-    if (validateDates(checkInDate, checkOutDate)) {
-      let message = `${t('booking.reservationFor')} ${name}:\n`;
-      message += `- ${t('booking.checkInDate')}: ${checkInDate}\n`;
-      message += `- ${t('booking.checkOutDate')}: ${checkOutDate}\n`;
-      message += `- ${t('booking.adults')}: ${adults}\n`;
-      if (children > 0) {
-        message += `- ${t('booking.children')}: ${children}\n`;
-      }
-      if (form.elements['observations'].value.trim() !== '') { 
-        message += `- ${t('booking.observations')}: ${form.elements['observations'].value}`;
-      }
+  //   if (validateDates(checkInDate, checkOutDate)) {
+  //     let message = `${t('booking.reservationFor')} ${name}:\n`;
+  //     message += `- ${t('booking.checkInDate')}: ${checkInDate}\n`;
+  //     message += `- ${t('booking.checkOutDate')}: ${checkOutDate}\n`;
+  //     message += `- ${t('booking.adults')}: ${adults}\n`;
+  //     if (children > 0) {
+  //       message += `- ${t('booking.children')}: ${children}\n`;
+  //     }
+  //     if (form.elements['observations'].value.trim() !== '') { 
+  //       message += `- ${t('booking.observations')}: ${form.elements['observations'].value}`;
+  //     }
 
-      const whatsappUrl = `whatsapp://send?phone=+351964849002&text=${encodeURIComponent(message)}`;
-      window.location.href = whatsappUrl;
-    }
-  };
+  //     const whatsappUrl = `whatsapp://send?phone=+351964849002&text=${encodeURIComponent(message)}`;
+  //     window.location.href = whatsappUrl;
+  //   }
+  // };
 
   useEffect(() => {
-    const currentDate = new Date();
-    const currentHour = currentDate.getUTCHours() + 1; // Hora atual em Portugal (UTC+1)
+    // const currentDate = new Date();
+    // const currentHour = currentDate.getUTCHours() + 1; // Hora atual em Portugal (UTC+1)
 
-    if (currentHour >= 13) {
-      currentDate.setDate(currentDate.getDate() + 1);
-    }
+    // if (currentHour >= 13) {
+    //   currentDate.setDate(currentDate.getDate() + 1);
+    // }
 
-    const defaultCheckInDate = new Date(currentDate);
-    const defaultCheckOutDate = new Date(defaultCheckInDate);
-    defaultCheckOutDate.setDate(defaultCheckOutDate.getDate() + 1);
+    // const defaultCheckInDate = new Date(currentDate);
+    // const defaultCheckOutDate = new Date(defaultCheckInDate);
+    // defaultCheckOutDate.setDate(defaultCheckOutDate.getDate() + 1);
 
-    setCheckInDate(defaultCheckInDate.toISOString().split('T')[0]);
-    setCheckOutDate(defaultCheckOutDate.toISOString().split('T')[0]);
+    // setCheckInDate(defaultCheckInDate.toISOString().split('T')[0]);
+    // setCheckOutDate(defaultCheckOutDate.toISOString().split('T')[0]);
 
     window.scrollTo(0, 0);
     const interval = setInterval(() => {
@@ -106,7 +106,7 @@ const BookingPage = () => {
       </div>
       <TopBar altScreen={true} />
       <div className="cdv-main-container">
-        <div className="cdv-text" style={{ textAlign: "left", marginBottom: "80px"}}>
+        <div className="cdv-text" style={{ textAlign: "left"}}>
           <span style={{ textAlign: "left", width: "calc(100% - 80px)" }} data-aos="fade-up">{t('booking.paragraph1')}</span>
           <span style={{ textAlign: "left", width: "calc(100% - 100px)", fontWeight: "bold" }} data-aos="fade-up">{t('booking.paragraph2')}</span>
           <span data-aos="fade-up">{t('booking.paragraph3')}</span>
@@ -125,6 +125,7 @@ const BookingPage = () => {
             </div>
             <div className='reservation-text'>{t('booking.phone')}</div>
             <a className='reservation-title' href="tel:+351964849002">+351 964 849 002</a>
+            <a  style={{ marginTop: "-20px"}} className='reservation-title' href="tel:+351966910051">+351 966 910 051</a>
           </div>
           <div className="reservation-call" data-aos="fade-up">
             <div className='reservation-call-icon'>
@@ -134,7 +135,7 @@ const BookingPage = () => {
             <a className='reservation-title alt' href="mailto:casadavila.pt@hotmail.com">casadavila.pt@hotmail.com</a>
           </div>
         </div>
-        <div className='cdv-active-link' data-aos="fade-up">{t('booking.or')}</div>
+        {/* <div className='cdv-active-link' data-aos="fade-up">{t('booking.or')}</div>
 
         <div className="reservation-form">
           <div className='reservation-text' data-aos="fade-up">{t('booking.fillForm')}</div>
@@ -200,7 +201,7 @@ const BookingPage = () => {
             </div>
             <button className='cdv-button-secundary' type="submit">{t('booking.sendReservation')}</button>
           </form>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </section>
