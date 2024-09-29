@@ -143,6 +143,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               {t('contact-email')}
               </span>
               <span>{t('contact-phone')}</span>
+              <span>{t('contact-phone-2')}</span>
               <div>
                 <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
                 <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon"/>

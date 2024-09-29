@@ -449,15 +449,19 @@ input[type="date"] {
   .slick-dots li button:before {
     font-size: 6px;
     line-height: 6px;
-    width: 6px;
-    height: 6px;
+    width: 10px !important;
+    height: 10px !important;
   }
 
   .slick-dots li {
     position: relative;
     display: inline-block;
-    width: 11px;
-    height: 8px;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  #rooms-popup button {
+    font-size: 12px;
   }
   
   .cdv-title {
@@ -484,7 +488,7 @@ input[type="date"] {
   }
 
   .cdv-popup-times{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .cdv-card-details-title{

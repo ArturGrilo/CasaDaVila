@@ -48,6 +48,7 @@ function Footer() {
             {t('footer.email')}
           </span>
           <span className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone')}</span>
+          <span className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone-2')}</span>
           <div>
             <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon" />
             <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon" />
