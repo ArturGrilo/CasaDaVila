@@ -26,7 +26,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.historicalVillages')}>
-              <img loading="lazy" src="/images/Experiencias/AldeiasHistoricas.png" alt="Aldeias Históricas - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img loading="lazy" src="/images/Experiencias/AldeiasHistoricas.webp" alt="Aldeias Históricas - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.historicalVillages')}</div>
                 <div className="cdv-card-details-see-more">
@@ -46,7 +46,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.gardunhaMountain')}>
-              <img loading="lazy" src="/images/Experiencias/SerraDaGardunha.jpeg" alt="Serra da Gardunha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img loading="lazy" src="/images/Experiencias/SerraDaGardunha.webp" alt="Serra da Gardunha - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.gardunhaMountain')}</div>
                 <div className="cdv-card-details-see-more">
@@ -66,7 +66,7 @@ function Experiences() {
               </div>
             </a>
             <a className="cdv-card" data-aos="fade-right" href={t('routes.festivals')}>
-              <img loading="lazy" src="/images/Experiencias/AnjoDaGuarda.jpeg" alt="Festas e Romarias - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              <img loading="lazy" src="/images/Experiencias/AnjoDaGuarda.webp" alt="Festas e Romarias - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
               <div className="cdv-card-details">
                 <div className="cdv-card-details-title">{t('experiences.festivities')}</div>
                 <div className="cdv-card-details-see-more">

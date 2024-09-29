@@ -100,7 +100,7 @@
             "Em plena Serra da Gardunha, Castelo Novo ergue-se em tons de verde e cinza.",
             "Em plena Serra da Gardunha, a Aldeia Histórica de Castelo Novo ergue-se em tons de verde e cinza. Construída sobre o granito, Castelo Novo conserva no tempo um património arquitetónico único."
             ],
-            "image": "/images/Experiencias/AldeiasHistoricas.png"
+            "image": "/images/Experiencias/AldeiasHistoricas.webp"
         },
         {
             "title": "Monsanto (41km)",
@@ -271,7 +271,7 @@
                 "title": "Anjo da Guarda", 
                 "location": "Alpedrinha", 
                 "month": "Agosto", 
-                "image": "/images/Experiencias/AnjoDaGuarda.jpeg" 
+                "image": "/images/Experiencias/AnjoDaGuarda.webp" 
             },
             { 
                 "title": "Chocalhos", 

@@ -381,7 +381,7 @@ input[type="date"] {
 .cdv-img-parallax-alt-page{
   height: 100%;
   width: 100%;
-  background-image: url('../gallery-break-section.jpeg');
+  background-image: url('../gallery-break-section.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

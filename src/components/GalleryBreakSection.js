@@ -13,7 +13,7 @@ function GalleryBreakSection() {
     <section id="gallery-section-id" className="cdv-section alt">
       <img
         loading="lazy"
-        src="/images/gallery-break-section.webp"
+        src="/images/GalleryBreakSection/gallery-break-section.webp"
         alt="Alpedrinha - Vista do Palácio do Picadeiro - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"
         className="img-gallery-break-section"
       />

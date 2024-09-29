@@ -68,7 +68,7 @@ const App = () => {
           <Route 
             path={t('routes.historicalVillages')}
             element={<RoadTimeline 
-                        imgpath="Experiencias/AldeiasHistoricas.png"
+                        imgpath="Experiencias/AldeiasHistoricas.webp"
                         title={t('RoadTimelineHistorical.title')}
                         description={t('RoadTimelineHistorical.description', { returnObjects: true })}
                         routes={t('RoadTimelineHistorical.routes', { returnObjects: true }).map(route => ({
@@ -92,7 +92,7 @@ const App = () => {
             />
             <Route path={t('routes.gardunhaMountain')} 
             element={<RoadTimeline 
-                        imgpath="Experiencias/SerraDaGardunha.jpeg"
+                        imgpath="Experiencias/SerraDaGardunha.webp"
                         title={t('RoadTimelineGardunha.title')}
                         description={t('RoadTimelineGardunha.description', { returnObjects: true })}
                         routes={t('RoadTimelineGardunha.routes', { returnObjects: true }).map(route => ({
@@ -131,7 +131,7 @@ const App = () => {
           />
           <Route path={t('routes.festivals')} 
           element={<RoadTimeline 
-                        imgpath="Experiencias/AnjoDaGuarda.jpeg"
+                        imgpath="Experiencias/AnjoDaGuarda.webp"
                         title={t('RoadTimelineFestivals.title')}
                         description={t('RoadTimelineFestivals.description', { returnObjects: true })}
                         routes={t('RoadTimelineFestivals.routes', { returnObjects: true })}
@@ -158,12 +158,12 @@ const MainPage = () => {
         <Home />
         <AboutUs />
         <WordsBreakSection />
-        <Rooms />
-        <GalleryBreakSection />
+        <Rooms /> 
+        <GalleryBreakSection /> 
         <Experiences />
         <ReservationBreakSection />
         <Feedback />
-        <Footer />
+        <Footer /> 
       </Suspense>
     </div>
   );

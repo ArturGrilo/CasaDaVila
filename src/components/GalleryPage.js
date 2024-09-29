@@ -66,6 +66,7 @@ const GalleryPage = () => {
       "/images/Exterior/IMG_12.jpg",
       "/images/Exterior/IMG_13.jpg",
       "/images/Exterior/IMG_14.jpg",
+      "/images/Exterior/IMG_15.jpg",
     ]
   };
 
