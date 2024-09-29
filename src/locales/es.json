@@ -100,7 +100,7 @@
                     "En plena Sierra de Gardunha, Castelo Novo se alza en tonos de verde y gris.",
                     "En plena Sierra de Gardunha, el Pueblo Histórico de Castelo Novo se alza en tonos de verde y gris. Construido sobre granito, Castelo Novo conserva en el tiempo un patrimonio arquitectónico único."
                 ],
-                "image": "/images/CasteloNovo.jpeg"
+                "image": "/images/Experiencias/AldeiasHistoricas.png"
             },
             {
                 "title": "Monsanto (41km)",
@@ -108,7 +108,7 @@
                     "Elevado en un cerro que destaca en la mayor parte de los horizontes. Un encanto singular.",
                     "Elevado en un cerro que destaca en la mayor parte de los horizontes, el Pueblo Histórico de Monsanto posee un encanto singular."
                 ],
-                "image": "/images/Monsanto.jpeg"
+                "image": "/images/AldeiasHistoricas/Monsanto.webp"
             },
             {
                 "title": "Belmonte (44km)",
@@ -116,7 +116,7 @@
                     "Tierra de Pedro Álvares Cabral, con una amplia vista sobre la Sierra de Estrella.",
                     "Tierra de Pedro Álvares Cabral, situada en plena Cova da Beira y con amplia vista sobre la ladera oriental de la Sierra de Estrella, la villa de Belmonte justifica plenamente las características que le dieron su nombre."
                 ],
-                "image": "/images/Belmonte.jpeg"
+                "image": "/images/AldeiasHistoricas/Belmonte.webp"
             },
             {
                 "title": "Sortelha (56,5km)",
@@ -124,7 +124,7 @@
                     "Su fisonomía urbana y arquitectónica permanece inalterada desde el Renacimiento.",
                     "Sortelha es una de las villas más bellas y antiguas de Portugal, habiendo mantenido su fisonomía urbana y arquitectónica inalterada desde el Renacimiento hasta nuestros días."
                 ],
-                "image": "/images/Sortelha.jpeg"
+                "image": "/images/AldeiasHistoricas/Sortelha.webp"
             }
         ],
         "bottomLogo": "/images/AldeiasHistoricasPortuguesas.png"
@@ -283,7 +283,7 @@
                 "title": "Míscaros",
                 "location": "Alcaide",
                 "month": "Noviembre",
-                "image": "/images/Miscaros.jpeg"
+                "image": "/images/Romarias/Miscaros.webp" 
             }
         ],
         "bottomLogo": "logo-festivais.png"

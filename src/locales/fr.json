@@ -113,7 +113,7 @@
             "Au cœur de la Serra da Gardunha, Castelo Novo se dresse dans des tons de vert et de gris.",
             "Au cœur de la Serra da Gardunha, le Village Historique de Castelo Novo se dresse dans des tons de vert et de gris. Construit sur le granit, Castelo Novo conserve un patrimoine architectural unique."
         ],
-        "image": "/images/CasteloNovo.jpeg"
+        "image": "/images/Experiencias/AldeiasHistoricas.png"
         },
         {
         "title": "Monsanto (41 km)",
@@ -121,7 +121,7 @@
             "Perché sur une colline qui commande la vue de la plupart des horizons. Un charme unique.",
             "Perché sur une colline qui commande la vue de la plupart des horizons, le Village Historique de Monsanto possède un charme unique."
         ],
-        "image": "/images/Monsanto.jpeg"
+        "image": "/images/AldeiasHistoricas/Monsanto.webp"
         },
         {
         "title": "Belmonte (44 km)",
@@ -129,7 +129,7 @@
             "Terre de Pedro Álvares Cabral, offrant une vue panoramique sur la Serra da Estrela.",
             "Terre de Pedro Álvares Cabral, située au cœur de Cova da Beira et offrant une vue panoramique sur le versant oriental de la Serra da Estrela, le village de Belmonte justifie pleinement les caractéristiques qui lui ont donné son nom."
         ],
-        "image": "/images/Belmonte.jpeg"
+        "image": "/images/AldeiasHistoricas/Belmonte.webp"
         },
         {
         "title": "Sortelha (56,5 km)",
@@ -137,7 +137,7 @@
             "Ses caractéristiques urbaines et architecturales sont restées inchangées depuis la Renaissance.",
             "Sortelha est l'un des plus beaux et anciens villages portugais, ayant conservé ses caractéristiques urbaines et architecturales inchangées depuis la Renaissance jusqu'à aujourd'hui."
         ],
-        "image": "/images/Sortelha.jpeg"
+        "image": "/images/AldeiasHistoricas/Sortelha.webp"
         }
     ],
     "bottomLogo": "/images/VillagesHistoriquesPortugais.png"
@@ -296,7 +296,7 @@
                 "title": "Míscaros", 
                 "location": "Alcaide", 
                 "month": "Novembre", 
-                "image": "/images/Miscaros.jpeg" 
+                "image": "/images/Romarias/Miscaros.webp" 
             }
         ],
         "bottomLogo": "logo-festivais.png"
