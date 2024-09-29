@@ -8,8 +8,28 @@
   transition: opacity 1s ease-in-out; /* Define a transição suave */
 }
 
+.homepage-image .hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.highres-image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.highres-image.fade-in {
+  opacity: 1; /* Aparece suavemente quando carrega */
+}
+
 .fade-in {
   opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 .fade-out {
