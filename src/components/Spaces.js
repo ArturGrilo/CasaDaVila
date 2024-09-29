@@ -15,7 +15,6 @@ function Spaces({ space }) {
     "/images/RC_2.jpeg",
     "/images/RC_3.jpeg",
     "/images/RC_4.jpeg",
-    "/images/RC_5.jpeg",
     "/images/Comodidades/CasaDaVilaI.webp",
     "/images/RC_7.jpeg",
     "/images/RC_8.jpeg",
