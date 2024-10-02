@@ -143,7 +143,7 @@
                     "En una pequeña colina, flanqueada por dos cursos de agua, junto al río Zêzere.",
                     "La parte más antigua de la aldea está situada a lo largo de una pequeña colina, flanqueada por dos cursos de agua profundamente excavados, formando un conjunto perpendicular al curso del Zêzere, con el que limita."
                 ],
-                "image": "/images/Barroca.png"
+                "image": "/images/AldeiasDoXisto/Barroca.webp" 
             },
             {
                 "title": "Janeiro de Cima (52,1km)",
@@ -151,7 +151,7 @@
                     "Camina por el enredo de calles sinuosas cuyas casas revelan sus características fachadas de esquisto.",
                     "Janeiro de Cima se encuentra en la margen izquierda del Zêzere, rodeada por una extensa manta de terrenos agrícolas. Camina por el enredo de calles sinuosas cuyas casas revelan sus características fachadas de esquisto."
                 ],
-                "image": "/images/JaneiroDeCima.jpeg"
+                "image": "/images/AldeiasDoXisto/JaneiroDeCima.webp" 
             }
         ],
         "bottomLogo": "logo-aldeias-xisto.png"
@@ -353,7 +353,7 @@
     },
     "footer": {
         "location": "Ubicación",
-        "address": "Rua da Fonte, 2",
+        "address": "Rua do Forno, 2",
         "city": "Alpedrinha",
         "postalCode": "6230-058",
         "contacts": "Contactos",

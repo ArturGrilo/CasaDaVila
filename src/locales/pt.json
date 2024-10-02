@@ -143,7 +143,7 @@
                 "Num pequeno morro, ladeado por duas linhas de água, junto ao rio Zêzere.",
                 "A parte mais antiga da aldeia está implantada ao longo de um pequeno morro, ladeado por duas linhas de água profundamente cavadas, formando um conjunto perpendicular ao curso do Zêzere, com o qual confina."
             ], 
-            "image": "/images/Barroca.png" 
+            "image": "/images/AldeiasDoXisto/Barroca.webp" 
         },
         { 
             "title": "Janeiro de Cima (52,1km)", 
@@ -151,7 +151,7 @@
                 "Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto.",
                 "Janeiro de Cima encontra-se na margem esquerda do Zêzere, rodeada por uma extensa manta de terrenos agrícolas. Caminhe pelo emaranhado de ruas sinuosas cujas casas revelam as suas características fachadas em xisto."
             ],
-            "image": "/images/JaneiroDeCima.jpeg" 
+            "image": "/images/AldeiasDoXisto/JaneiroDeCima.webp" 
         }
         ], 
         "bottomLogo": "logo-aldeias-xisto.png"
@@ -353,7 +353,7 @@
     },
     "footer": {
         "location": "Localização",
-        "address": "Rua da Fonte, 2",
+        "address": "Rua do Forno, 2",
         "city": "Alpedrinha",
         "postalCode": "6230-058",
         "contacts": "Contactos",
