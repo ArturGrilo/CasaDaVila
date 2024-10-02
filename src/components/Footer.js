@@ -9,8 +9,8 @@ function Footer() {
   const { t } = useTranslation();
 
   // Coordenadas da localização do alojamento (latitude e longitude)
-  const latAlojamento = 40.099420814223066;
-  const lngAlojamento = -7.46680080569976;
+  const latAlojamento = 40.099183;
+  const lngAlojamento = -7.466664;
 
   // Link do Google Maps com trajeto
   const googleMapsLink = `https://www.google.com/maps/dir/?api=1&destination=${latAlojamento},${lngAlojamento}`;

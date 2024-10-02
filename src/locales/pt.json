@@ -246,8 +246,8 @@
             { 
                 "title": "Terreiro de Santo António", 
                 "description": [
-                    "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três pisos.",
-                    "Antigo edifício dos Paços do Concelho, construído em 1680, de planta retangular com três e um piso. Entre 1972 e 1973 sofreu obras de restauração, sendo depois aqui instalada a Junta de Freguesia e uma associação recreativa."
+                    "Terreiro único, onde a vista inconfundível sobre o horizonte, se complementa com a bela Capela de Santo António.",
+                    "Terreiro com uma capela única de planta longitudinal simples com um volume único e com cobertura em telhado de duas águas. O interior apresenta uma capela-mor ladeada por corredores laterais com acesso à capela-mor e um aposento que acede à tribuna."
                 ],
                 "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg" 
             }
@@ -353,7 +353,7 @@
     },
     "footer": {
         "location": "Localização",
-        "address": "Rua do Forno, 2",
+        "address": "Rua do Forno, 1",
         "city": "Alpedrinha",
         "postalCode": "6230-058",
         "contacts": "Contactos",
