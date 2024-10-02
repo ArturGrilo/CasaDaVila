@@ -53,7 +53,7 @@ const Feedback = () => {
           ))}
         </div>
         <div className="feedback-image">
-          <img loading="lazy" src={"/images/Feedback/FeedbackImage.webp"} alt="feedback - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
+          <img src={"/images/Feedback/FeedbackImage.webp"} alt="feedback - Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" />
         </div>
       </div>
     </section>
