@@ -144,9 +144,19 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               </span>
               <span>{t('contact-phone')}</span>
               <span>{t('contact-phone-2')}</span>
-              <div>
+              <div className="mobile-menu-social-media">
                 <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
-                <FontAwesomeIcon icon={faInstagram} className="footer-bigger-icon"/>
+                <a 
+                  href="https://www.instagram.com/casadavila_alojamentolocal?igsh=MWwyaXY1eGpnaGlhbw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-bigger-icon"
+                >
+                  <FontAwesomeIcon 
+                    icon={faInstagram} 
+                    className="footer-bigger-icon" 
+                  />
+                </a>
               </div>
             </div>
             <div className="feedback-image">

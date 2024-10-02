@@ -109,6 +109,19 @@
   display: none;
 }
 
+.mobile-menu .footer-bigger-icon{
+  color: black;
+}
+
+.mobile-menu-social-media{
+  display: flex;
+}
+
+.mobile-menu-social-media a{
+  border-bottom: none !important;
+  padding: 0 !important;
+}
+
 .logo-container {
   max-height: 150px;
   animation: fadeIn 1s ease-in-out;
