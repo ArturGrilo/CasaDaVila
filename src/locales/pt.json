@@ -250,6 +250,22 @@
                     "Terreiro com uma capela única de planta longitudinal simples com um volume único e com cobertura em telhado de duas águas. O interior apresenta uma capela-mor ladeada por corredores laterais com acesso à capela-mor e um aposento que acede à tribuna."
                 ],
                 "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg" 
+            },
+            { 
+                "title": "Casa do Pátio", 
+                "description": [
+                    "Casa do Pátio ou Solar dos Britos é uma casa senhorial, conhecida pela fonte existente no balcão da fachada principal.",
+                    "Casa do Pátio ou Solar dos Britos é um solar barroco de planta retangular, com três pisos definidos por frisos e uma fachada principal dividida em três panos. Destaque para uma fonte existente no balcão da fachada principal."
+                ],
+                "image": "/images/Alpedrinha/CasadoPatio.webp" 
+            },
+            { 
+                "title": "Igreja Matriz", 
+                "description": [
+                    "Igreja maneirista, composta por três naves com quatro tramos, uma capela-mor mais estreita e baixa, uma sacristia e um anexo.",
+                    "Igreja maneirista, composta por três naves com quatro tramos, uma capela-mor mais estreita e baixa, uma sacristia e um anexo. Foi reconstruída entre 1557 e 1578 sobre um templo primitivo datado do século XII/XIII."
+                ],
+                "image": "/images/Alpedrinha/IgrejaMatriz.webp" 
             }
         ],
         "bottomLogo": "logo-alpedrinha.png"
