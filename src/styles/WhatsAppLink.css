@@ -84,8 +84,8 @@
 
   .whatsapp-link {
     button {
-        width: 36px;
-        height: 40px;
+        width: 36px !important;
+        height: 42px !important;
     }
   }
 
