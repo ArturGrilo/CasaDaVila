@@ -263,6 +263,38 @@
                     "Le Terreiro de Santo António est une place historique d'Alpedrinha avec un charme architectural notable et une importance historique. Elle reflète le riche patrimoine de la région."
                 ],
                 "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg" 
+            },
+            { 
+                "title": "Casa do Pátio", 
+                "description": [
+                    "La Casa do Pátio, également connue sous le nom de Solar dos Britos, est une maison seigneuriale célèbre pour la fontaine située sur le balcon de la façade principale.",
+                    "La Casa do Pátio, ou Solar dos Britos, est un manoir baroque de plan rectangulaire, avec trois étages définis par des frises et une façade principale divisée en trois sections. Le point fort est la fontaine sur le balcon de la façade principale."
+                ],
+                "image": "/images/Alpedrinha/CasadoPatio.webp" 
+            },
+            { 
+                "title": "Igreja Matriz", 
+                "description": [
+                    "Une église de style maniériste, composée de trois nefs avec quatre travées, un chœur plus étroit et plus bas, une sacristie et une annexe.",
+                    "Une église de style maniériste, composée de trois nefs avec quatre travées, un chœur plus étroit et plus bas, une sacristie et une annexe. Elle a été reconstruite entre 1557 et 1578 sur un temple primitif datant des XIIe/XIIIe siècles."
+                ],
+                "image": "/images/Alpedrinha/IgrejaMatriz.webp" 
+            },
+            { 
+                "title": "Théâtre Clube d'Alpedrinha", 
+                "description": [
+                    "Le premier théâtre à apparaître dans le district de Castelo Branco, actuellement l'un de ses principaux pôles culturels.",
+                    "Le Théâtre Clube d'Alpedrinha a été le premier théâtre à être créé dans le district de Castelo Branco, et il reste aujourd'hui l'un des principaux pôles culturels de la région."
+                ],
+                "image": "/images/Alpedrinha/TCA.webp" 
+            },
+            { 
+                "title": "Église de la Miséricorde", 
+                "description": [
+                    "Juste à côté de la Casa da Vila, c'est un exemple remarquable de l'architecture maniériste de la fin du XVIe et du début du XVIIe siècle.",
+                    "Située au cœur du village, et immédiatement à côté de la Casa da Vila, l'Église de la Miséricorde d'Alpedrinha se distingue comme un exemple notable de l'architecture maniériste de la fin du XVIe et du début du XVIIe siècle."
+                ],
+                "image": "/images/Alpedrinha/IgrejaDaMisericordia.webp" 
             }
         ],
         "bottomLogo": "logo-alpedrinha.png"

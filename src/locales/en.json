@@ -250,6 +250,38 @@
                 "Terreiro de Santo António is a historic square in Alpedrinha with notable architectural charm and historical importance. It reflects the rich heritage of the region."
             ],
             "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg" 
+        },
+        { 
+            "title": "Casa do Pátio", 
+            "description": [
+                "Casa do Pátio, also known as Solar dos Britos, is a manor house known for the fountain located on the balcony of the main façade.",
+                "Casa do Pátio, or Solar dos Britos, is a baroque manor house with a rectangular plan, featuring three floors defined by friezes and a main façade divided into three sections. The highlight is the fountain on the balcony of the main façade."
+            ],
+            "image": "/images/Alpedrinha/CasadoPatio.webp" 
+        },
+        { 
+            "title": "Igreja Matriz", 
+            "description": [
+                "A Mannerist church with three naves and four bays, a narrower and lower chancel, a sacristy, and an annex.",
+                "A Mannerist church with three naves and four bays, a narrower and lower chancel, a sacristy, and an annex. It was rebuilt between 1557 and 1578 over a primitive temple dating from the 12th/13th century."
+            ],
+            "image": "/images/Alpedrinha/IgrejaMatriz.webp" 
+        },
+        { 
+            "title": "Teatro Clube de Alpedrinha", 
+            "description": [
+                "The first theater to appear in the Castelo Branco District, currently one of its main cultural hubs.",
+                "The Teatro Clube de Alpedrinha was the first theater to be established in the Castelo Branco District, and today it remains one of the region’s leading cultural hubs."
+            ],
+            "image": "/images/Alpedrinha/TCA.webp" 
+        },
+        { 
+            "title": "Igreja da Misericórdia", 
+            "description": [
+                "Right next to Casa da Vila, it is a remarkable example of Mannerist architecture from the late 16th and early 17th century.",
+                "Located in the heart of the village, and immediately next to Casa da Vila, the Igreja da Misericórdia de Alpedrinha stands out as a notable example of Mannerist architecture from the late 16th and early 17th century."
+            ],
+            "image": "/images/Alpedrinha/IgrejaDaMisericordia.webp" 
         }
     ],
     "bottomLogo": "logo-alpedrinha.png"

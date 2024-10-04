@@ -250,6 +250,38 @@
                     "Una plaza con una capilla única de planta longitudinal simple, un solo volumen y un tejado a dos aguas. El interior presenta una capilla mayor flanqueada por corredores laterales con acceso a la capilla mayor y una habitación que conduce a la tribuna."
                 ],                
                 "image": "/images/Alpedrinha/TerreiroStAntonio.jpeg"
+            },
+            { 
+                "title": "Casa del Patio", 
+                "description": [
+                    "La Casa del Patio, también conocida como Solar de los Britos, es una casa señorial famosa por la fuente situada en el balcón de la fachada principal.",
+                    "La Casa del Patio, o Solar de los Britos, es un palacete barroco de planta rectangular, con tres pisos definidos por frisos y una fachada principal dividida en tres tramos. La fuente en el balcón de la fachada principal es el principal punto de interés."
+                ],
+                "image": "/images/Alpedrinha/CasadoPatio.webp" 
+            },
+            { 
+                "title": "Iglesia Matriz", 
+                "description": [
+                    "Iglesia manierista, compuesta por tres naves con cuatro tramos, un presbiterio más estrecho y bajo, una sacristía y un anexo.",
+                    "Iglesia manierista, compuesta por tres naves con cuatro tramos, un presbiterio más estrecho y bajo, una sacristía y un anexo. Fue reconstruida entre 1557 y 1578 sobre un templo primitivo que data de los siglos XII/XIII."
+                ],
+                "image": "/images/Alpedrinha/IgrejaMatriz.webp" 
+            },
+            { 
+                "title": "Teatro Club de Alpedrinha", 
+                "description": [
+                    "El primer teatro que surgió en el Distrito de Castelo Branco, siendo actualmente uno de sus principales polos de dinamización cultural.",
+                    "El Teatro Club de Alpedrinha fue el primer teatro en nacer en el Distrito de Castelo Branco, y hoy en día sigue siendo uno de sus mayores centros de dinamización cultural."
+                ],
+                "image": "/images/Alpedrinha/TCA.webp" 
+            },
+            { 
+                "title": "Iglesia de la Misericordia", 
+                "description": [
+                    "Justo al lado de la Casa da Vila, es un ejemplo notable de la arquitectura manierista de finales del siglo XVI y principios del siglo XVII.",
+                    "Ubicada en el corazón del pueblo, e inmediatamente al lado de la Casa da Vila, la Iglesia de la Misericordia de Alpedrinha destaca como un notable ejemplo de la arquitectura manierista de finales del siglo XVI y principios del siglo XVII."
+                ],
+                "image": "/images/Alpedrinha/IgrejaDaMisericordia.webp" 
             }
         ],
         "bottomLogo": "logo-alpedrinha.png"

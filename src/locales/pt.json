@@ -266,6 +266,22 @@
                     "Igreja maneirista, composta por três naves com quatro tramos, uma capela-mor mais estreita e baixa, uma sacristia e um anexo. Foi reconstruída entre 1557 e 1578 sobre um templo primitivo datado do século XII/XIII."
                 ],
                 "image": "/images/Alpedrinha/IgrejaMatriz.webp" 
+            },
+            { 
+                "title": "Teatro Clube de Alpedrinha", 
+                "description": [
+                    "O primeiro teatro a surgir no Distrito de Castelo Branco, sendo atualmente um dos seus maiores polos de dinamização cultural.",
+                    "O Teatro Clube de Alpedrinha foi o primeiro teatro a nascer no Distrito de Castelo Branco, sendo atualmente um dos seus maiores polos de dinamização cultural."
+                ],
+                "image": "/images/Alpedrinha/TCA.webp" 
+            },
+            { 
+                "title": "Igreja da Misericórdia", 
+                "description": [
+                    "Mesmo ao lado da Casa da Vila, é um exemplo notável da arquitetura maneirista do final do século XVI e início do século XVII.",
+                    "Localizada no coração da vila, e imediatamente ao lado da Casa da Vila, a Igreja da Misericórdia de Alpedrinha destaca-se como um exemplo notável da arquitetura maneirista do final do século XVI e início do século XVII."
+                ],
+                "image": "/images/Alpedrinha/IgrejaDaMisericordia.webp" 
             }
         ],
         "bottomLogo": "logo-alpedrinha.png"
