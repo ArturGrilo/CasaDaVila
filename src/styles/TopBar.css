@@ -140,6 +140,11 @@
   max-height: 100px;
 }
 
+.side-menu-phone{
+  border-bottom: none !important;
+  padding: 0 !important;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

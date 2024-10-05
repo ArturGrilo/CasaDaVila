@@ -142,8 +142,8 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
               <span onClick={() => window.location.href = 'mailto:casadavila.pt@hotmail.com'}>
               {t('contact-email')}
               </span>
-              <span>{t('contact-phone')}</span>
-              <span>{t('contact-phone-2')}</span>
+              <a href="tel:+351964849002" className="side-menu-phone">{t('footer.phone')}</a>
+              <a href="tel:+351966910051" className="side-menu-phone">{t('footer.phone-2')}</a>
               <div className="mobile-menu-social-media">
                 <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
                 <a 
