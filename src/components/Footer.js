@@ -47,8 +47,8 @@ function Footer() {
           <span className="footer-text" style={{ textDecoration: "none !important" }} onClick={() => window.location.href = `mailto:${t('footer.email')}`}>
             {t('footer.email')}
           </span>
-          <span className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone')}</span>
-          <span className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone-2')}</span>
+          <span href="tel:+351964849002" className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone')}</span>
+          <span href="tel:+351966910051" className="footer-text" style={{ textDecoration: "none !important" }}>{t('footer.phone-2')}</span>
           <div>
             <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon" />
             <a 
