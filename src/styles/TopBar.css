@@ -332,16 +332,15 @@
   top: 0;
   left: -300px; /* Esconde o menu lateral */
   width: 300px;
-  min-height: 100%;
+  height: 100%;
   background-color: var(--color-background-light); /* Cor de fundo do menu */
   transition: left 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
 }
 
-@media only screen and (max-height: 920px) {
+/*@media only screen and (max-height: 920px) {
   .mobile-menu {
     display: block;
   }
@@ -350,7 +349,7 @@
     overflow-y: unset;
     height: calc(100vh - 288.5px) !important;
   }
-}
+}*/
 
 .side-menu-main-container{
   position: relative;
