@@ -446,6 +446,10 @@
   max-width: 100%;
 }
 
+.mobile-menu .feedback-image img {
+  margin-bottom: -10px;
+}
+
 .dropdown-toggle{
   display: flex;
   justify-content: space-between;
