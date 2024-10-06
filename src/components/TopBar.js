@@ -98,13 +98,14 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             <FontAwesomeIcon icon="bars" className="top-bar-icon" />
           </div>
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-            <div className="side-menu-main-container">
-              <div className="logo-container">
-                <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
-                <div className="times-icon" onClick={handleMenuToggle}>
-                  <FontAwesomeIcon icon="times" className="times" />
-                </div>
+            <div className="logo-container">
+              <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+              <div className="times-icon" onClick={handleMenuToggle}>
+                <FontAwesomeIcon icon="times" className="times" />
               </div>
+            </div>
+            <div className="side-menu-main-container">
+              
               <a href="/#home-id" onClick={handleMenuToggle} className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
                 <span>{t('home-label')}</span>
               </a>
@@ -187,10 +188,11 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="feedback-image">
+              <div className="feedback-image">
                 <img loading="lazy" src="/images/MenuLateral/MenuImage.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+              </div>
             </div>
+            
           </div>
           <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home-id' ? 'cdv-active-link' : ''}`}>
             <span>{t('home-label')}</span>

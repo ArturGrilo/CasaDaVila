@@ -340,6 +340,10 @@
   justify-content: space-between;
 }
 
+.mobile-menu .logo-container img{
+  height: 70px;
+} 
+
 /*@media only screen and (max-height: 920px) {
   .mobile-menu {
     display: block;
@@ -351,14 +355,20 @@
   }
 }*/
 
-.side-menu-main-container{
+.side-menu-main-container {
+  display: flex;
   position: relative;
   overflow-x: hidden;
   height: 100%;
   width: 100%;
+  overflow-y: unset;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu .feedback-image{
+  margin: 0;
+  padding: 0;
   height: 236px;
 }
 
@@ -366,7 +376,7 @@
   position: absolute;
   font-size: 25px;
   right: 30px;
-  top: calc(50% - 8px);
+  top: calc(50% - 9px);
   color: black;
 }
 
@@ -381,7 +391,7 @@
   padding: 0 0 0 15px;
   margin-bottom: 10px;
   position: relative;
-  height: 70px;
+  height: 80px;
 }
 
 .mobile-menu .logo-container, .mobile-menu .logo-container img{
