@@ -16,6 +16,7 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,6 +83,10 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
       <div className="top-bar-container">
@@ -93,74 +98,98 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
             <FontAwesomeIcon icon="bars" className="top-bar-icon" />
           </div>
           <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-            <div className="logo-container">
-              <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
-              <div className="times-icon" onClick={handleMenuToggle}>
-                <FontAwesomeIcon icon="times" className="times" />
+            <div className="side-menu-main-container">
+              <div className="logo-container">
+                <img loading="lazy" src="/images/Logo/CasaDaVilaLogo.png" alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+                <div className="times-icon" onClick={handleMenuToggle}>
+                  <FontAwesomeIcon icon="times" className="times" />
+                </div>
               </div>
-            </div>
-            <a href="/#home-id" onClick={handleMenuToggle} className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
-              <span>{t('home-label')}</span>
-            </a>
-            <a href="/#about-us-id" 
-              className={activeSection === 'about-us-id' ? 'cdv-active-link' : ''}
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick('about-us-id');
-              }}>
-              <span>{t('about-us-label')}</span>
-            </a>
-            <a 
-              className={activeSection === 'spaces-id' ? 'cdv-active-link' : ''} 
-              href="/#spaces-id"
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick('spaces-id');
-              }}
-            >
-              <span>{t('spaces-label')}</span>
-            </a>
-            <a href="/Galeria" 
-              className={activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''} 
-              onClick={(e) => {
-                window.location.href = '/Galeria';
-              }}>
-              <span>{t('gallery-label')}</span>
-            </a>
-            <a href="/#exps-id" 
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick('exps-id');
-              }}
-              className={activeSection === 'exps-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
-              <span>{t('experiences-label')}</span>
-            </a>
-            <a href="/Reservar" className={activeSection === 'reservar-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
-              <span>{t('reservar-label')}</span>
-            </a>
-            <div className="side-menu-contacts">
-              <span onClick={() => window.location.href = 'mailto:casadavila.pt@hotmail.com'}>
-              {t('contact-email')}
-              </span>
-              <a href="tel:+351964849002" className="side-menu-phone">{t('footer.phone')}</a>
-              <a href="tel:+351966910051" className="side-menu-phone">{t('footer.phone-2')}</a>
-              <div className="mobile-menu-social-media">
-                <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
-                <a 
-                  href="https://www.instagram.com/casadavila_alojamentolocal?igsh=MWwyaXY1eGpnaGlhbw==" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="footer-bigger-icon"
-                >
-                  <FontAwesomeIcon 
-                    icon={faInstagram} 
-                    className="footer-bigger-icon" 
-                  />
-                </a>
+              <a href="/#home-id" onClick={handleMenuToggle} className={activeSection === 'home-id' ? 'cdv-active-link' : ''}>
+                <span>{t('home-label')}</span>
+              </a>
+              <a href="/#about-us-id" 
+                className={activeSection === 'about-us-id' ? 'cdv-active-link' : ''}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick('about-us-id');
+                }}>
+                <span>{t('about-us-label')}</span>
+              </a>
+              <a 
+                className={activeSection === 'spaces-id' ? 'cdv-active-link' : ''} 
+                href="/#spaces-id"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick('spaces-id');
+                }}
+              >
+                <span>{t('spaces-label')}</span>
+              </a>
+              <a href="/Galeria" 
+                className={activeSection === 'gallery-section-id' ? 'cdv-active-link' : ''} 
+                onClick={(e) => {
+                  window.location.href = '/Galeria';
+                }}>
+                <span>{t('gallery-label')}</span>
+              </a>
+              <div className="dropdown-menu">
+                <div 
+                  onClick={toggleDropdown} 
+                  className={`dropdown-toggle ${activeSection === 'exps-id' ? 'cdv-active-link' : ''}`}>
+                  <span>{t('experiences-label')}</span>
+                  <FontAwesomeIcon icon={faCaretDown} className="caret-icon" />
+                </div>
+                {isDropdownOpen && (
+                  <div className="dropdown-content">
+                    <a href={t('routes.alpedrinha')}>
+                      <div>Alpedrinha</div>
+                    </a>
+                    <a href={t('routes.historicalVillages')}>
+                      <div>{t('historical-villages-label')}</div>
+                    </a>
+                    <a href={t('routes.schistVillages')}>
+                      <div>{t('experiences.schistVillages')}</div>
+                    </a>
+                    <a href={t('routes.gardunhaMountain')}>
+                      <div>{t('gardunha-mountain-label')}</div>
+                    </a>
+                    <a href={t('routes.estrelaMountain')}>
+                      <div>{t('estrela-mountain-label')}</div>
+                    </a>
+                    <a href={t('routes.festivals')}>
+                      <div>{t('festivals-label')}</div>
+                    </a>
+                  </div>
+                )}
+              </div>
+              <a href="/Reservar" className={activeSection === 'reservar-id' ? 'dropdown-menu-link cdv-active-link' : 'dropdown-menu-link'}>
+                <span>{t('reservar-label')}</span>
+              </a>
+              <div className="side-menu-contacts">
+                <span onClick={() => window.location.href = 'mailto:casadavila.pt@hotmail.com'}>
+                {t('contact-email')}
+                </span>
+                <a href="tel:+351964849002" className="side-menu-phone">{t('footer.phone')}</a>
+                <a href="tel:+351966910051" className="side-menu-phone">{t('footer.phone-2')}</a>
+                <div className="mobile-menu-social-media">
+                  <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
+                  <a 
+                    href="https://www.instagram.com/casadavila_alojamentolocal?igsh=MWwyaXY1eGpnaGlhbw==" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="footer-bigger-icon"
+                  >
+                    <FontAwesomeIcon 
+                      icon={faInstagram} 
+                      className="footer-bigger-icon" 
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="feedback-image">
-              <img loading="lazy" src="/images/MenuLateral/MenuImage.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
+                <img loading="lazy" src="/images/MenuLateral/MenuImage.webp" alt="feedback Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira"/>
             </div>
           </div>
           <a href="/#home-id" className={`desktop-topbar-link ${activeSection === 'home-id' ? 'cdv-active-link' : ''}`}>
