@@ -174,7 +174,17 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
                 <a href="tel:+351964849002" className="side-menu-phone">{t('footer.phone')}</a>
                 <a href="tel:+351966910051" className="side-menu-phone">{t('footer.phone-2')}</a>
                 <div className="mobile-menu-social-media">
-                  <FontAwesomeIcon icon={faFacebook} className="footer-bigger-icon"/>
+                <a 
+                  href="https://www.facebook.com/share/JicoBzt9PHzVKMik/?mibextid=LQQJ4d" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer-bigger-icon"
+                >
+                  <FontAwesomeIcon 
+                    icon={faFacebook} 
+                    className="footer-bigger-icon" 
+                  />
+                </a>
                   <a 
                     href="https://www.instagram.com/casadavila_alojamentolocal?igsh=MWwyaXY1eGpnaGlhbw==" 
                     target="_blank" 
