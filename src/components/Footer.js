@@ -44,9 +44,9 @@ function Footer() {
         </div>
         <div className="footer-column-3">
           <span className="footer-title">{t('footer.contacts')}</span>
-          <span className="footer-text" onClick={() => window.location.href = `mailto:${t('footer.email')}`}>
+          <a href={`mailto:${t('footer.email')}`} className="footer-text">
             {t('footer.email')}
-          </span>
+          </a>
           <a href="tel:+351964849002" className="footer-text">{t('footer.phone')}</a>
           <a href="tel:+351966910051" className="footer-text">{t('footer.phone-2')}</a>
           <div>
@@ -76,7 +76,7 @@ function Footer() {
         </div>
       </div>
       <p className="footer-copyright-text">Casa Da Vila &copy; {new Date().getFullYear()}</p>
-      <p className="footer-site-credits">{t('footer.credits')}</p>
+      <p className="footer-site-credits">{t('footer.credits')} <a href="https://arturgrilo.netlify.app/">Artur Grilo</a></p>
     </footer>
   );
 }

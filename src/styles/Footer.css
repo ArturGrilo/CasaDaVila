@@ -77,13 +77,13 @@
 }
 
 .footer-site-credits{
-  font-size: 16px;
+  font-size: 18px;
   color: white;
 }
 
 .footer-site-credits a{
   color: white;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 @media only screen and (max-width: 2000px) {
@@ -105,7 +105,7 @@
   }
 
   .footer-site-credits {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
