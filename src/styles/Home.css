@@ -75,4 +75,85 @@
 .home-main-container {
   position: relative;
   z-index: 1;
+  height: 100%;
+  background: 
+    linear-gradient(to top, 
+                    rgba(0, 0, 0, 0.8) 0%, 
+                    rgba(0, 0, 0, 0) 100%) bottom / 100% 60%;
+  background-size: 100% 60%, 20%; /* Fundo ocupa apenas os últimos 60% */
+  background-position: bottom; /* Posiciona o fundo na parte inferior */
+  background-repeat: no-repeat, repeat;
+}
+
+.home-main-container-2 {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 400px;
+  width: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="10,0 20,10 10,20 0,10" fill="%23ffffff" opacity="0.1"/></svg>') repeat;
+  background-size: 100px;
+  background-position: bottom;
+  background-repeat: repeat;
+  opacity: 0.3;
+}
+
+.home-info-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 40px);
+  bottom: 25%;
+  color: white;
+  flex-direction: column;
+  gap: 60px;
+  margin: 0 20px;
+}
+
+.home-info-main-text{
+  font-family: 'Cinzel', sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.home-info-sub-text{
+  font-family: 'Cinzel', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1rem; /* Tamanho do floco */
+  opacity: 0.8;
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+
+}
+
+/* Animação de queda */
+@keyframes fall {
+  0% {
+    top: -10px;
+    left: calc(100% * var(--start-x)); /* Varia a posição inicial */
+    transform: scale(var(--start-size)); /* Flocos de tamanhos variados */
+  }
+  100% {
+    top: 100vh;
+    left: calc(100% * var(--end-x)); /* Move lateralmente ao cair */
+    transform: scale(var(--end-size));
+  }
+}
+
+/* Movimento lateral suave */
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
 }

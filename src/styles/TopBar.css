@@ -467,6 +467,19 @@
   font-size: 14px !important;
 }
 
+img.kit-natal.logo-natal {
+  position: absolute;
+  height: 78px;
+  top: -5px;
+  right: 101px;
+}
+
+.scrolled img.kit-natal.logo-natal {
+  height: 51px;
+  top: -3px;
+  right: 65px;
+}
+
 @media only screen and (max-width: 2000px) {
   .logo{
     max-height: 120px;
@@ -508,6 +521,29 @@
   .dropdown-menu-container {
     margin-top: 26px;
   }
+
+  img.kit-natal.logo-natal {
+    height: 62px;
+    top: -4px;
+    right: 80px;
+  }
+
+  .kit-natal.garland-natal {
+    display: none;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 100px;
+    background-image: url(../garlands.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  .scrolled img.kit-natal.logo-natal {
+    height: 48px;
+    top: -8px;
+    right: 50px;
+  }
 }
 
 @media only screen and (max-width: 870px) {
@@ -546,5 +582,11 @@
 
   .links-top-bar.open {
     display: block;
+  }
+
+  img.kit-natal.logo-natal {
+    height: 55px;
+    top: -7px;
+    right: 65px;
   }
 }

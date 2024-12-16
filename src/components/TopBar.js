@@ -89,9 +89,11 @@ const TopBar = ({ scrollThreshold, altScreen }) => {
 
   return (
     <div className={`top-bar ${scrolled ? "scrolled" : ""}`} ref={topBarRef}>
+      <div className="kit-natal garland-natal"></div>
       <div className="top-bar-container">
         <div onClick={() => window.location.href = "/#home-id"} className="logo-container">
           <img src={scrolled ? "/images/Logo/CasaDaVilaLogo.png" : "/images/Logo/CasaDaVilaWhiteLOGO.png"} alt="Logo Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="logo" />
+          <img src="/images/Natal/hat.png" alt="Logo Casa da Vila - Natal Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira" className="kit-natal logo-natal" />
         </div>
         <div className="links-top-bar">
           <div className="cdv-menu-icon" onClick={handleMenuToggle}>

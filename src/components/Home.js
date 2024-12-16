@@ -4,10 +4,11 @@ import "../styles/Home.css";
 const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
-  const images = useMemo(() => [
+  const images = useMemo(() => [/*  
     "/images/HomePage/HomePage_1.webp",
     "/images/HomePage/HomePage_2.webp",
-    "/images/HomePage/HomePage_3.webp",
+    "/images/HomePage/HomePage_3.webp",*/
+    "/images/HomePage/image.png"
   ], []); 
 
   useEffect(() => {
@@ -25,7 +26,81 @@ const Home = () => {
           <img src={img} alt={`Homepage imagem Casa da Vila - Alojamento Local , Alpedrinha , Beira Baixa , Sintra da Beira`} className="homepage-image-animation"/>
         </div>
       ))}
-      <div className="home-main-container"></div>
+      <div className="home-main-container">
+        <span 
+              className="snowflake"
+              style={{
+                left: 'calc(100% * 0.1)', // Posição inicial
+                animationDuration: '10s', // Tempo de queda
+                '--start-x': 0.1,
+                '--end-x': 0.1,
+                '--start-size': 0.8, // Tamanho inicial
+                '--end-size': 1.2, // Tamanho final
+              }}
+        >❄</span>
+  <span
+    className="snowflake"
+    style={{
+      left: 'calc(100% * 0.3)',
+      animationDuration: '8s',
+      '--start-x': 0.3,
+      '--end-x': 0.35,
+      '--start-size': 0.6,
+      '--end-size': 1.1,
+    }}
+  >
+    ❄
+  </span>
+  <span
+    className="snowflake"
+    style={{
+      left: 'calc(100% * 0.5)',
+      animationDuration: '12s',
+      '--start-x': 0.5,
+      '--end-x': 0.5,
+      '--start-size': 0.7,
+      '--end-size': 1.3,
+    }}
+  >
+    ❄
+  </span>
+  <span
+    className="snowflake"
+    style={{
+      left: 'calc(100% * 0.7)',
+      animationDuration: '9s',
+      '--start-x': 0.7,
+      '--end-x': 0.75,
+      '--start-size': 0.5,
+      '--end-size': 1.0,
+    }}
+  >
+    ❄
+  </span>
+  <span
+    className="snowflake"
+    style={{
+      left: 'calc(100% * 0.9)',
+      animationDuration: '11s',
+      '--start-x': 0.9,
+      '--end-x': 0.85,
+      '--start-size': 0.9,
+      '--end-size': 1.0,
+    }}
+  >
+    ❄
+  </span>
+      
+        <div className="home-main-container-2"></div>
+        <div className="home-info-container">
+          <div className="home-info-main-text">
+            <span>Feliz Natal</span>
+          </div>
+          <div className="home-info-sub-text">
+            <span>Obrigado por fazerem parte da nossa história</span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
