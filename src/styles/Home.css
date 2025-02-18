@@ -76,13 +76,13 @@
   position: relative;
   z-index: 1;
   height: 100%;
-  background: 
+  /*background: 
     linear-gradient(to top, 
                     rgba(0, 0, 0, 0.8) 0%, 
                     rgba(0, 0, 0, 0) 100%) bottom / 100% 60%;
-  background-size: 100% 60%, 20%; /* Fundo ocupa apenas os últimos 60% */
-  background-position: bottom; /* Posiciona o fundo na parte inferior */
-  background-repeat: no-repeat, repeat;
+  background-size: 100% 60%, 20%; /* Fundo ocupa apenas os últimos 60% 
+  background-position: bottom; /* Posiciona o fundo na parte inferior 
+  background-repeat: no-repeat, repeat;*/
 }
 
 .home-main-container-2 {
