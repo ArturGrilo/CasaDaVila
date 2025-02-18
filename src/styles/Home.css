@@ -95,12 +95,12 @@
   background-size: 100px;
   background-position: bottom;
   background-repeat: repeat;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .home-info-container {
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   width: calc(100% - 40px);
   bottom: 25%;
@@ -125,6 +125,7 @@
 }
 
 .snowflake {
+  display: none;
   position: absolute;
   top: -10px;
   color: white;
@@ -132,6 +133,12 @@
   opacity: 0.8;
   animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
 
+}
+
+.sao-valentim-casadavila{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* Animação de queda */
