@@ -6,15 +6,18 @@ const Home = () => {
 
   const images = useMemo(() => [ 
     "/images/HomePage/HomePage_1.webp",
-    "/images/HomePage/HomePage_2.webp",
-    "/images/HomePage/HomePage_3.webp"/*
-    /*"/images/HomePage/image.png"  --> Imagem de Natal */ 
+    "/images/HomePage/HomePage_4.jpeg",
+    "/images/HomePage/HomePage_6.jpeg",
+    "/images/HomePage/HomePage_7.jpeg",
+    "/images/HomePage/HomePage_8.jpeg",
+    "/images/HomePage/HomePage_9.jpeg",
+    "/images/HomePage/HomePage_5.jpeg"
   ], []); 
 
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change the image every 5 seconds
+    }, 3000); // Change the image every 3 seconds
 
     return () => clearInterval(interval);
   }, [images]); // Depend on images to rerun the effect when it changes
@@ -97,10 +100,10 @@ const Home = () => {
         </div>
         <div className="home-info-container">
           <div className="home-info-main-text">
-            <span>Feliz Natal</span>
+            <span>Na simplicidade do campo</span>
           </div>
           <div className="home-info-sub-text">
-            <span>Obrigado por fazerem parte da nossa história</span>
+            <span>Encontramos a verdadeira essência da vida</span>
           </div>
         </div>
       </div>

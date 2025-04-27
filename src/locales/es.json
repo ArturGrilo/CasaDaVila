@@ -170,7 +170,7 @@
                     "Explora las Rutas de la Sierra de Gardunha, una jornada inmersiva y fascinante.",
                     "Explora las Rutas de la Sierra de Gardunha, una jornada inmersiva y fascinante en la reserva natural de la Red Natura 2000 y en el Geoparque Naturtejo."
                 ],
-                "image": "/images/PercursosGardunha.jpg"
+                "image": "/images/Gardunha/PercursosGardunha.jpg"
             },
             {
                 "title": "Casa del Guarda",
@@ -178,7 +178,7 @@
                     "Amplias áreas de recreo y una vista deslumbrante de las majestuosas sierras circundantes.",
                     "En este encantador lugar te esperan amplias áreas de recreo, equipadas con mesas, barbacoas, espacios para preparar deliciosas comidas al aire libre y también ofrece una vista deslumbrante de las majestuosas sierras circundantes."
                 ],
-                "image": "/images/CasaDoGuarda.jpeg"
+                "image": "/images/Gardunha/CasaDoGuarda.jpeg"
             }
         ],
         "bottomLogo": "logo-serra-gardunha.png",
@@ -206,7 +206,7 @@
                     "Una de las ciudades más importantes situadas al pie del Parque Natural de la Sierra de Estrella.",
                     "Situada a 550 metros de altitud, Seia es una de las ciudades más importantes situadas al pie del Parque Natural de la Sierra de Estrella y una puerta de entrada al punto más alto de Portugal Continental (Torre)."
                 ],
-                "image": "/images/Seia.jpeg"
+                "image": "/images/SerraDaEstrela/Seia.jpeg"
             }
         ],
         "bottomLogo": "logo-serra-estrela.png"

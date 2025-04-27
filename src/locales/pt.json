@@ -170,7 +170,7 @@
                     "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante.",
                     "Desbrave as Rotas da Serra da Gardunha, uma jornada imersiva e fascinante na reserva natural da Rede Natura 2000 e no Geopark Naturtejo."
                 ],
-                "image": "/images/PercursosGardunha.jpg"
+                "image": "/images/Gardunha/PercursosGardunha.jpg"
             },
             {
                 "title": "Casa do Guarda",
@@ -178,7 +178,7 @@
                     "Amplas áreas de lazer e uma vista deslumbrante das majestosas serras circundantes.",
                     "Neste local encantador, aguardam-no amplas áreas de lazer, equipadas com mesas, churrasqueiras, espaços para preparar deliciosas refeições ao ar livre e ainda oferece uma vista deslumbrante das majestosas serras circundantes."
                 ],
-                "image": "/images/CasaDoGuarda.jpeg"
+                "image": "/images/Gardunha/CasaDoGuarda.jpeg"
             }
         ],
         "bottomLogo": "logo-serra-gardunha.png",
@@ -206,7 +206,7 @@
                     "Uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela.",
                     "Situada a 550 metros de altitude, Seia é uma das mais importantes cidades situadas no sopé do Parque Natural da Serra da Estrela e uma porta de entrada para o ponto mais alto de Portugal Continental (Torre)."
                 ],
-                "image": "/images/Seia.jpeg"
+                "image": "/images/SerraDaEstrela/Seia.jpeg"
             }
         ],
         "bottomLogo": "logo-serra-estrela.png"

@@ -11,35 +11,31 @@ function Spaces({ space }) {
   const { t } = useTranslation();
 
   const space1_Images = [
-    "/images/RC_1.jpeg",
-    "/images/RC_2.jpeg",
-    "/images/RC_3.jpeg",
-    "/images/RC_4.jpeg",
-    "/images/Comodidades/CasaDaVilaI.webp",
-    "/images/RC_7.jpeg",
-    "/images/RC_8.jpeg",
-    "/images/RC_9.jpeg",
-    "/images/RC_10.jpeg",
-    "/images/RC_11.jpeg",
-    "/images/RC_12.jpeg",
-    "/images/RC_13.jpeg",
-    "/images/RC_14.jpeg"
+      "/images/CasaDaVilaI/CasaDaVilaI_1.jpeg",
+      "/images/CasaDaVilaI/CasaDaVilaI_2.jpeg",
+      "/images/CasaDaVilaI/CasaDaVilaI_3.jpeg",
+      "/images/CasaDaVilaI/CasaDaVilaI_4.jpeg",
+      "/images/CasaDaVilaI/CasaDaVilaI_5.jpeg",
+      "/images/CasaDaVilaI/CasaDaVilaI_6.jpg",
+      "/images/CasaDaVilaI/CasaDaVilaI_7.jpg",
+      "/images/CasaDaVilaI/CasaDaVilaI_8.jpg",
+      "/images/CasaDaVilaI/CasaDaVilaI_9.jpg"
   ];
 
   const space2_Images = [
-    "/images/PS_1.jpeg",
-    "/images/PS_2.jpeg",
-    "/images/Comodidades/CasaDaVilaII.webp",
-    "/images/PS_4.jpeg",
-    "/images/PS_5.jpeg",
-    "/images/PS_6.jpeg",
-    "/images/PS_7.jpeg",
-    "/images/PS_8.jpeg",
-    "/images/PS_9.jpeg",
-    "/images/PS_10.jpeg",
-    "/images/PS_11.jpeg",
-    "/images/PS_12.jpeg",
-    "/images/PS_13.jpeg"
+      "/images/CasaDaVilaII/CasaDaVilaII_1.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_2.jpg",
+      "/images/CasaDaVilaII/CasaDaVilaII_3.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_4.jpg",
+      "/images/CasaDaVilaII/CasaDaVilaII_5.jpg",
+      "/images/CasaDaVilaII/CasaDaVilaII_6.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_7.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_8.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_9.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_10.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_11.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_12.jpeg",
+      "/images/CasaDaVilaII/CasaDaVilaII_13.jpeg"
   ];
 
   library.add(faWifi, faSnowflake, faShower, faFireBurner, faTv, faBed, faCouch, faPerson, faBinoculars);
