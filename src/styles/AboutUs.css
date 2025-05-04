@@ -16,6 +16,7 @@
 .cdv-about-us-image{
   max-width: 100%;
   height: fit-content;
+  height: -webkit-fit-content;
 }
 
 .not-desktop{
