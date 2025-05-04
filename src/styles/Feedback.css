@@ -147,3 +147,10 @@
     margin: 0 10px;
   }
 }
+
+
+@media only screen and (max-width: 740px) {
+  .feedback-main-container .cdv-title{
+    max-width: calc(100% - 40px);
+  }
+}
