@@ -27,7 +27,7 @@ function AboutUs() {
         </div>
         <div className='cdv-about-us-container not-desktop'>
           <div className='cdv-text'>
-            <span data-aos="fade-up">{t('about-us.paragraph3')}</span>
+            <span data-aos="fade-up">{t('about-us.paragraph3phone')}</span>
             <span data-aos="fade-up">{t('about-us.paragraph4')}</span>
             <div className="about-us-signature not-desktop" data-aos="fade-up">{t('about-us.signature')}</div>
           </div>

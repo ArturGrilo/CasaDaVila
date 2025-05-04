@@ -20,12 +20,13 @@
         "text": "Galería"
     },
     "about-us": {
-        "title": "Sobre Nosotros",
-        "paragraph1": "¡Hola! Soy María da Conceição, pero puedes llamarme São.",
-        "paragraph2": "Es un gran placer para mí presentarte la historia de mi proyecto más reciente. Todo comenzó con una casa de piedra abandonada, esperando una nueva vida, donde me aventuré en la emocionante tarea de su reconstrucción. Una verdadera obra de amor y dedicación que poco a poco dio vida a este nuevo y acogedor espacio, la Casa da Vila.",
-        "paragraph3": "Aunque ya estoy cerca de la jubilación, no pude dejar de trabajar. Encontré en la decoración y en el arte de recibir a las personas mis grandes pasiones, y decidí unir estos dos mundos en este proyecto. Cada detalle, desde los muebles elegidos con cariño hasta las pequeñas sorpresas que preparé para nuestros huéspedes, refleja mi dedicación en proporcionar una estancia verdaderamente acogedora y memorable.",
+        "title": "Sobre nosotros",
+        "paragraph1": "¡Hola, soy São!",
+        "paragraph2": "Me enamoré de una casa de piedra olvidada y la transformé en Casa da Vila, un espacio acogedor creado con amor y atención al detalle.",
+        "paragraph3": "En este proyecto, descubrí mi pasión por la decoración y el arte de recibir a las personas. Cada detalle refleja mi dedicación a ofrecer una estancia verdaderamente cálida y memorable.",
+        "paragraph3phone": "En este proyecto, cada detalle refleja mi dedicación a ofrecer una estancia verdaderamente cálida y memorable.",
         "paragraph4": "Con cariño,",
-        "signature": "María da Conceição Ferreira da Silva"
+        "signature": "Maria da Conceição Ferreira da Silva"
     },
     "booking": {
         "book": "Reservar",
