@@ -143,6 +143,11 @@ input[type="date"] {
   text-transform: uppercase;
   align-items: baseline;
   font-family: 'Cinzel', sans-serif;
+  margin-bottom: 20px;
+}
+
+.cdv-img-alt-page .cdv-title {
+  display: block;
 }
 
 .cdv-small-title{
@@ -173,7 +178,6 @@ input[type="date"] {
 .cdv-title-and-text{
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .cdv-text{
@@ -217,7 +221,6 @@ input[type="date"] {
   height: 100%;
   max-width: 700px;
   padding: 0 60px;
-  align-items: center;
 }
 
 /*--------------------------------------------*/

@@ -4,6 +4,10 @@
   gap: 30px;
 }
 
+#exps-id .cdv-grid {
+  justify-items: center;
+}
+
 #exps-id .cdv-card{
   height: 50vh;
   width: 50vh;

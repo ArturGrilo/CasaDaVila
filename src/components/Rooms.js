@@ -25,6 +25,7 @@ function Rooms() {
     <section id="spaces-id" className="cdv-section">
       <div className="cdv-main-container">
         <div className="cdv-title" data-aos="fade-up">
+          <span className='cdv-small-title'>Casa da Vila</span>
           <span>{t('rooms.amenities')}</span>
         </div>
         <div className="cdv-text">

@@ -35,6 +35,7 @@ const Feedback = () => {
     <section id="feedback-id" className="feedback-section">
       <div className="feedback-main-container">
         <div className="cdv-title" data-aos="fade-up">
+          <span className='cdv-small-title'>Casa da Vila</span>
           <span>{t('feedback.title')}</span>
         </div>
         <div className="feedback-aspas">"</div>
