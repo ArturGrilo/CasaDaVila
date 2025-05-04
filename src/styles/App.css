@@ -134,15 +134,24 @@ input[type="date"] {
 
 .cdv-title{
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-background-dark);
   font-size: 50px;
   font-weight: bold;
-  margin: 5px 0 40px 0;
   text-transform: uppercase;
   align-items: baseline;
   font-family: 'Cinzel', sans-serif;
+}
+
+.cdv-small-title{
+  width: 100%;
+  color: var(--color-primary);
+  font-size: 18px;
+  margin-bottom: -15px;
+  text-transform: capitalize;
+  font-family: 'SubTitle', sans-serif;
 }
 
 .cdv-title.alt{
@@ -161,11 +170,17 @@ input[type="date"] {
   font-family: 'Cinzel', sans-serif;
 }
 
-.cdv-text{
+.cdv-title-and-text{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-align: center;
+}
+
+.cdv-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
   font-size: 20px;
 }
 
@@ -195,10 +210,12 @@ input[type="date"] {
   background-color: rgba(150, 0, 0, 0.9);
 }
 
-.cdv-main-container{
+.cdv-main-container {
   display: flex;
   flex-direction: column;
+  margin: auto;
   height: 100%;
+  max-width: 700px;
   padding: 0 60px;
   align-items: center;
 }
@@ -407,7 +424,7 @@ input[type="date"] {
 
 @media only screen and (max-width: 2000px) {  
   .cdv-title {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .cdv-text {
