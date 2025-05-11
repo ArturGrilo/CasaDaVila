@@ -145,11 +145,13 @@
   .media-type-buttons {
     flex-direction: column;
     margin: 40px 0 !important;
+    align-items: center;
   }
 
   .media-type-buttons .cdv-button-secundary,
   .media-type-buttons .cdv-button-primary{
     font-size: 15px;
+    width: 250px;
   }
 
   .media-item img{

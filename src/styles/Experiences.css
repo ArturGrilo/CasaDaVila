@@ -9,8 +9,9 @@
 }
 
 #exps-id .cdv-card{
-  height: 50vh;
-  width: 50vh;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
 }
 
 #exps-id .cdv-card img{
@@ -27,30 +28,10 @@
   opacity: 0.3;
 }
 
-@media only screen and (max-width: 1300px) {
-  #exps-id .cdv-card {
-    height: 40vh;
-    width: 40vh;
-  }
-}
-
-@media only screen and (max-width: 1050px) {
-  #exps-id .cdv-card {
-    height: 35vh;
-    width: 35vh;
-  }
-}
-
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 570px) {
   #exps-id .cdv-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-  }
-
-  #exps-id .cdv-card {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
   }
 
   #experiences-id .cdv-text{
