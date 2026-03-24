@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import TopBar from "../components/TopBar";
-import Footer from "../components/Footer";
+import TopBar from "./TopBar";
+import Footer from "./Footer";
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/GalleryPage.css';

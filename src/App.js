@@ -25,6 +25,7 @@ const WordsBreakSection = lazy(() => import('./components/WordsBreakSection'));
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 const GalleryPage = lazy(() => import('./components/GalleryPage'));
 const BookingPage = lazy(() => import('./components/Booking'));
+const BookingPage2 = lazy(() => import('./components/Booking2'));
 
 const App = () => {
   const { t } = useTranslation();
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="/PoliticaDePrivacidade" element={<PrivacyPolicy />} />
           <Route path="/Galeria" element={<GalleryPage />} />
           <Route path="/Reservar" element={<BookingPage />} />
+          <Route path="/ReservarNovo" element={<BookingPage2 />} />
           <Route 
             path={t('routes.historicalVillages')}
             element={<RoadTimeline 

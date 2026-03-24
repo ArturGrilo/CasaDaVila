@@ -2,8 +2,8 @@ import React, { useEffect, useCallback, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import TopBar from "../components/TopBar";
-import Footer from "../components/Footer";
+import TopBar from "./TopBar";
+import Footer from "./Footer";
 import "../styles/Bookings.css";
 
 const BookingPage = () => {

@@ -2,8 +2,8 @@ import React, { useEffect, useState, useCallback } from "react";
 import "../styles/RoadTimeline.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonWalking, faCarSide, faFlag, faTree } from '@fortawesome/free-solid-svg-icons';
-import TopBar from "../components/TopBar";
-import Footer from "../components/Footer";
+import TopBar from "./TopBar";
+import Footer from "./Footer";
 
 function RoadTimeline({ imgpath, title, description, routes, bottomLogo, isNature, isParties, month, location }) {
     const [showContent, setShowContent] = useState(false);
